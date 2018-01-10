@@ -1,0 +1,296 @@
+/*----------------------- navbar start /image er center e kaaj---------------------- */
+#size{
+    height: 992px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size:50px;
+    text-shadow: #00b3ee;
+}
+/*-------------------navbar end--------*/
+
+
+
+.container-fluid img{
+    width: 100%;
+    height: 450px;
+}
+#bgColor{
+    background-color: #090f19;
+
+}
+#fntColor h1{
+ color:#fff;
+}
+#fntColor p{
+ color:#ced9ea;
+}
+#fntColor i{
+ color:#ced9ea;
+}
+
+.thik img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 5px;
+}
+.thik .course-title{
+    font-size: 15px;
+}
+#panel-text{
+    font-size: 20px;
+    font-family: Candara;
+    padding-left: 120px;
+}
+.panel-body p,a {
+    font-size: 20px;
+    font-family: Candara;
+    padding-left: 18px;
+}
+#lecturer{
+    font-size: 20px;
+    padding-left: 120px;
+}
+.rating{
+    float: right;
+    padding-left: 200px;
+}
+#icn{
+    font-size: 15px;
+    padding-left: 120px;
+}
+#left {
+    float: left;
+   /* color: #fff;
+    background: #122b40; */
+    padding-top: 5px;
+
+}
+
+.panel-body{
+    background-color: #f9f9f9;;
+    padding: 10px 15px;
+
+}
+ul{
+    list-style: none;
+}
+#left i{
+    font-size: 20px;
+}
+
+#onno i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#onno{
+    float: right;
+}
+#pad{
+    padding-left: 25px;
+}
+#rate{
+    float: left;
+    padding-left: 0;
+    
+}
+#rate i{
+    color: yellow;
+}
+#chnge{
+    color: yellow;
+}
+#rateRight{
+    float: right;
+    padding-right: 790px;
+}
+#description i{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.checked{
+    color:orange;
+}
+
+
+/* user rating for course */
+* {
+    box-sizing: border-box;
+}
+#bdy{
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+}
+
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+
+/* --------------tutorial segment ---------- */
+/* FOR DEMO ONLY */
+/* Import Bootswatch paper theme because it isn't provided by Bootsnipp and it is awesome! */
+@import url(//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/paper/bootstrap.min.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
+
+/* WHAT YOU NEED */
+.fading-side-menu.affix-top {
+    opacity: 1;
+    transition: opacity 1s
+}
+.fading-side-menu.affix {
+    top: 11.5px;
+}
+.fading-side-menu.affix {
+    opacity: 0.2;
+    transition: opacity 5s
+}
+.fading-side-menu.affix:hover {
+    opacity: 1;
+    transition: opacity 0.3s
+}
+/* RECOMMENDED STYLING BUT NOT REQUIRED */
+.fading-side-menu a {
+    color: rgb(102, 102, 102);
+}
+.fading-side-menu a .fa {
+    padding-right:15px;
+}
+
+/* FOR DEMO ONLY */
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+header {
+    background: url('https://unsplash.imgix.net/photo-1427955569621-3e494de2b1d2?fit=crop&fm=jpg&h=700&q=75&w=1050') no-repeat center bottom;
+    background-size: cover;
+    margin-bottom: 30px;
+    min-height: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+header:after {
+    bottom: 0px;
+    box-shadow: 0px -0px 10px 10px rgb(255, 255, 255);
+    content: '';
+    height: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+}
+header .col-xs-12 {
+    height: 320px;
+}
+
+header .alert-info {
+    background-color: rgba(156, 39, 176, 0.7);
+}
+
+.title {
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+p.small.text-muted {
+    margin-bottom: 0px;
+}
+
+.lead {
+    font-style: italic;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#fullscreen {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+/* -------------- tutorial segment end---------- */
+
+
+
+
+
+
+
+
