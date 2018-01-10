@@ -1,76 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WEB Page</title>
-
-    <link rel="stylesheet" href="../lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/main.css">
-
-
-</head>
-<body>
-<!-- ********** navbar ************* -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header navbar-left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Sheko</a>
-        </div>
-        <div class="collapse navbar-collapse" id="site-menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="tutorial.html">TUTORIAL</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="login.php">LOGIN</a></li>
-                <li><a href="#join_pannel">REGISTER</a></li>
-            </ul>
-        </div>
-    </div>
-
-</nav>
+<?php require_once("../includes/php/functions.php"); ?>
+<?php require_once("../includes/php/session.php"); ?>
+<?php require_once("../includes/layouts/header.php")?>
 <section>
     <img id="size" src="../style/pictures/ipad.jpeg">
     <div class="centered">
         <h1>Learn Coding</h1>
         <hr>
-        <a href="#join_pannel" type="button" class="btn btn-success btn-lg">Join Now</a>
+        <a href="#join_pannel" type="button" class="btn btn-success btn-lg">Start Now</a>
     </div>
 </section>
 <br><br>
 <!-- **********navbar end *********** -->
+<?php if(isset($_SESSION['username'])){?>
 
-<div id="join_pannel" class='split-pane col-xs-12 col-sm-6 uiux-side'>
-    <div>
-        <img src='http://bit.ly/BCR-design'>
-        <div class='text-content'>
-            <div>Become</div>
-            <div class='big'>an Instructor?</div>
+<?php }else{?>
+    <div id="join_pannel" class='split-pane col-xs-12 col-sm-6 uiux-side'>
+        <div>
+            <img src='http://bit.ly/BCR-design'>
+            <div class='text-content'>
+                <div>Become</div>
+                <div class='big'>an Instructor?</div>
+            </div>
+            <a href="reg_teacher.php" class='button'>
+                Join Now
+            </a>
         </div>
-        <a href="reg_teacher.php" class='button'>
-            Join Now
-        </a>
     </div>
-</div>
-<div class='split-pane col-xs-12 col-sm-6 frontend-side'>
-    <div>
-        <img src='http://bit.ly/bcr-dev'>
-        <div class='text-content'>
-            <div>Become</div>
-            <div class='big'>A learner?</div>
+    <div class='split-pane col-xs-12 col-sm-6 frontend-side'>
+        <div>
+            <img src='http://bit.ly/bcr-dev'>
+            <div class='text-content'>
+                <div>Become</div>
+                <div class='big'>A learner?</div>
+            </div>
+            <a href="reg_student.php" class='button'>
+                Join Now
+            </a>
         </div>
-        <a href="reg_student.php" class='button'>
-            Join Now
-        </a>
     </div>
-</div>
+
+<?php }?>
 <!-- ********* another segment end ***** -->
 
 
