@@ -116,7 +116,7 @@
 
 
                         <p class="signin button">
-                            <input type="submit" id="submit" value="Register"/>
+                            <input type="submit" id="submit" name="register_teacher" value="Register"/>
                         </p>
 
 

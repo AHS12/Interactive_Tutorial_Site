@@ -4,8 +4,9 @@ body, html {
     margin: 0;
 }
 
+
 .hero-image {
-    background-image: url("../images/android.jpeg");
+    background-image: url("../style/pictures/android.jpeg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;

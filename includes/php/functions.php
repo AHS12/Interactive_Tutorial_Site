@@ -6,13 +6,16 @@
  * Time: 01:51 PM
  */
 
-function register_as_student()
+function encrypt_user_pass($userpassword)
 {
+    //using Crypto_BlowFish encryption
+    $hashFormate = "$2y$10$";
+    $salt = "iusesomestupidestrin12";
+    $hashF_and_salt = $hashFormate . $salt;
+    //encrypting password
+    $password = crypt($userpassword, $hashF_and_salt);
+
+    return $password;
 
 }
 
-function register_as_teacher()
-{
-
-
-}

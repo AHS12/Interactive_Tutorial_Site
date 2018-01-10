@@ -4,20 +4,9 @@
     <meta charset="UTF-8">
     <title>WEB Page</title>
 
-    <link rel="stylesheet" href="../style/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../style/main.css">
-
-
-    <script>
-
-
-        $('#largeShoes').on('shown.bs.modal', function () {
-            $('#referencia').focus();
-        })
-
-
-    </script>
 
 
 </head>
@@ -39,50 +28,35 @@
                 <li><a href="tutorial.html">TUTORIAL</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="login.php">Register</a>
-
+                <li><a href="login.php">LOGIN</a></li>
+                <li><a href="#join_pannel">REGISTER</a></li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    </li>
-    </ul>
-    </div>
-    </div>
 </nav>
 <section>
     <img id="size" src="../style/pictures/ipad.jpeg">
     <div class="centered">
         <h1>Learn Coding</h1>
         <hr>
-        <button type="button" class="btn btn-primary">Join Now</button>
+        <a href="#join_pannel" type="button" class="btn btn-success btn-lg">Join Now</a>
     </div>
 </section>
 <br><br>
 <!-- **********navbar end *********** -->
 
-<!-- ***********hero images ****** -->
-<div class="hero-image">
-    <div class="hero-text">
-        <h1 style="font-size:50px">I am Kawsar Ahmed</h1>
-        <p>Learn Coding With passion</p>
-        <button>Get Started</button>
-    </div>
-</div>
-<br><br>
-<!-- ********** another segment ***** -->
-<div class='split-pane col-xs-12 col-sm-6 uiux-side'>
+<div id="join_pannel" class='split-pane col-xs-12 col-sm-6 uiux-side'>
     <div>
         <img src='http://bit.ly/BCR-design'>
         <div class='text-content'>
             <div>Become</div>
             <div class='big'>an Instructor?</div>
         </div>
-        <button>
+        <a href="reg_teacher.php" class='button'>
             Join Now
-        </button>
+        </a>
     </div>
 </div>
 <div class='split-pane col-xs-12 col-sm-6 frontend-side'>
@@ -92,13 +66,12 @@
             <div>Become</div>
             <div class='big'>A learner?</div>
         </div>
-        <a class='button'>
+        <a href="reg_student.php" class='button'>
             Join Now
         </a>
     </div>
 </div>
 <!-- ********* another segment end ***** -->
-
 
 
 <!-- **************our course boxes ************* -->
@@ -114,7 +87,8 @@
                 <!-- Controls -->
                 <div class="controls pull-right hidden-xs">
                     <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
-                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                       data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success"
+                                                href="#carousel-example"
                                                 data-slide="next"></a>
                 </div>
             </div>
@@ -127,7 +101,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -138,16 +112,20 @@
                                                 $199.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">Course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -157,7 +135,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -172,9 +150,11 @@
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -184,7 +164,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -195,16 +175,20 @@
                                                 $149.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -214,7 +198,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -225,16 +209,20 @@
                                                 $199.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -248,7 +236,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -259,16 +247,20 @@
                                                 $199.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -278,7 +270,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -293,9 +285,11 @@
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -305,7 +299,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -316,16 +310,20 @@
                                                 $149.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -335,7 +333,7 @@
                         <div class="col-sm-3">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a" />
+                                    <img src="../style/pictures/android.jpeg" class="img-responsive" alt="a"/>
                                 </div>
                                 <div class="info">
                                     <div class="row">
@@ -346,16 +344,20 @@
                                                 $199.99</h5>
                                         </div>
                                         <div class="rating hidden-sm col-md-6">
-                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
-                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            <i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i
+                                                    class="price-text-color fa fa-star">
                                             </i><i class="fa fa-star"></i>
                                         </div>
                                     </div>
                                     <div class="separator clear-left">
                                         <p class="btn-add">
-                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                            <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com"
+                                                                                  class="hidden-sm">Add to cart</a></p>
                                         <p class="btn-details">
-                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">course details</a></p>
+                                            <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com"
+                                                                         class="hidden-sm">course details</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -396,7 +398,9 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
-                    <p id="new"><button class="hb" id="color">Contact</button></p>
+                    <p id="new">
+                        <button class="hb" id="color">Contact</button>
+                    </p>
                 </div>
             </div>
 
@@ -411,7 +415,9 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
-                    <p id="new"><button class="hb" id="color">Contact</button></p>
+                    <p id="new">
+                        <button class="hb" id="color">Contact</button>
+                    </p>
                 </div>
             </div>
 
@@ -425,7 +431,9 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
-                    <p id="new"><button class="hb" id="color">Contact</button></p>
+                    <p id="new">
+                        <button class="hb" id="color">Contact</button>
+                    </p>
                 </div>
             </div>
 
@@ -441,7 +449,8 @@
 
 <section id="contact">
     <div class="section-content">
-        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+        <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s"
+                                                data-wow-duration="2s"> Touch with us</span></h1>
         <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
     </div>
     <div class="contact-section">
@@ -463,12 +472,15 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for ="description"> Message</label>
-                        <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                        <label for="description"> Message</label>
+                        <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
                     </div>
                     <div>
 
-                        <button type="button" class="btn btn-default submit btn-responsive"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                        <button type="button" class="btn btn-default submit btn-responsive"><i class="fa fa-paper-plane"
+                                                                                               aria-hidden="true"></i>
+                            Send Message
+                        </button>
                     </div>
 
                 </div>
@@ -490,9 +502,11 @@
         <div class="text-center center-block">
             <!-- <p class="txt-railway">- Bootsnipp.com -</p> -->
             <!-- <br /> -->
-            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+                                                            class="fa fa-facebook-square fa-3x social"></i></a>
             <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+                                                                 class="fa fa-google-plus-square fa-3x social"></i></a>
             <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
         </div>
         <!--<hr> -->
@@ -516,7 +530,8 @@
 
                         <div class="design">
 
-                            <a href="#">Franchisee </a> |  <a target="_blank" href="#">Web Design & Development by Sheko</a>
+                            <a href="#">Franchisee </a> | <a target="_blank" href="#">Web Design & Development by
+                                Sheko</a>
 
                         </div>
 
@@ -532,19 +547,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Latest compiled and minified JavaScript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -553,21 +555,12 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.appear.js"></script>
 -->
-<script type="text/javascript" src="../scripts/another.js"></script>
+<!--<script type="text/javascript" src="../scripts/another.js"></script>-->
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../lib/jquery-3.2.1.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
 <!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script >
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
 
-    // Initialize popover component
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
 
 </body>
 </html>
