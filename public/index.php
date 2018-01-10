@@ -11,7 +11,7 @@
 </section>
 <br><br>
 <!-- **********navbar end *********** -->
-<?php if(isset($_SESSION['username'])){?>
+<?php if(isset($_SESSION['userfname'])){?>
 
 <?php }else{?>
     <div id="join_pannel" class='split-pane col-xs-12 col-sm-6 uiux-side'>

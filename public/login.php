@@ -7,13 +7,19 @@
     if(isset($_POST['submit'])){
         $usermail = $_POST["email"];
         $password = $_POST["password"];
-        $found_usermail = attempt_login($usermail,$password);
+        $found_user = attempt_login($usermail,$password);
 
-        if($found_usermail){
+        if($found_user){
             //success
             //mark user as logged in
-            $_SESSION["user_id"]=$found_usermail["id"];
-            $_SESSION["username"]=$found_usermail["firstname"];
+            $_SESSION["user_id"]=$found_user["id"];
+            $_SESSION["userfname"]=$found_user["firstname"];
+            $_SESSION["userlname"]=$found_user["lastname"];
+            $_SESSION["usermail"]=$found_user["email"];
+            $_SESSION["userpass"]=$found_user["password"];
+            $_SESSION["userpicture"]=$found_user["picture"];
+            $_SESSION["userinstitute"]=$found_user["institution"];
+            $_SESSION["userbio"]=$found_user["bio"];
             redirect_to("index.php");
         }
         else{

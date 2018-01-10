@@ -103,7 +103,7 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
                         <p>
                             <label for="username" class="uname"> Your email</label>
-                            <input id="username" name="username" required="required" type="email"
+                            <input id="username" name="email" required="required" type="email"
                                    placeholder="mymail@mail.com"/>
                         </p>
 
