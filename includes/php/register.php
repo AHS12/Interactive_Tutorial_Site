@@ -76,7 +76,7 @@ if (isset($_POST['register_student'])) {
 
     } else {
         $_SESSION['wrong_pass'] = 1;
-        header("location: ../public/reg_student.php");
+        header("location: ../../public/reg_student.php");
     }
 }
 
