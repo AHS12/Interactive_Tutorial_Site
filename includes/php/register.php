@@ -11,6 +11,7 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
 include "init.php";
 
+
 $db = new Database();
 
 if (isset($_POST['register_student'])) {
@@ -51,7 +52,7 @@ if (isset($_POST['register_student'])) {
 
                 move_uploaded_file($fileTmp, $filePath);
 
-                $password = encrypt_user_pass($password);
+                $password = password_encrypt($password);
                 $userRole = "S";
 
                 $query = "INSERT INTO users(firstname,lastname,email,password,user_role,picture) VALUES ";
