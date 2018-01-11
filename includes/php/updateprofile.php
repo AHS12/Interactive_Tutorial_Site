@@ -17,7 +17,7 @@ if (isset($_POST['update_student'])) {
     $newfirstname = $db2->escape_string($_POST['first_name']);
     $newLastname = $db2->escape_string($_POST['last_name']);
     $newmail = $db2->escape_string($_POST['email']);
-    $newpass = $db2->escape_string($_POST['password']);
+//    $newpass = $db2->escape_string($_POST['password']);
     $newinstitute = $db2->escape_string($_POST['institution']);
     $newbio = $db2->escape_string($_POST['bio']);
 
@@ -45,18 +45,53 @@ if (isset($_POST['update_student'])) {
 
             move_uploaded_file($fileTmp, $filePath);
 
-            $password = password_encrypt($newpass);
-            $userRole = "S";
+//            $password = password_encrypt($newpass);
+//            $userRole = "S";
 
-            $query = "UPDATE users SET firstname= '$newfirstname',lastname='$newLastname',email='$newmail',password='$newpass',";
-            $query .= "institution='$newinstitute',bio='$newbio',picture='$fileUserImgName'";
+            $query = "UPDATE users SET firstname= '$newfirstname',lastname ='$newLastname',email ='$newmail',";
+            $query .= "institution='$newinstitute',bio='$newbio',picture='$fileUserImgName' WHERE email='$newmail'";
 
-            $result = $db->execute_query($query);
+            $result = $db2->execute_query($query);
             if (!$result) {
-                die("Failed!!!" . mysqli_error($db->connection));
-            }
+                die("Failed!!!" . mysqli_error($db2->connection));
+            } //update SESSION
 
-            header("location: ../../public/profile.php");
+
+            else {
+
+//                $usermail = $_SESSION['usermail'];
+
+                $user_id = $_SESSION["user_id"];
+
+                $query = "SELECT * ";
+                $query .= "FROM users ";
+                $query .= "WHERE id = '{$user_id}'";
+                $query .= "LIMIT 1";
+
+                $profile_data = $db2->execute_query($query);
+
+
+
+                $update_profile_data = mysqli_fetch_assoc($profile_data);
+
+
+                if ($update_profile_data) {
+                    $_SESSION["userfname"] = $update_profile_data["firstname"];
+                    $_SESSION["userlname"] = $update_profile_data["lastname"];
+                    $_SESSION["usermail"] = $update_profile_data["email"];
+                    $_SESSION["userpass"] = $update_profile_data["password"];
+                    $_SESSION["userpicture"] = $update_profile_data["picture"];
+                    $_SESSION["userinstitute"] = $update_profile_data["institution"];
+                    $_SESSION["userbio"] = $update_profile_data["bio"];
+
+
+                    redirect_to("../../public/profile.php");
+
+                    //
+                } else {
+
+                }
+            }
             $_SESSION['successReg'] = 1;
 
         }
@@ -64,6 +99,8 @@ if (isset($_POST['update_student'])) {
         $_SESSION['no_image'] = 1;
         header("location: ../../public/profile.php");
     }
+
+    // update process ends
 
 
 }

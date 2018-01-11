@@ -1,35 +1,34 @@
-<?php require_once("../includes/database/db_connection.php");?>
+<?php require_once("../includes/database/db_connection.php"); ?>
 <?php require_once("../includes/layouts/header.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
+<?php require_once ("../includes/php/validation_function.php")?>
 <?php
-    $usermail = "";
-    if(isset($_POST['submit'])){
-        $usermail = $_POST["email"];
-        $password = $_POST["password"];
-        $found_user = attempt_login($usermail,$password);
+$usermail = "";
+if (isset($_POST['submit'])) {
+    $usermail = $_POST["email"];
+    $password = $_POST["password"];
+    $found_user = attempt_login($usermail, $password);
 
-        if($found_user){
-            //success
-            //mark user as logged in
-            $_SESSION["user_id"]=$found_user["id"];
-            $_SESSION["userfname"]=$found_user["firstname"];
-            $_SESSION["userlname"]=$found_user["lastname"];
-            $_SESSION["usermail"]=$found_user["email"];
-            $_SESSION["userpass"]=$found_user["password"];
-            $_SESSION["userpicture"]=$found_user["picture"];
-            $_SESSION["userinstitute"]=$found_user["institution"];
-            $_SESSION["userbio"]=$found_user["bio"];
-            redirect_to("index.php");
-        }
-        else{
-            $_SESSION["message"] = "Username/password not found";
-
-        }
-    }
-    else{
+    if ($found_user) {
+        //success
+        //mark user as logged in
+        $_SESSION["user_id"] = $found_user["id"];
+        $_SESSION["userfname"] = $found_user["firstname"];
+        $_SESSION["userlname"] = $found_user["lastname"];
+        $_SESSION["usermail"] = $found_user["email"];
+        $_SESSION["userpass"] = $found_user["password"];
+        $_SESSION["userpicture"] = $found_user["picture"];
+        $_SESSION["userinstitute"] = $found_user["institution"];
+        $_SESSION["userbio"] = $found_user["bio"];
+        redirect_to("index.php");
+    } else {
+        $_SESSION["message"] = "Username/password not found";
 
     }
+} else {
+
+}
 ?>
 <br>
 <!-- ********** navbar end ************* -->
@@ -51,6 +50,9 @@
 
                     <form action="login.php" autocomplete="on" method="post">
                         <h1>Log in</h1>
+                        <?php echo message();
+                        echo form_errors($errors);
+                        ?>
                         <p>
                             <label for="email" class="uname"> Your email </label>
                             <input id="username" name="email" required="required" type="text"
@@ -81,39 +83,6 @@
                         </p>
                     </form>
                 </div>
-
-                <!--                <div id="register" class="animate form">-->
-                <!--                    <form action="mysuperscript.php" autocomplete="on">-->
-                <!--                        <h1> Sign up </h1>-->
-                <!--                        <p>-->
-                <!--                            <label for="usernamesignup" class="uname">Your username</label>-->
-                <!--                            <input id="usernamesignup" name="usernamesignup" required="required" type="text"-->
-                <!--                                   placeholder="mysuperusername690"/>-->
-                <!--                        </p>-->
-                <!--                        <p>-->
-                <!--                            <label for="emailsignup" class="youmail"> Your email</label>-->
-                <!--                            <input id="emailsignup" name="emailsignup" required="required" type="email"-->
-                <!--                                   placeholder="mysupermail@mail.com"/>-->
-                <!--                        </p>-->
-                <!--                        <p>-->
-                <!--                            <label for="passwordsignup" class="youpasswd">Your password </label>-->
-                <!--                            <input id="passwordsignup" name="passwordsignup" required="required" type="password"-->
-                <!--                                   placeholder="eg. X8df!90EO"/>-->
-                <!--                        </p>-->
-                <!--                        <p>-->
-                <!--                            <label for="passwordsignup_confirm" class="youpasswd">Please confirm your password </label>-->
-                <!--                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"-->
-                <!--                                   type="password" placeholder="eg. X8df!90EO"/>-->
-                <!--                        </p>-->
-                <!--                        <p class="signin button">-->
-                <!--                            <input type="submit" value="Sign up"/>-->
-                <!--                        </p>-->
-                <!--                        <p class="change_link">-->
-                <!--                            Already a member ?-->
-                <!--                            <a href="#tologin" class="to_register"> Go and log in </a>-->
-                <!--                        </p>-->
-                <!--                    </form>-->
-                <!--                </div>-->
 
             </div>
         </div>

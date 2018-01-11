@@ -1,10 +1,13 @@
 <?php
 @ob_start();
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
-
-echo $_SESSION['username'];
 ?>
 
+
+<?php
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +99,7 @@ echo $_SESSION['username'];
                                     <div class="col-md-9">
                                         <h2 style="font-size:38px">
                                             <strong><?php echo $_SESSION['userfname'] . " " . $_SESSION['userlname'];
-                                            ?></strong>
+                                                ?></strong>
                                         </h2>
                                     </div>
                                 </div>
@@ -115,7 +118,7 @@ echo $_SESSION['username'];
                                         <strong>
 
                                             <?php
-                                            if (!empty($_SESSION['userinstitute'])) {
+                                            if (isset($_SESSION['userinstitute'])) {
                                                 echo $_SESSION['userinstitute'];
                                             } else echo "No Institution";
                                             ?>
@@ -145,7 +148,7 @@ echo $_SESSION['username'];
                                     <div style="height: 15px"></div>
                                     <p>
                                         <?php
-                                        if (!empty($_SESSION['userbio'])) {
+                                        if (isset($_SESSION['userbio'])) {
                                             echo $_SESSION['userbio'];
                                         } else echo "No bio added yet";
 
@@ -295,20 +298,12 @@ echo $_SESSION['username'];
                             </div>
                         </div>
 
-                        <div class="form-group">
-
-                            <div class="col-xs-6">
-                                <label for="password"><h4>Password</h4></label>
-                                <input type="password" class="form-control" name="password" id="password"
-                                       value="<?php echo $_SESSION['userpass'] ?>">
-                            </div>
-                        </div>
 
                         <div class="form-group">
 
                             <div class="col-xs-6">
                                 <label for="Institution"><h4>Institution</h4></label>
-                                <input type="email" class="form-control" name="institution" id="Institution"
+                                <input type="text" class="form-control" name="institution" id="Institution"
                                        value="<?php echo $_SESSION['userinstitute'] ?>">
                             </div>
                         </div>
