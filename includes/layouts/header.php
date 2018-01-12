@@ -30,6 +30,7 @@
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+
                 <?php if(isset($_SESSION['username'])){?>
                     <li><a href="profile.php"><?php echo htmlentities($_SESSION["username"]); ?></a></li>
                 <?php }else{?>
