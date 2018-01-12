@@ -6,7 +6,6 @@
  * Time: 08:20 PM
  */
 
-//new config in lacture
 
 //DATABASE Connection Constants
 

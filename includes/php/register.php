@@ -19,7 +19,7 @@ if (isset($_POST['register_student'])) {
 
     $firstname = $db->escape_string($_POST['firstname']);
     $lastname = $db->escape_string($_POST['lastname']);
-    $email = $db->escape_string($_POST['lastname']);
+    $email = $db->escape_string($_POST['email']);
     $password = $db->escape_string($_POST['password']);
     $confirmPass = $db->escape_string($_POST['confirm_pass']);
 
