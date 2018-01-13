@@ -92,5 +92,24 @@ function confirm_logged_in(){
     if(!isset($_SESSION['admin_id'])){
         redirect_to("login.php");
     }
+
 }
 
+function form_errors($errors = array()){
+
+    $output = "";
+    if (!empty($errors)){
+        $output = "<div class=\"error\">";
+        $output .= "please fix the errors";
+        $output .="<ul>";
+        foreach ($errors as $key=> $error){
+            $output .="<li>";
+            $output .= htmlentities($error);
+            $output .="<li/>";
+        }
+        $output .="</ul>";
+        $output .="</div>";
+    }
+    return $output;
+
+}
