@@ -1,81 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e8fbb12-4c01-4dd9-8b2d-ad6cc90b2f75" name="Default" comment="log in successful">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/15156062121.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515608666profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515609828sticker_bug_digital.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648497profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648717profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648791profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648792profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648827profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648829profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648843profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648862profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648884profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515648977profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515649363Bangladesh-map-divisions-wise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515653299profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515653890sticker_bug_digital.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515654550profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515654713profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515655222sticker_bug_digital.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515655268sticker_bug_digital.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1515655273sticker_bug_digital.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/database/interactivets.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/updateprofile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/validation_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fontAwesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/profile.css" />
+    <list default="true" id="6e8fbb12-4c01-4dd9-8b2d-ad6cc90b2f75" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/database/db_constants.php" afterPath="$PROJECT_DIR$/includes/database/db_constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/layouts/header.php" afterPath="$PROJECT_DIR$/includes/layouts/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/php/functions.php" afterPath="$PROJECT_DIR$/includes/php/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/php/register.php" afterPath="$PROJECT_DIR$/includes/php/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.php" afterPath="$PROJECT_DIR$/public/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reg_student.php" afterPath="$PROJECT_DIR$/public/reg_student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/reg_teacher.php" afterPath="$PROJECT_DIR$/public/reg_teacher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -220,8 +147,8 @@
       <file leaf-file-name="reg_teacher.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/reg_teacher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1952">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="512">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -258,6 +185,9 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="sohel_part" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -444,7 +374,7 @@
       <workItem from="1515737412958" duration="71000" />
       <workItem from="1515765847027" duration="211000" />
       <workItem from="1515766211197" duration="1007000" />
-      <workItem from="1515849779795" duration="1293000" />
+      <workItem from="1515849779795" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1515597169343</created>
@@ -460,11 +390,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515604412569</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="instructor register &amp; profile update">
+      <created>1515851152793</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515851152793</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26434000" />
+    <option name="totallyTimeSpent" value="26576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,13 +413,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17246597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61030596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -554,7 +490,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="log in successful" />
-    <option name="LAST_COMMIT_MESSAGE" value="log in successful" />
+    <MESSAGE value="instructor register &amp; profile update" />
+    <option name="LAST_COMMIT_MESSAGE" value="instructor register &amp; profile update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -586,6 +523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,6 +539,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
           <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,6 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -670,6 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
           <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -744,6 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,6 +774,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,6 +789,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
           <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -944,8 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/reg_teacher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1952">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="512">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
