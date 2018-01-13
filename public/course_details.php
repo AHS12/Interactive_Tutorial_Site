@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>WEB Page</title>
 
-    <link rel="stylesheet" href="../style/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/lib/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/main.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
 
 </head>
 <body>
@@ -29,23 +29,20 @@
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="login.php">Register</a>
-
+                <li><a href="index.php#join_pannel">REGISTER</a></li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    </li>
-    </ul>
-    </div>
-    </div>
 </nav>
+
 <br><br>
 <header>
-    <div  class="jumbotron" id="bgColor">
+    <div class="jumbotron" id="bgColor">
         <div class="container" id="fntColor">
             <h1>Advanced CSS and Sass: Take Your CSS to the Next Level!</h1>
-            <p>The most advanced and modern CSS course on the internet: master animations, flexbox, responsive design, and so much more</p>
+            <p>The most advanced and modern CSS course on the internet: master animations, flexbox, responsive design,
+                and so much more</p>
 
             <div class="rating col-lg-12 col-md-1" id="rate">
                 <span class="fa fa-star checked"></span>
@@ -54,7 +51,7 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <div id="rateRight">
-                    <p>4.6 Ratings  9,324 enrolled</p>
+                    <p>4.6 Ratings 9,324 enrolled</p>
                 </div>
 
             </div>
@@ -76,42 +73,52 @@
                 <div class="col-lg-12">
                     <ul class="col-lg-6" id="left">
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
 
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
 
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                     </ul>
 
 
                     <ul class="col-lg-6" id="onno">
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
 
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
 
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                         <li>
-                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn coding.Interface is really rich.</i>
+                            <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn
+                                coding.Interface is really rich.</i>
                         </li>
                     </ul>
                 </div>
@@ -124,22 +131,29 @@
 </div>
 <br><br>
 <section>
+    <div class="container">
     <div>
         <h3>Requirement</h3>
         <ol>
-            <li>This not a beginner course — You should be confident in coding HTML and CSS before taking the course</li>
+            <li>This not a beginner course — You should be confident in coding HTML and CSS before taking the course
+            </li>
             <li>Any computer and OS will work — Windows, macOS or Linux</li>
             <li>There is no need for any paid software — The text editor you already have works just fine</li>
         </ol>
     </div>
     <div>
         <h3>Description</h3>
-        <p>Have you been coding CSS for some time, but want to take your game to the next level? Do you feel confused with CSS jargon like inheritance, specificity or the cascade?</p><br>
-        <p>What if there was one resource, one place, where you could learn all the advanced and modern CSS techniques and properties you've been reading about?</p>
+        <p>Have you been coding CSS for some time, but want to take your game to the next level? Do you feel confused
+            with CSS jargon like inheritance, specificity or the cascade?</p><br>
+        <p>What if there was one resource, one place, where you could learn all the advanced and modern CSS techniques
+            and properties you've been reading about?</p>
         <h5>Good News:</h5>
-        <i>Welcome to "Advanced CSS and Sass", the most advanced, the most modern, and the most complete CSS course on the internet. It's everything you want in an advanced CSS course, and more.</i>
-        <p>You will learn complex CSS animations, advanced responsive design techniques, flexbox layouts, Sass, CSS architecture, fundamental CSS concepts, and so much more.</p>
-        <p>Like in all my courses, you will build beautiful and carefully designed projects, that will make you proud of yourself and leave you ready to build complex projects on your own.</p>
+        <i>Welcome to "Advanced CSS and Sass", the most advanced, the most modern, and the most complete CSS course on
+            the internet. It's everything you want in an advanced CSS course, and more.</i>
+        <p>You will learn complex CSS animations, advanced responsive design techniques, flexbox layouts, Sass, CSS
+            architecture, fundamental CSS concepts, and so much more.</p>
+        <p>Like in all my courses, you will build beautiful and carefully designed projects, that will make you proud of
+            yourself and leave you ready to build complex projects on your own.</p>
         <p>After finishing the course you will:</p>
         <ol>
             <li>Be up to speed with the most modern and advanced CSS properties and techniques;</li>
@@ -147,6 +161,7 @@
             <li>Be ready to build responsive layouts for all kind of devices and situations;</li>
             <li>Truly understand how CSS works behind the scenes;</li>
         </ol>
+    </div>
     </div>
 </section>
 <br><br>
@@ -219,32 +234,6 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- jQuery library -->
