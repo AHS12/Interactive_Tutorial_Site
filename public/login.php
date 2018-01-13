@@ -2,7 +2,7 @@
 <?php require_once("../includes/layouts/header.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
-<?php require_once ("../includes/php/validation_function.php")?>
+<?php require_once("../includes/php/validation_function.php") ?>
 <?php
 $usermail = "";
 if (isset($_POST['submit'])) {
@@ -23,7 +23,8 @@ if (isset($_POST['submit'])) {
         $_SESSION["userbio"] = $found_user["bio"];
         redirect_to("index.php");
     } else {
-        $_SESSION["message"] = "Username/password not found";
+        $_SESSION["err_login"] = 1;
+        redirect_to("login.php");
 
     }
 } else {
@@ -50,8 +51,14 @@ if (isset($_POST['submit'])) {
 
                     <form action="login.php" autocomplete="on" method="post">
                         <h1>Log in</h1>
-                        <?php echo message();
-                        echo form_errors($errors);
+                        <?php //echo message();
+                        //                        echo form_errors($errors);
+
+
+                        if (isset($_SESSION["err_login"])) {
+                            echo "<h2 id=\"message\" class=\"text-center alert alert-danger\"><strong>Email Or Password Error!</strong></h2>";
+                        }
+                        session_unset();
                         ?>
                         <p>
                             <label for="email" class="uname"> Your email </label>
