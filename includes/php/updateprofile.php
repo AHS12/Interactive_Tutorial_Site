@@ -13,7 +13,7 @@ include "init.php";
 
 $db2 = new Database();
 
-if (isset($_POST['update_student'])) {
+if (isset($_POST['update_user'])) {
     $newfirstname = $db2->escape_string($_POST['first_name']);
     $newLastname = $db2->escape_string($_POST['last_name']);
     $newmail = $db2->escape_string($_POST['email']);

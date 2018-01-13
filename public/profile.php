@@ -352,7 +352,7 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <br>
-                                <button class="btn btn-lg btn-success" name="update_student" type="submit">Update
+                                <button class="btn btn-lg btn-success" name="update_user" type="submit">Update
 
                             </div>
                         </div>
