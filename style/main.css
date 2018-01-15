@@ -49,8 +49,9 @@ body, html {
     height: 992px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     position: relative;
+    width: 100%;
 }
 .centered {
     position: absolute;

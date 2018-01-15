@@ -2,47 +2,10 @@
 @ob_start();
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
 ?>
-
-
 <?php
-
+require_once ("../includes/layouts/header2.php");
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-
-    <link rel="stylesheet" href="../lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/profile.css">
-</head>
-<body>
-<!-- ********** navbar ************* -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header navbar-left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Sheko</a>
-        </div>
-        <div class="collapse navbar-collapse" id="site-menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="tutorial.html">TUTORIAL</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="../includes/php/logout.php">LOGOUT</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <br><br>
 <!-- ********** navbar end************* -->
 <!-- ************profile navbar start ******* -->
@@ -87,7 +50,7 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
                 <li><a href="#settings" data-toggle="tab">Setting</a></li>
             </ul>
 
-            <div class="tab-content">
+            <div class="tab-content" id="profile_tab">
                 <div class="tab-pane active" id="home">
 
                     <hr>
@@ -185,83 +148,143 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
                 <div class="tab-pane" id="messages">
 
                     <h2></h2>
-                    <div class="container-fluid">
+                    <div class="container">
+                        <h1>Minimal Preview Thumbnails </h1>
+                        <hr>
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Post Thumbnail List
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="viewed">257 <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="viewed">3 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="http://bootsnipp.com/snippets/featured/post-thumbnail-list" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
-
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Colourful Tabbed Slider Carousel
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">433 <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">4 <i class="fa fa-star"></i></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Portfolio using Panels
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">2.1K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">13 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Parallax Login Form
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">11.5K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">24 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
-
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Timeline (responsive)
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">7.3K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">31 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="proCard">
-                                    <img src="../style/pictures/pjg.jpg" alt="Kawsar">
-                                    <h5>Course Name</h5>
-                                    <p class="title">Course Tittle</p>
-                                    <hr>
-                                    <p id="new">
-                                        <button class="hb" id="color">Start Course</button>
-                                    </p>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Responsive Quote Carousel
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">2.5K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">18 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.0</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
-
-
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Responsive Quote Carousel
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">2.5K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">18 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.0</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <h4>
+                                        Responsive Quote Carousel
+                                        <span class="label label-info info">
+                        <span data-toggle="tooltip" title="Viewed">2.5K <i class="fa fa-eye" aria-hidden="true"></i></span>
+                        <span data-toggle="tooltip" title="Favorited">18 <b class="fa fa-star"></b></span>
+                        <span data-toggle="tooltip" title="Bootstrap version">3.0.0</span>
+                    </span>
+                                    </h4>
+                                    <img src="../style/pictures/android.jpeg" alt="...">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

@@ -1,6 +1,8 @@
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
-<?php require_once("../includes/layouts/header.php")?>
+<?php require_once("../includes/layouts/header.php") ?>
+
+
 <section>
     <img id="size" src="../style/pictures/ipad.jpeg">
     <div class="centered">
@@ -11,9 +13,9 @@
 </section>
 <br><br>
 <!-- **********navbar end *********** -->
-<?php if(isset($_SESSION['userfname'])){?>
+<?php if (isset($_SESSION['userfname'])) { ?>
 
-<?php }else{?>
+<?php } else { ?>
     <div id="join_pannel" class='split-pane col-xs-12 col-sm-6 uiux-side'>
         <div>
             <img src='http://bit.ly/BCR-design'>
@@ -39,7 +41,7 @@
         </div>
     </div>
 
-<?php }?>
+<?php } ?>
 <!-- ********* another segment end ***** -->
 
 
