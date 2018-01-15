@@ -1,6 +1,9 @@
+<?php require_once("../includes/php/session.php"); ?>
+<?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
-<!-- **********navbar end *********** -->
 
+
+<!-- **********navbar end *********** -->
 
 <hr style="width: 100%">
 <!--<hr style="width: 100%">-->
@@ -114,83 +117,7 @@
                         <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
                     </span>
                 </h4>
-                <img src="images/android.jpeg" alt="...">
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <h1>another tutorial </h1>
-    <hr>
-    <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-                <h4>
-                    Parallax Login Form
-                    <span class="label label-info info">
-                        <span data-toggle="tooltip" title="Viewed">11.5K <i class="fa fa-eye"
-                                                                            aria-hidden="true"></i></span>
-                        <span data-toggle="tooltip" title="Favorited">24 <b class="fa fa-star"></b></span>
-                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
-                    </span>
-                </h4>
-                <img src="images/android.jpeg" alt="...">
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-                <h4>
-                    Parallax Login Form
-                    <span class="label label-info info">
-                        <span data-toggle="tooltip" title="Viewed">11.5K <i class="fa fa-eye"
-                                                                            aria-hidden="true"></i></span>
-                        <span data-toggle="tooltip" title="Favorited">24 <b class="fa fa-star"></b></span>
-                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
-                    </span>
-                </h4>
-                <img src="images/android.jpeg" alt="...">
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-                <h4>
-                    Parallax Login Form
-                    <span class="label label-info info">
-                        <span data-toggle="tooltip" title="Viewed">11.5K <i class="fa fa-eye"
-                                                                            aria-hidden="true"></i></span>
-                        <span data-toggle="tooltip" title="Favorited">24 <b class="fa fa-star"></b></span>
-                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
-                    </span>
-                </h4>
-                <img src="images/android.jpeg" alt="...">
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
-                    eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-                <h4>
-                    Parallax Login Form
-                    <span class="label label-info info">
-                        <span data-toggle="tooltip" title="Viewed">11.5K <i class="fa fa-eye"
-                                                                            aria-hidden="true"></i></span>
-                        <span data-toggle="tooltip" title="Favorited">24 <b class="fa fa-star"></b></span>
-                        <span data-toggle="tooltip" title="Bootstrap version">3.0.3</span>
-                    </span>
-                </h4>
-                <img src="images/android.jpeg" alt="...">
+                <img src="../style/pictures/android.jpeg" alt="...">
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
                     eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <a href="#" class="btn btn-primary col-xs-12" role="button">View Snippet</a>
