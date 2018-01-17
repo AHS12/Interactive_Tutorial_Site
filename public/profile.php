@@ -312,14 +312,6 @@ require_once ("../includes/layouts/header2.php");
                             </div>
                         </div>
 
-                        <div class="form-group">
-
-                            <div class="col-xs-6">
-                                <label for="email"><h4>Email</h4></label>
-                                <input type="email" class="form-control" name="email" id="email"
-                                       value="<?php echo $_SESSION['usermail'] ?>">
-                            </div>
-                        </div>
 
 
                         <div class="form-group">
