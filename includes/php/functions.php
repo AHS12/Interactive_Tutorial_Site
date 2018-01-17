@@ -10,6 +10,12 @@ function confirm_query($result_set){
     }
 }
 
+function mysqli_prep($string){
+    global $connection;
+    $menu_name = mysqli_real_escape_string($connection,$string);
+    return $menu_name;
+}
+
 function encrypt_user_pass($userpassword)
 {
     //using Crypto_BlowFish encryption
@@ -22,6 +28,7 @@ function encrypt_user_pass($userpassword)
     return $password;
 
 }
+
 function password_encrypt($password){
     $hashed_format = "$2y$10$";  //tel php to use blowfish with 10 iteration
     $salt_length = 22;  //blowfish salt should be 22 charachter or more
@@ -113,3 +120,87 @@ function form_errors($errors = array()){
     return $output;
 
 }
+
+function find_selected_user_by_id($userID){
+
+    global $connection;
+
+    //escaping for security
+    $safe_user_id = mysqli_real_escape_string($connection,$userID);
+    //2. make query
+    $query  = "SELECT * ";
+    $query .= "FROM users ";
+    $query .= "WHERE id = {$safe_user_id} ";
+    $query .= "LIMIT 1";
+    //this is famous technique
+    //used by dev so i can use if else(true) to apply any of them when it needed
+    $userID_set = mysqli_query($connection,$query);
+    confirm_query($userID_set);
+    return $userID_set;
+}
+
+function get_selected_content_by_id(){
+
+    global $selected_content_id;
+
+    if(isset($_GET["content"])){
+        $selected_content_id = $_GET["content"];
+        return $selected_content_id;
+
+    }
+    else{
+        $selected_content_id =null;
+        return $selected_content_id;
+    }
+
+}
+
+function find_selected_content_by_id($content_id){
+    global $connection;
+
+    //escaping for security
+    $safe_content_id = mysqli_real_escape_string($connection,$content_id);
+
+    //2. make query
+    $query  = "SELECT * ";
+    $query .= "FROM content ";
+    $query .= "WHERE content_id = {$safe_content_id} ";
+    $query .= "LIMIT 1";
+    //this is famous technique
+    //used by dev so i can use if else(true) to apply any of them when it needed
+    $content_set = mysqli_query($connection,$query);
+    confirm_query($content_set);
+    if($content = mysqli_fetch_assoc($content_set)){
+        return $content;
+    }
+    else{
+        return null;
+    }
+}
+
+function find_user_by_user_id($user_id){
+
+    global $connection;
+
+    //escaping for security
+    $safe_user_id = mysqli_real_escape_string($connection,$user_id);
+
+    //2. make query
+    $query  = "SELECT * ";
+    $query .= "FROM users ";
+    $query .= "WHERE id = {$safe_user_id} ";
+    $query .= "LIMIT 1";
+    //this is famous technique
+    //used by dev so i can use if else(true) to apply any of them when it needed
+    $user_set = mysqli_query($connection,$query);
+    confirm_query($user_set);
+    if($user = mysqli_fetch_assoc($user_set)){
+        return $user;
+    }
+    else{
+        return null;
+    }
+
+}
+
+?>
