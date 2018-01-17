@@ -287,8 +287,148 @@ p.small.text-muted {
 }
 /* -------------- tutorial segment end---------- */
 
+/* -------thumbnail section start ----- */
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+    width: 25rem;
 
 
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.thumbnail p{
+    padding-left: 5px;
+    font-size: 16px;
+}
 
+.thumbnail > h4 {
+    padding: 7px 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.thumbnail h4 .info {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0.6em;
+    padding-left: 15px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    cursor:  pointer;
+}
+
+.thumbnail h4 .info > span {
+    margin-right: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail a.btn {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/* ------ thumbnail section stop---------- */
+
+
+/*---------- profile edit start--------- */
+#bio{
+    right-width: 1500px;
+
+}
+
+.row{
+    margin-top: 40px;
+}
+
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding: 10px 0;
+    background: #f5f5f5;
+    border-top: 3px solid #3AAA64;
+}
+
+.list-group {
+    list-style: disc inside;
+
+}
+
+.list-group-item {
+    display: list-item;
+}
+
+.find-more{
+    text-align: right;
+}
+
+
+.label-theme{
+    background: #3AAA64;
+    font-size: 14px;
+    padding: .3em .7em .3em;
+    color: #fff;
+    border-radius: .25em;
+}
+
+.label a{
+    color: inherit;
+}
+/*---------- profile edit end --------- */
+
+/*-----------------course taken option start ---------- */
+.proCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #f4f2f2;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+#new{
+    color:#fff;
+}
+
+#color{
+
+    width: 100%;
+}
+.hb{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 10px;
+}
+/*-----------------course taken option end ------------ */
 
 
