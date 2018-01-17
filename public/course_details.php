@@ -5,7 +5,7 @@
     <title>WEB Page</title>
 
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
 
 </head>
