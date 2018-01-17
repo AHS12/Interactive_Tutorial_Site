@@ -27,7 +27,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="cards.php">COURSES</a></li>
                 <li><a href="forum.php">FORUM</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="index.php#contact">CONTACT</a></li>
                 <?php if(isset($_SESSION['userfname'])){?>
 <!--                    <li><a href="profile.php">--><?php //echo htmlentities($_SESSION["userfname"]); ?><!--</a></li>-->
                     <li class="dropdown">
