@@ -78,6 +78,7 @@
                         <i class="fa fa-clock-o" aria-hidden="true"> 10 Hrs</i>
                         <i class="fa fa-address-card" aria-hidden="true"> <?php echo htmlentities($content_values['content_level']) ?></i>
                         <i class="fa fa-cc" aria-hidden="true"> English</i>
+                        <a href="#" style="float: right; width: 250px;" class="btn btn-success btn-lg">Enroll</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                         <div class="col-lg-12">
                             <ul class="col-lg-6" id="left">
                                 <li>
-                                    <i class="fa fa-check"> <?php echo  nl2br(mysqli_prep($content_values['content_what_to_learn']));?></i>
+                                    <i class="fa fa-check"> <?php echo  nl2br($content_values['content_what_to_learn']);?></i>
                                 </li>
 
 <!--                                <li>-->
@@ -152,7 +153,7 @@
                 <div>
                     <h3>Requirements</h3>
                     <ol>
-                        <li><?php echo nl2br(mysqli_prep($content_values['content_requirements']));?>
+                        <li><?php echo nl2br($content_values['content_requirements']);?>
                         </li>
                     </ol>
                 </div>
@@ -257,6 +258,56 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class="footer-bottom">
+    <div class="container-fluid">
+        <h3>Follow US</h3>
+        <!--<hr> -->
+        <div class="text-center center-block">
+            <!-- <p class="txt-railway">- Bootsnipp.com -</p> -->
+            <!-- <br /> -->
+            <a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+                                                            class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+                                                                 class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+        <!--<hr> -->
+        <div class="bottom">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                        <div class="copyright">
+
+                            © 2017, All rights reserved
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                        <div class="design">
+
+                            <a href="#">Cool!! </a> | <a target="_blank" href="#">Web Design & Development by Team ASK</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
 
 </body>

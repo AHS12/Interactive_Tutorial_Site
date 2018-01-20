@@ -431,4 +431,24 @@ button:hover, a:hover {
 }
 /*-----------------course taken option end ------------ */
 
+/*-----------------create course landing page ------------ */
+#back_colr{
+    background-color: #f7f7f7;
+}
+.panel
+{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; position: center;"
+}
+/*---------------- create course segment start --------- */
+.require {
+    color: #666;
+}
+label small {
+    color: #999;
+    font-weight: normal;
+}
+/*----------------- create course segment end ------------ */
+
 
