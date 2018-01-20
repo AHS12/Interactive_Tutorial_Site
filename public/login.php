@@ -21,6 +21,7 @@ if (isset($_POST['submit'])) {
         $_SESSION["userpicture"] = $found_user["picture"];
         $_SESSION["userinstitute"] = $found_user["institution"];
         $_SESSION["userbio"] = $found_user["bio"];
+        $_SESSION["userrole"] = $found_user["user_role"];
         redirect_to("index.php");
     } else {
         $_SESSION["err_login"] = 1;
