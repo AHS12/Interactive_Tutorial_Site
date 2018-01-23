@@ -1,6 +1,8 @@
+<br><br>
+<hr>
 <div class="footer-bottom">
     <div class="container-fluid">
-        <h3>Follow US</h3>
+
         <!--<hr> -->
         <div class="text-center center-block">
             <!-- <p class="txt-railway">- Bootsnipp.com -</p> -->

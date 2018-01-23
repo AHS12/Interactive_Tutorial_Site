@@ -1,3 +1,4 @@
+<?php require_once ("session.php")?>
 <?php
 function redirect_to($new_location){
     header("location: ".$new_location);
@@ -77,6 +78,7 @@ function attempt_login($usermail, $password){
         return false;
     }
 }
+
 function find_user_by_email($usermail){
     global $connection;
     $safe_usermail = mysqli_real_escape_string($connection,$usermail);
@@ -94,12 +96,16 @@ function find_user_by_email($usermail){
         return null;
     }
 }
+function teacher_logged_in(){
+    if(isset($_SESSION['userrole'])){
+        $userrole = $_SESSION['userrole'];
 
-function confirm_logged_in(){
-    if(!isset($_SESSION['admin_id'])){
-        redirect_to("login.php");
+        if(($userrole!="T")){
+            redirect_to("../public/index.php");
+        }
+    }else{
+        redirect_to("../public/index.php");
     }
-
 }
 
 function form_errors($errors = array()){
