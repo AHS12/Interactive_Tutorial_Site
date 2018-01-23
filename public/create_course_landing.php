@@ -1,6 +1,9 @@
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
+<?php
+teacher_logged_in();
+?>
 <br>
 <hr>
 <div class="container">

@@ -30,18 +30,13 @@
 
                 <li><a href="#contact">CONTACT</a></li>
                 <?php
-                    $userrole = "";
+                $userrole = "";
                 if(isset($_SESSION['userrole'])) {
                     $userrole = $_SESSION['userrole'];
 
                 }?>
                 <?php if((($userrole=="T") && isset($_SESSION['userfname']))){?>
                     <!--                    <li><a href="profile.php">--><?php //echo htmlentities($_SESSION["userfname"]); ?><!--</a></li>-->
-
-                <li><a href="index.php#contact">CONTACT</a></li>
-                <?php if(isset($_SESSION['userfname'])){?>
-<!--                    <li><a href="profile.php">--><?php //echo htmlentities($_SESSION["userfname"]); ?><!--</a></li>-->
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> </i><?php echo " ". htmlentities($_SESSION["userfname"]);?><b class="caret"></b></a>
                         <ul class="dropdown-menu">

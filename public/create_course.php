@@ -1,24 +1,30 @@
-<?php require_once "../includes/layouts/header2.php" ?>
-<br>
+<?php require_once ("../includes/database/db_connection.php")?>
+<?php require_once ("../includes/php/functions.php")?>
+<?php require_once ("../includes/php/session.php")?>
+<?php include "../includes/layouts/header2.php" ?>
+<?php
+teacher_logged_in();
+?>
 <div class="container">
     <div class="container" style="margin-left: 0;">
-        <div class="row" style="padding:5px;">
-            <div class="col-md-4">
+        <div class="row" style="padding:4px;">
+            <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="../style/pictures/dash_publish_illustration.png" class="img-responsive">
+                    <div class="col-md-4">
+                        <img style="height: 150px; width: 50%;"  src="../style/pictures/dash_publish_illustration.png" class="img-responsive">
                     </div>
-                    <div class="col-md-6">
-                        <h4 style="padding-left: 10px;"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> Name of the course</h4>
+                    <div class="col-md-4">
+                        <h4"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> Name of the course</h4>
 
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-primary" style="width: 150px; float: right;padding-left: 20px;">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Course Settings
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <a href="#" class="btn btn-primary" style="width: 150px; float: right;padding-left: 20px;">
-                    <i class="fa fa-cog" aria-hidden="true"></i> Course Srtting
-                </a>
-            </div>
+
         </div>
 
     </div>
@@ -27,17 +33,7 @@
     <!-- side bar processs start -->
     <div class="container" style="margin-left: 0;">
         <div class="col-sm-2">
-            <nav class="nav-sidebar">
-                <ul class="nav tabs">
-                    <li class="#"><a href="page1.html">Course Goal</a></li>
-                    <li class=""><a href="page2.html">Curriculum</a></li>
-                    <li class=""><a href="page3.html">Course landing page</a></li>
-                    <li class=""><a href="page4.html">Price & Coupons</a></li>
-                    <li class=""><a href="page5.html">Captions</a></li>
-                    <li class=""><a href="page6.html">Automatic Message</a></li>
-                </ul>
-                <a href="#" class="btn btn-danger">Submit for review</a>
-            </nav>
+            <?php include "../includes/layouts/create_course_nav.php"?>
             <!-- <div><h2 class="add">Place for your add!</h2></div> -->
         </div>
         <!-- tab content -->
@@ -46,76 +42,117 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <hr style="width: 100%;margin-top: 2px;">
+                        <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6">
                                     <h2>Create post</h2>
+                                    <?php
+
+                                    $user_id = $_SESSION['user_id'];
+                                    $content_title = "content_title"."$user_id";
+                                    $content_category = "content_category"."$user_id";
+                                    $content_level = "content_level"."$user_id";
+                                    $content_requirements = "content_requirements"."$user_id";
+                                    $content_what_to_learn = "content_what_to_learn"."$user_id";
+                                    $content_details = "content_details"."$user_id";
+                                    $content_tags = "content_tags"."$user_id";
+
+                                    if(isset($_POST['submit'])){
+                                        echo $_SESSION['$content_title'] = mysqli_prep($_POST['content_title'])."<br>";
+                                        echo $_SESSION['$content_category'] = mysqli_prep($_POST['content_category'])."<br>";
+                                        echo $content_level = $_POST['content_level']."<br>";
+                                        echo $content_requirements = $_POST['content_requirements']."<br>";
+                                        echo $content_what_to_learn = $_POST['content_what_to_learn']."<br>";
+                                        echo $content_details = $_POST['content_details']."<br>";
+                                        echo $content_tags = $_POST['content_tags']."<br>";
+                                    }
+                                    ?>
+
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="#" class="btn btn-primary" style="float: right;margin-top: 15px;">Save</a>
+                                    <a href="" class="btn btn-primary" style="float: right;margin-top: 15px;">Save</a>
                                 </div>
                             </div>
                             <hr style="width: 100%">
 
 
-                            <form action="" method="POST">
+                            <form action="create_course.php" method="post">
                                 <div class="form-group">
-                                    <label for="title"> Course Title <span class="require">*</span></label>
-                                    <input type="text" class="form-control" name="title" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="title"> Course Category <span class="require">*</span></label>
-                                    <select class="form-control" id="availability">
-                                        <option value="UnderConstruction">Under Construction</option>
-                                        <option value="ReadytoMove">Ready to Move</option>
+                                    <label for="content_title"> Course Title <span class="require">*</span></label>
+                                    <input type="text" class="form-control" name="content_title" />
+                                    <br>
+
+                                    <label for="content_category"> Course Category <span class="require">*</span></label>
+                                    <select class="form-control" id="availability" name="content_category">
+                                        <option value="Android">Android</option>
+                                        <option value="PHP">PHP</option>
+                                        <option value="Javascript">Javascript</option>
 
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="title">Course Level <span class="require">*</span></label>
-                                    <select class="form-control" id="availability">
-                                        <option value="UnderConstruction">Beginner</option>
-                                        <option value="ReadytoMove">Intermediate</option>
-                                        <option value="ReadytoMove">Advance</option>
+                                    <br>
+
+                                    <label for="content_level">Course Level <span class="require">*</span></label>
+                                    <select class="form-control" id="availability" name="content_level">
+                                        <option value="Beginner">Beginner</option>
+                                        <option value="Intermediate">Intermediate</option>
+                                        <option value="Advanced">Advanced</option>
 
                                     </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="description">Course Requirement</label>
-                                    <textarea rows="5" class="form-control" name="description" ></textarea>
+                                    <br>
+
+                                    <label for="content_requirements">Course Requirement</label>
+                                    <textarea rows="5" class="form-control" name="content_requirements" ></textarea>
+                                    <br>
+
+                                    <label for="content_what_to_learn">What Will I learn?</label>
+                                    <textarea rows="5" class="form-control" name="content_what_to_learn" ></textarea>
+                                    <br>
+
+                                    <label for="content_details">Course Description</label>
+                                    <textarea rows="5" class="form-control" name="content_details" ></textarea>
+                                    <br>
+
+                                    <label for="content_tags"> Course Tags <span class="require">*</span></label>
+                                    <input type="text" class="form-control" name="content_tags" />
+                                    <br>
+
+                                    <p>
+
+                                        <!--    for preview Image-->
+
+                                        <script type="text/javascript">
+                                            function readURL(input) {
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+
+                                                    reader.onload = function (e) {
+                                                        $('#preview').attr('src', e.target.result);
+                                                    };
+
+                                                    reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+                                        </script>
+
+                                        <input type="file" name="image" onchange="readURL(this)"> <br>
+                                        <img width="240" height="240" id="preview" src="#" alt=""> <br>
+
+                                    </p>
+
+                                    <input style="float: right; margin-bottom: 10px" type="submit" name="submit" class="btn btn-success btn-lg">
+                                    <br>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="description">What Will I learn?</label>
-                                    <textarea rows="5" class="form-control" name="description" ></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="description">Course Description</label>
-                                    <textarea rows="5" class="form-control" name="description" ></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="description">Image For Course</label>
-                                    <form action="#">
-                                        <input type="file" name="pic" accept="image/*"><br>
-                                        <input type="submit">
-                                    </form>
-                                </div>
-
-                                <div class="form-group">
-                                    <button style="float: right; margin-bottom: 10px" type="button" class="btn btn-success btn-lg">Next</button>
-                                </div>
 
                             </form>
 
 
                         </div>
-                        <div class="col-md-4" style="margin-left: 5px;">
+                        <div class="col-md-2" style="margin-left: 5px;">
 
-                            <h2>Lorem ipsum lorem ipsum</h2>
-                            <p>Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've compiled resources and best practices to help you get to the next level, no matter where you're starting.</p>
-                            <a href="#">View Details</a>
+                            <h3>Helpful Tips</h3>
+                            <p style="font-size:16px;">Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've compiled resources and best practices to help you get to the next level, no matter where you're starting.</p>
+
                         </div>
 
                     </div>
@@ -146,6 +183,8 @@
 
 
     </div>
+
     <!-- side bar process end -->
 
 </div>
+<?php include "../includes/layouts/footer.php"?>
