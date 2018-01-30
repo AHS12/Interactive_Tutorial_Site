@@ -3,7 +3,9 @@
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
 ?>
 <?php
+require_once ("../includes/php/functions.php");
 require_once ("../includes/layouts/header2.php");
+confirm_logged_in();
 
 ?>
 <br><br>

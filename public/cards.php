@@ -51,7 +51,7 @@
     <div class="row">
 
             <?php
-            $query = "SELECT * FROM content";
+            $query = "SELECT * FROM content WHERE visibility = 1";
             $select_all_content = mysqli_query($connection,$query);
             while($row = mysqli_fetch_assoc($select_all_content)){
                 $content_id = $row['content_id'];
@@ -192,10 +192,11 @@
 
 
 </script>
-
+<br>
+<hr>
 <div class="footer-bottom">
     <div class="container-fluid">
-        <h3>Follow US</h3>
+
         <!--<hr> -->
         <div class="text-center center-block">
             <!-- <p class="txt-railway">- Bootsnipp.com -</p> -->

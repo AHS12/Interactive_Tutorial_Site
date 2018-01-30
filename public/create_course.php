@@ -5,29 +5,72 @@
 <?php
 teacher_logged_in();
 ?>
+<?php
+if(isset($_POST['submit'])){
+    $fileUserImgName = "test_image5.jpg";
+    $content_id = $_SESSION['content_id'];
+    $content_title = mysqli_prep($_POST['content_title']);
+    $content_category = mysqli_prep($_POST['content_category']);
+    $content_level = mysqli_prep($_POST['content_level']);
+    $content_requirements = mysqli_prep($_POST['content_requirements']);
+    $content_what_to_learn = mysqli_prep($_POST['content_what_to_learn']);
+    $content_details = mysqli_prep($_POST['content_details']);
+    $content_tags = mysqli_prep($_POST['content_tags']);
+
+    //process image
+
+    if(isset($_FILES['image'])){
+        $fileTmp = $_FILES['image']['tmp_name']; //Temporary location Of File
+        $fileUserImgName = time() . $_FILES['image']['name'];
+        $fileType = $_FILES['image']['type'];
+        $filePath = "../../images/" . $fileUserImgName;
+
+        $fileSize = getimagesize($fileTmp);
+
+
+        if ($fileSize != false) {
+
+
+            if (($fileType != "image/jpeg" && $fileType != "image/png") && $fileType != "image/gif") {
+
+                $_SESSION['wrong_image_formate'] = 1;
+                header("location: ../../public/reg_student.php");
+
+            } else {
+
+
+                move_uploaded_file($fileTmp, $filePath);
+
+            }
+        } else {
+            $_SESSION['no_image'] = 1;
+            header("location: ../../public/reg_student.php");
+        }
+    }
+
+    $query  = "UPDATE content SET ";
+    $query .= "content_title = '{$content_title}', ";
+    $query .= "content_what_to_learn = '{$content_what_to_learn}', ";
+    $query .= "content_details = '{$content_details}', ";
+    $query .= "content_requirements = '{$content_requirements}', ";
+    $query .= "content_picture = '{$fileUserImgName}', ";
+    $query .= "content_category = '{$content_category}', ";
+    $query .= "content_tags = '{$content_tags}', ";
+    $query .= "content_level = '{$content_level}' ";
+    $query .= "WHERE content_id = {$content_id} ";
+    $query .= "LIMIT 1";
+    //this is famous technique used by dev so i can use if else(true) to apply any of them when it needed
+    $result = mysqli_query($connection,$query);
+    if(!$result){
+        die("query failed".mysqli_error($connection));
+    }
+
+}
+?>
+<?php require_once ("../includes/php/create_course_data.php")?>
+
 <div class="container">
-    <div class="container" style="margin-left: 0;">
-        <div class="row" style="padding:4px;">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img style="height: 150px; width: 50%;"  src="../style/pictures/dash_publish_illustration.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-4">
-                        <h4"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> Name of the course</h4>
-
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="btn btn-primary" style="width: 150px; float: right;padding-left: 20px;">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Course Settings
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    <?php include ("../includes/layouts/create_course_header.php");?>
     <hr>
 
     <!-- side bar processs start -->
@@ -48,29 +91,11 @@ teacher_logged_in();
                                     <h2>Create post</h2>
                                     <?php
 
-                                    $user_id = $_SESSION['user_id'];
-                                    $content_title = "content_title"."$user_id";
-                                    $content_category = "content_category"."$user_id";
-                                    $content_level = "content_level"."$user_id";
-                                    $content_requirements = "content_requirements"."$user_id";
-                                    $content_what_to_learn = "content_what_to_learn"."$user_id";
-                                    $content_details = "content_details"."$user_id";
-                                    $content_tags = "content_tags"."$user_id";
 
-                                    if(isset($_POST['submit'])){
-                                        echo $_SESSION['$content_title'] = mysqli_prep($_POST['content_title'])."<br>";
-                                        echo $_SESSION['$content_category'] = mysqli_prep($_POST['content_category'])."<br>";
-                                        echo $content_level = $_POST['content_level']."<br>";
-                                        echo $content_requirements = $_POST['content_requirements']."<br>";
-                                        echo $content_what_to_learn = $_POST['content_what_to_learn']."<br>";
-                                        echo $content_details = $_POST['content_details']."<br>";
-                                        echo $content_tags = $_POST['content_tags']."<br>";
-                                    }
+
+
                                     ?>
 
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="" class="btn btn-primary" style="float: right;margin-top: 15px;">Save</a>
                                 </div>
                             </div>
                             <hr style="width: 100%">
@@ -79,7 +104,7 @@ teacher_logged_in();
                             <form action="create_course.php" method="post">
                                 <div class="form-group">
                                     <label for="content_title"> Course Title <span class="require">*</span></label>
-                                    <input type="text" class="form-control" name="content_title" />
+                                    <input type="text" class="form-control" name="content_title" value="<?php echo htmlentities($content_title) ?>" />
                                     <br>
 
                                     <label for="content_category"> Course Category <span class="require">*</span></label>
@@ -101,19 +126,19 @@ teacher_logged_in();
                                     <br>
 
                                     <label for="content_requirements">Course Requirement</label>
-                                    <textarea rows="5" class="form-control" name="content_requirements" ></textarea>
+                                    <textarea rows="5" class="form-control" name="content_requirements"><?php echo $content_requirements ?></textarea>
                                     <br>
 
                                     <label for="content_what_to_learn">What Will I learn?</label>
-                                    <textarea rows="5" class="form-control" name="content_what_to_learn" ></textarea>
+                                    <textarea rows="5" class="form-control" name="content_what_to_learn" ><?php echo $content_what_to_learn ?></textarea>
                                     <br>
 
                                     <label for="content_details">Course Description</label>
-                                    <textarea rows="5" class="form-control" name="content_details" ></textarea>
+                                    <textarea rows="5" class="form-control" name="content_details" ><?php echo $content_details ?></textarea>
                                     <br>
 
                                     <label for="content_tags"> Course Tags <span class="require">*</span></label>
-                                    <input type="text" class="form-control" name="content_tags" />
+                                    <input type="text" class="form-control" name="content_tags" value="<?php echo htmlentities($content_tags) ?>" />
                                     <br>
 
                                     <p>
@@ -139,7 +164,7 @@ teacher_logged_in();
 
                                     </p>
 
-                                    <input style="float: right; margin-bottom: 10px" type="submit" name="submit" class="btn btn-success btn-lg">
+                                    <input style="float: right; margin-bottom: 10px" type="submit" name="submit" class="btn btn-success btn-lg" value="Save">
                                     <br>
                                 </div>
 

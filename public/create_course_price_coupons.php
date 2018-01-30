@@ -5,30 +5,10 @@
 <?php
 teacher_logged_in();
 ?>
-    <br>
+<?php require_once ("../includes/php/create_course_data.php")?>
+
     <div class="container">
-        <div class="container" style="margin-left: 0;">
-            <div class="row" style="padding:4px;">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img style="height: 150px; width: 50%;"  src="../style/pictures/dash_publish_illustration.png" class="img-responsive">
-                        </div>
-                        <div class="col-md-4">
-                            <h4"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> Name of the course</h4>
-
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="btn btn-primary" style="width: 150px; float: right;padding-left: 20px;">
-                                <i class="fa fa-cog" aria-hidden="true"></i> Course Settings
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
+        <?php include ("../includes/layouts/create_course_header.php")?>
         <hr>
 
         <!-- side bar processs start -->
@@ -70,9 +50,6 @@ teacher_logged_in();
 //                                        }
 //                                        ?>
 
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="" class="btn btn-primary" style="float: right;margin-top: 15px;">Save</a>
                                     </div>
                                 </div>
                                 <hr style="width: 100%">
