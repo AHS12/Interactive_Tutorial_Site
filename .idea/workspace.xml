@@ -5,96 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="834205bf-d4c2-4d64-8918-47fd39bb51fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hacker.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/layouts/header3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/video_record.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/video_upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/extension.cache.dbm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/extension.cache.mysql.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/extension.cache.mysqli.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/extension.cache.sqlite3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/getid3.lib.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/getid3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.archive.gzip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.archive.rar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.archive.szip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.archive.tar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.archive.zip.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.asf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.bink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.flv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.matroska.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.mpeg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.nsv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.quicktime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.riff.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.swf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio-video.ts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.aa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.aac.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.ac3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.amr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.au.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.avr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.bonk.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.dsf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.dss.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.dts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.flac.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.la.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.lpac.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.midi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.mod.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.monkey.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.mp3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.mpc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.ogg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.optimfrog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.rkau.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.shorten.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.tta.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.voc.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.vqf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.audio.wavpack.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.bmp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.efax.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.gif.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.jpg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.pcd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.png.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.svg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.graphic.tiff.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.cue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.exe.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.iso.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.msoffice.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.par2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.misc.pdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.tag.apetag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.tag.id3v1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.tag.id3v2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.tag.lyrics3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/module.tag.xmp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.apetag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.id3v1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.id3v2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.lyrics3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.metaflac.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/getid3/write.vorbiscomment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/videopogress.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/layouts/create_course_nav.php" afterPath="$PROJECT_DIR$/includes/layouts/create_course_nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/layouts/header.php" afterPath="$PROJECT_DIR$/includes/layouts/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/layouts/header2.php" afterPath="$PROJECT_DIR$/includes/layouts/header2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_details.php" afterPath="$PROJECT_DIR$/public/course_details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_video_player.php" afterPath="$PROJECT_DIR$/public/course_video_player.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_view.php" afterPath="$PROJECT_DIR$/public/course_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/create_course.php" afterPath="$PROJECT_DIR$/public/create_course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/create_course_curriculum.php" afterPath="$PROJECT_DIR$/public/create_course_curriculum.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/cards.php" afterPath="$PROJECT_DIR$/public/course_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/database/interactivets.sql" afterPath="$PROJECT_DIR$/includes/database/interactivets.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -200,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="course_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/course_view.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
@@ -209,6 +121,16 @@
                 <marker date="1517411027605" expanded="true" signature="1380:1404" ph="..." />
                 <marker date="1517411027605" expanded="true" signature="2880:2950" ph="SELECT * FRO... content_resources" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactivets.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/database/interactivets.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -462,20 +384,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interactive_Tutorial_Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interactive_Tutorial_Site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -488,11 +396,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xampp\htdocs\Interactive_Tutorial_Site\includes\database" />
       <recent name="D:\Xampp\htdocs\Interactive_Tutorial_Site\style" />
       <recent name="D:\Xampp\htdocs\Interactive_Tutorial_Site\images" />
       <recent name="D:\Xampp\htdocs\Interactive_Tutorial_Site\includes\php" />
       <recent name="D:\Xampp\htdocs\Interactive_Tutorial_Site\lib" />
-      <recent name="C:\xampp\htdocs\Interactive_Tutorial_Site\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -612,7 +520,7 @@
       <workItem from="1516811475919" duration="632000" />
       <workItem from="1517244284209" duration="1606000" />
       <workItem from="1517288410466" duration="21191000" />
-      <workItem from="1517404775577" duration="6136000" />
+      <workItem from="1517404775577" duration="6306000" />
     </task>
     <task id="LOCAL-00001" summary="design re shalar">
       <created>1516036055859</created>
@@ -677,11 +585,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517338586478</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mejor bug fixed in course creation and added video player">
+      <created>1517411130160</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1517411130160</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110199000" />
+    <option name="totallyTimeSpent" value="110369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -768,21 +683,14 @@
     <MESSAGE value="create course page" />
     <MESSAGE value="create course pages ready" />
     <MESSAGE value="stupid modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="stupid modal" />
+    <MESSAGE value="mejor bug fixed in course creation and added video player" />
+    <option name="LAST_COMMIT_MESSAGE" value="mejor bug fixed in course creation and added video player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/database/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/create_course_title.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -861,6 +769,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,6 +1068,14 @@
             <marker date="1517411027605" expanded="true" signature="1380:1404" ph="..." />
             <marker date="1517411027605" expanded="true" signature="2880:2950" ph="SELECT * FRO... content_resources" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/database/interactivets.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
