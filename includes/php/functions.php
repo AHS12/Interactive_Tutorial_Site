@@ -108,6 +108,16 @@ function teacher_logged_in(){
     }
 }
 
+function logged_in(){
+    return isset($_SESSION['user_id']);
+}
+
+function confirm_logged_in(){
+    if(!logged_in()){
+        redirect_to("login.php");
+    }
+}
+
 function form_errors($errors = array()){
 
     $output = "";
@@ -207,6 +217,11 @@ function find_user_by_user_id($user_id){
         return null;
     }
 
+}
+
+function check_all_data_of_courses(){
+    $showmodal = true;
+    return $showmodal;
 }
 
 ?>
