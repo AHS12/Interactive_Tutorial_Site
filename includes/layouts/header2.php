@@ -6,6 +6,50 @@
   <link rel="stylesheet" href="../lib/bootstrap.min.css">
   <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+
+
+    <script type="text/javascript">
+        /**
+         * Created by MD AZIZUL HAKIM on 30/01/2018.
+         */
+
+        function _(el) {
+            return document.getElementById(el);
+        }
+        function uploadFile() {
+            var file = _("file1").files[0];
+            // alert(file.name+" | "+file.size+" | "+file.type);
+            var formdata = new FormData();
+            formdata.append("file1", file);
+            var ajax = new XMLHttpRequest();
+            ajax.upload.addEventListener("progress", progressHandler, false);
+            ajax.addEventListener("load", completeHandler, false);
+            ajax.addEventListener("error", errorHandler, false);
+            ajax.addEventListener("abort", abortHandler, false);
+            ajax.open("POST", "../includes/php/video_upload.php");
+            ajax.send(formdata);
+        }
+        function progressHandler(event) {
+//            _("loaded_n_total").innerHTML = "Uploaded " + event.loaded + " bytes of " + event.total;
+            var percent = (event.loaded / event.total) * 100;
+            _("progressBar").value = Math.round(percent);
+            _("status").innerHTML = Math.round(percent) + "% uploaded... please wait";
+        }
+        function completeHandler(event) {
+            _("status").innerHTML = event.target.responseText;
+            _("progressBar").value = 0;
+        }
+        function errorHandler(event) {
+            _("status").innerHTML = "Upload Failed";
+        }
+        function abortHandler(event) {
+            _("status").innerHTML = "Upload Aborted";
+        }
+
+    </script>
+
+
 <body>
 <!-- ********** navbar ************* -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -20,7 +64,7 @@
     </div>
     <div class="collapse navbar-collapse" id="site-menu">
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="cards.php">COURSES</a></li>
+          <li><a href="course_list.php">COURSES</a></li>
           <li><a href="forum.php">FORUM</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <?php
