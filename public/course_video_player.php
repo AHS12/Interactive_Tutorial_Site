@@ -35,6 +35,7 @@ if (isset($_GET['video_id'])) {
     $query = "SELECT * FROM content_resources WHERE video_id = '$video_id'";
     $result = mysqli_query($connection, $query);
     $video_data = mysqli_fetch_assoc($result);
+    $_SESSION['current_conten_id'] = $video_data['video_content_id'];
     $video_url = $video_data['file_url'];
     $video_mtitle = $video_data['video_title'];
     $video_desc = $video_data['video_desc'];
@@ -65,21 +66,23 @@ if (isset($_GET['video_id'])) {
 
 <div id="wrapper">
 
+    <?php
+    if (isset($content_id)) {
+        $content_values = find_selected_content_by_id($content_id);
+        $_SESSION['current_content_title'] =htmlentities(mysqli_prep($content_values['content_title']));
+        $_SESSION['current_conten_id'] = $content_id;
+    }
+    ?>
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
                 <h3>
-                    <?php
-                    if (isset($content_id)) {
-                        $content_values = find_selected_content_by_id($content_id);
-                        echo htmlentities(mysqli_prep($content_values['content_title']));
-                    }
-                    ?>
+                    <?php echo $_SESSION['current_content_title'] ?>
                 </h3>
             </li>
             <?php
-            $query = "SELECT * FROM content_resources WHERE video_content_id = '$content_id'";
+            $query = "SELECT * FROM content_resources WHERE video_content_id = '{$_SESSION['current_conten_id']}'";
             $result = mysqli_query($connection, $query);
 
             while ($row = mysqli_fetch_assoc($result)) {
