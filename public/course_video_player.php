@@ -77,11 +77,12 @@ if (isset($_GET['video_id'])) {
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <h3>
-                    <?php echo $_SESSION['current_content_title'] ?>
+                <h3 class="text-center help-block">
+                    <?php echo htmlentities($_SESSION['current_content_title']) ?>
                 </h3>
             </li>
             <?php
+            echo "<br>";
             $query = "SELECT * FROM content_resources WHERE video_content_id = '{$_SESSION['current_content_id']}'";
             $result = mysqli_query($connection, $query);
 
