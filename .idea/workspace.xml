@@ -121,29 +121,29 @@
       <file leaf-file-name="course_video_player.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/course_video_player.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+            <state relative-caret-position="424">
+              <caret line="116" column="114" lean-forward="false" selection-start-line="116" selection-start-column="114" selection-end-line="116" selection-end-column="114" />
               <folding>
-                <marker date="1517597645447" expanded="true" signature="524:584" ph="SELECT * FRO... videos" />
-                <marker date="1517597645447" expanded="true" signature="1818:1948" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="1839:1930" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="1990:2004" ph="SELECT * FRO... videos" />
-                <marker date="1517597645447" expanded="true" signature="1990:2048" ph="SELECT * FRO... content_resources" />
-                <marker date="1517597645447" expanded="true" signature="1990:2081" ph="SELECT * FRO... content_resources" />
-                <marker date="1517597645447" expanded="true" signature="2386:2543" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="2720:2966" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="2734:2845" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="2889:2966" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="2927:2966" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="3052:3078" ph="Select Video... Playlist" />
-                <marker date="1517597645447" expanded="true" signature="3380:3616" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="3450:3616" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="3531:3616" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="3912:4010" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="3970:4010" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="4094:4120" ph="Select Video... Playlist" />
-                <marker date="1517597645447" expanded="true" signature="4409:4544" ph="..." />
-                <marker date="1517597645447" expanded="true" signature="4452:4533" ph="{...}" />
+                <marker date="1517598253073" expanded="true" signature="524:584" ph="SELECT * FRO... videos" />
+                <marker date="1517598253073" expanded="true" signature="1820:1950" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="1841:1932" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="1992:2006" ph="SELECT * FRO... videos" />
+                <marker date="1517598253073" expanded="true" signature="1992:2050" ph="SELECT * FRO... content_resources" />
+                <marker date="1517598253073" expanded="true" signature="1992:2084" ph="SELECT * FRO... content_resources" />
+                <marker date="1517598253073" expanded="true" signature="2389:2546" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="2723:3108" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="2737:2987" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="3031:3108" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="3069:3108" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="3194:3220" ph="Select Video... Playlist" />
+                <marker date="1517598253073" expanded="true" signature="3522:3758" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="3592:3758" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="3673:3758" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="4054:4152" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="4112:4152" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="4236:4262" ph="Select Video... Playlist" />
+                <marker date="1517598253073" expanded="true" signature="4551:4686" ph="..." />
+                <marker date="1517598253073" expanded="true" signature="4594:4675" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -411,7 +411,7 @@
       <workItem from="1517288410466" duration="21191000" />
       <workItem from="1517404775577" duration="6751000" />
       <workItem from="1517486951014" duration="101000" />
-      <workItem from="1517597214143" duration="537000" />
+      <workItem from="1517597214143" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="design re shalar">
       <created>1516036055859</created>
@@ -490,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517411237315</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="BugFix on Video Player">
+      <created>1517597784206</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1517597784207</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111452000" />
+    <option name="totallyTimeSpent" value="111960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -584,7 +591,8 @@
     <MESSAGE value="stupid modal" />
     <MESSAGE value="mejor bug fixed in course creation and added video player" />
     <MESSAGE value="updated database file" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated database file" />
+    <MESSAGE value="BugFix on Video Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="BugFix on Video Player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -927,29 +935,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/course_video_player.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        <state relative-caret-position="424">
+          <caret line="116" column="114" lean-forward="false" selection-start-line="116" selection-start-column="114" selection-end-line="116" selection-end-column="114" />
           <folding>
-            <marker date="1517597645447" expanded="true" signature="524:584" ph="SELECT * FRO... videos" />
-            <marker date="1517597645447" expanded="true" signature="1818:1948" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="1839:1930" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="1990:2004" ph="SELECT * FRO... videos" />
-            <marker date="1517597645447" expanded="true" signature="1990:2048" ph="SELECT * FRO... content_resources" />
-            <marker date="1517597645447" expanded="true" signature="1990:2081" ph="SELECT * FRO... content_resources" />
-            <marker date="1517597645447" expanded="true" signature="2386:2543" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="2720:2966" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="2734:2845" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="2889:2966" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="2927:2966" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="3052:3078" ph="Select Video... Playlist" />
-            <marker date="1517597645447" expanded="true" signature="3380:3616" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="3450:3616" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="3531:3616" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="3912:4010" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="3970:4010" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="4094:4120" ph="Select Video... Playlist" />
-            <marker date="1517597645447" expanded="true" signature="4409:4544" ph="..." />
-            <marker date="1517597645447" expanded="true" signature="4452:4533" ph="{...}" />
+            <marker date="1517598253073" expanded="true" signature="524:584" ph="SELECT * FRO... videos" />
+            <marker date="1517598253073" expanded="true" signature="1820:1950" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="1841:1932" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="1992:2006" ph="SELECT * FRO... videos" />
+            <marker date="1517598253073" expanded="true" signature="1992:2050" ph="SELECT * FRO... content_resources" />
+            <marker date="1517598253073" expanded="true" signature="1992:2084" ph="SELECT * FRO... content_resources" />
+            <marker date="1517598253073" expanded="true" signature="2389:2546" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="2723:3108" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="2737:2987" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="3031:3108" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="3069:3108" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="3194:3220" ph="Select Video... Playlist" />
+            <marker date="1517598253073" expanded="true" signature="3522:3758" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="3592:3758" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="3673:3758" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="4054:4152" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="4112:4152" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="4236:4262" ph="Select Video... Playlist" />
+            <marker date="1517598253073" expanded="true" signature="4551:4686" ph="..." />
+            <marker date="1517598253073" expanded="true" signature="4594:4675" ph="{...}" />
           </folding>
         </state>
       </provider>
