@@ -26,8 +26,7 @@
 
                 <div class="tab-content" id="profile_tab">
                     <div class="tab-pane active" id="home">
-
-
+                        
                         <!-- ******HEADER****** -->
 
 
