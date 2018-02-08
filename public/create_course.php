@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         $fileTmp = $_FILES['image']['tmp_name']; //Temporary location Of File
         $fileUserImgName = time() . $_FILES['image']['name'];
         $fileType = $_FILES['image']['type'];
-        $filePath = "../../images/" . $fileUserImgName;
+        $filePath = "../images/" . $fileUserImgName;
 
         $fileSize = getimagesize($fileTmp);
 
@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
             if (($fileType != "image/jpeg" && $fileType != "image/png") && $fileType != "image/gif") {
 
                 $_SESSION['wrong_image_formate'] = 1;
-                header("location: ../../public/reg_student.php");
+                header("location: ../../public/create_course.php");
 
             } else {
 
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
             }
         } else {
             $_SESSION['no_image'] = 1;
-            header("location: ../../public/reg_student.php");
+            header("location: ../../public/create_course.php");
         }
     }
 

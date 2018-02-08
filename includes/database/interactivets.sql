@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2018 at 06:34 AM
--- Server version: 10.1.24-MariaDB
--- PHP Version: 7.1.6
+-- Generation Time: Jan 31, 2018 at 04:06 PM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -51,68 +51,34 @@ CREATE TABLE `content` (
 INSERT INTO `content` (`content_id`, `user_id`, `content_title`, `content_what_to_learn`, `content_details`, `content_requirements`, `content_picture`, `content_date`, `content_category`, `content_tags`, `content_level`, `content_status`, `visibility`) VALUES
 (1, 7, 'Android Java Masterclass - Become an App Developer: project included', 'You’re taught step by step HOW to build Android 7 apps for Google’s Nougat platform that will work on older Android versions.\r\nWith each comprehensive step, the WHY you’re doing it is explained.\r\nYou’ll have EXPERT LEVEL knowledge of the Java programming language and know exactly how each process of Android Nougat development works.\r\nThe course is continually UPDATED, so you’ll learn the very latest as Android Nougat evolves.', 'There’s no getting around it.\r\n\r\nAndroid accounts for 81.7% of all smartphones sold, but not all come packed with the very latest Android Nougat.\r\n\r\nThat won’t worry you because after completing this course, the apps you build will perform brilliantly on Android Nougat or any older Android operating system.\r\n\r\nNow that’s something most courses don’t teach you!\r\n\r\n', 'A computer - Windows, Mac, and Linux are all supported. Setup and installation instructions are included for each platform.\r\nYour ENTHUSIASM to learn the worlds #1 app development framework, and then to showcase it on your RESUME!\r\nEverything else needed to write apps for Android 7 Nougat is already included in the course.', 'test_image3.jpg', '2018-01-17', 'Android', 'Android, java', 'Beginner', 'draft', 1),
 (2, 7, 'How to Get Your First 1,000 Customers: \r\nwith project included', 'Understand the basics of growth marketing and traction channels\r\nDrill down on customer pain points and build user personas\r\nAlign marketing channels with their personal preferences and skills\r\nUse Twitter and Facebook to conduct research and sales outreach\r\nCanvas Reddit, Meetup, and other platforms to canvas for customers\r\nSet up, manage, and analyze user stats & behaviors through Google Analytics\r\nSuccessfully drive sales through posting & commenting on Reddit, ProductHunt, & HackerNews\r\nSet up, populate, and use an Instagram account', 'How may customers do you have?\r\n\r\nIf you said \"none\" or \"not enough\", this course is for you. \r\n\r\nIn this course, we\'re going to focus on how YOU can take any product, service, or business and sell it to 10s, 100s, or even 1,000s of customers. ', 'You should have basic familiarity with social media\r\nYou don\'t need to have a product or business, however, it helps', 'test_image1.jpg', '2018-01-16', 'Javascript', 'Javascript, JS', 'Beginner', 'draft', 0),
-(3, 7, 'The Complete Web Development Course - Build 15 Projects', 'Design and build Cash Earning Powerful Websites on a highly professional level using the latest Web Technologies.\r\nUse HTML5 and CSS3 to build website content and add stunning styling and decoration.\r\nUse Javascript, jQuery & jQuery User Interface to create Interactive Websites and Games.\r\nUse Twitter Bootstrap to produce Responsive Websites that will adapt to any device size.\r\n', '*****15 Full Professional Projects worth over 20,000$*****\r\n\r\n*****Car Sharing Website (10h), Online Notes App (11h) & many more*****\r\n\r\n*****77 hours of Content + 40 hands on Activities + 21 Quizzes*****\r\n\r\n*****Learn Step by Step with NO Step Skipped*****', 'I will teach you everything. All you need is a computer.\r\nThere is absolutely no pre-knowledge required. This is a 100% Comprehensive Web Development Course that will take you from Zero-skills to a Cash Earning Web Developer, Step by Step with NO Step skipped.', 'test_image5.jpg', '2018-01-17', 'Web Development', 'Web, Web Development, html, css, php ,js, javascript', 'Advanced', 'draft', 0);
+(3, 7, 'The Complete Web Development Course - Build 15 Projects', 'Design and build Cash Earning Powerful Websites on a highly professional level using the latest Web Technologies.\r\nUse HTML5 and CSS3 to build website content and add stunning styling and decoration.\r\nUse Javascript, jQuery & jQuery User Interface to create Interactive Websites and Games.\r\nUse Twitter Bootstrap to produce Responsive Websites that will adapt to any device size.\r\n', '*****15 Full Professional Projects worth over 20,000$*****\r\n\r\n*****Car Sharing Website (10h), Online Notes App (11h) & many more*****\r\n\r\n*****77 hours of Content + 40 hands on Activities + 21 Quizzes*****\r\n\r\n*****Learn Step by Step with NO Step Skipped*****', 'I will teach you everything. All you need is a computer.\r\nThere is absolutely no pre-knowledge required. This is a 100% Comprehensive Web Development Course that will take you from Zero-skills to a Cash Earning Web Developer, Step by Step with NO Step skipped.', 'test_image5.jpg', '2018-01-17', 'Web Development', 'Web, Web Development, html, css, php ,js, javascript', 'Advanced', 'draft', 0),
+(4, 6, 'DEMO COURSE FOR ABDUL', ' PHP And MySql', ' Nothing to say just watch the video and learn', ' BASIC Programming Knowledge and nothing', 'hacker.jpg', '2018-01-31', 'PHP', ' PHP, DATABASE', 'Beginner', 'draft', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `content_resource`
+-- Table structure for table `content_resources`
 --
 
-CREATE TABLE `content_resource` (
-  `id` int(111) NOT NULL,
-  `vid1` varchar(255) NOT NULL,
-  `vid1_text` text NOT NULL,
-  `vid2` varchar(255) NOT NULL,
-  `vid2_text` text NOT NULL,
-  `vid3` varchar(255) NOT NULL,
-  `vid3_text` text NOT NULL,
-  `vid4` varchar(255) NOT NULL,
-  `vid4_text` text NOT NULL,
-  `vid5` varchar(255) NOT NULL,
-  `vid5_text` text NOT NULL,
-  `vid6` varchar(255) NOT NULL,
-  `vid6_text` text NOT NULL,
-  `vid7` varchar(255) NOT NULL,
-  `vid7_text` text NOT NULL,
-  `vid8` varchar(255) NOT NULL,
-  `vid8_text` text NOT NULL,
-  `vid9` varchar(255) NOT NULL,
-  `vid9_text` text NOT NULL,
-  `vid10` varchar(255) NOT NULL,
-  `vid10_text` text NOT NULL,
-  `vid11` varchar(255) NOT NULL,
-  `vid11_text` text NOT NULL,
-  `vid12` varchar(255) NOT NULL,
-  `vid12_text` text NOT NULL,
-  `vid13` varchar(255) NOT NULL,
-  `vid13_text` text NOT NULL,
-  `vid14` varchar(255) NOT NULL,
-  `vid14_text` text NOT NULL,
-  `vid15` varchar(255) NOT NULL,
-  `vid15_text` text NOT NULL,
-  `vid16` varchar(255) NOT NULL,
-  `vid16_text` text NOT NULL,
-  `vid17` varchar(255) NOT NULL,
-  `vid17_text` text NOT NULL,
-  `vid18` varchar(255) NOT NULL,
-  `vid18_text` text NOT NULL,
-  `vid19` varchar(255) NOT NULL,
-  `vid19_text` text NOT NULL,
-  `vid20` varchar(255) NOT NULL,
-  `vid20_text` text NOT NULL,
-  `vid21` varchar(255) NOT NULL,
-  `vid21_text` text NOT NULL,
-  `vid22` varchar(255) NOT NULL,
-  `vid22_text` text NOT NULL,
-  `vid23` varchar(255) NOT NULL,
-  `vid23_text` text NOT NULL,
-  `vid24` varchar(255) NOT NULL,
-  `vid24_text` text NOT NULL,
-  `vid25` varchar(255) NOT NULL,
-  `vid25_text` text NOT NULL,
-  `exam_id` int(11) NOT NULL
+CREATE TABLE `content_resources` (
+  `video_id` int(11) NOT NULL,
+  `video_content_id` int(11) NOT NULL,
+  `file_name` varchar(255) NOT NULL,
+  `file_url` varchar(255) NOT NULL,
+  `video_serial` int(11) NOT NULL,
+  `video_title` varchar(255) NOT NULL,
+  `video_desc` varchar(255) NOT NULL,
+  `video_week` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `content_resources`
+--
+
+INSERT INTO `content_resources` (`video_id`, `video_content_id`, `file_name`, `file_url`, `video_serial`, `video_title`, `video_desc`, `video_week`) VALUES
+(3, 3, '1517391823PHP- Video Upload & Playback (Using Database) - YouTube.MP4', '../videos/1517391823PHP- Video Upload & Playback (Using Database) - YouTube.MP4', 1, 'PHP tutorial 1', 'SACUOHOUHCHCHCOHCOHCQUHCQHCCOQH', 1),
+(4, 4, '1517405172PHP- Video Upload & Playback (Using Database) - YouTube.MP4', '../videos/1517405172PHP- Video Upload & Playback (Using Database) - YouTube.MP4', 1, 'PHP-Upload Video', 'Here u will learn How to upload video in server and record it in database', 1),
+(5, 4, '1517405309video1.mp4', '../videos/1517405309video1.mp4', 2, 'Movie Trailer', 'A movie Trailer for fun....enjoy the low quality ', 1);
 
 -- --------------------------------------------------------
 
@@ -176,10 +142,11 @@ ALTER TABLE `content`
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `content_resource`
+-- Indexes for table `content_resources`
 --
-ALTER TABLE `content_resource`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `content_resources`
+  ADD PRIMARY KEY (`video_id`),
+  ADD KEY `video_content_id` (`video_content_id`);
 
 --
 -- Indexes for table `questiontable`
@@ -202,12 +169,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `content`
 --
 ALTER TABLE `content`
-  MODIFY `content_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `content_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `content_resource`
+-- AUTO_INCREMENT for table `content_resources`
 --
-ALTER TABLE `content_resource`
-  MODIFY `id` int(111) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `content_resources`
+  MODIFY `video_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `users`
 --
@@ -222,6 +189,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `content`
   ADD CONSTRAINT `content_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `content_resources`
+--
+ALTER TABLE `content_resources`
+  ADD CONSTRAINT `content_resources_ibfk_1` FOREIGN KEY (`video_content_id`) REFERENCES `content` (`content_id`);
 
 --
 -- Constraints for table `questiontable`

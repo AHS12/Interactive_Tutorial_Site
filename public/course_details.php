@@ -40,7 +40,8 @@
 <?php require_once("../includes/php/session.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
-<?php $content_id = get_selected_content_by_id();?>
+<?php $content_id = get_selected_content_by_id();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,7 +117,7 @@
                         <i class="fa fa-clock-o" aria-hidden="true"> 10 Hrs</i>
                         <i class="fa fa-address-card" aria-hidden="true"> <?php echo htmlentities($content_values['content_level']) ?></i>
                         <i class="fa fa-cc" aria-hidden="true"> English</i>
-                        <a href="#" style="float: right; width: 250px;" class="btn btn-success btn-lg">Enroll</a>
+                        <a href="course_view.php?content=<?php echo urlencode($content_id) ?>" style="float: right; width: 250px;" class="btn btn-success btn-lg">Enroll</a>
                     </div>
                 </div>
             </div>
