@@ -69,7 +69,7 @@ if (isset($_GET['video_id'])) {
     <?php
     if (isset($content_id)) {
         $content_values = find_selected_content_by_id($content_id);
-        $_SESSION['current_content_title'] =htmlentities(mysqli_prep($content_values['content_title']));
+        $_SESSION['current_content_title'] = htmlentities(mysqli_prep($content_values['content_title']));
         $_SESSION['current_content_id'] = $content_id;
     }
     ?>
@@ -115,7 +115,8 @@ if (isset($_GET['video_id'])) {
     <div id="page-content-wrapper">
         <div>
             <a href="#menu-toggle" class="btn btn-success" id="menu-toggle">Course Playlist</a>
-            <a href="course_view.php?content=<?php echo $_SESSION['current_content_id'] ?>" class="btn btn-primary">Back To Curriculum</a>
+            <a href="course_view.php?content=<?php echo $_SESSION['current_content_id'] ?>" class="btn btn-primary">Back
+                To Curriculum</a>
         </div>
         <div class="container text-center">
 
