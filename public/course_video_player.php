@@ -34,11 +34,21 @@ if (isset($_GET['video_id'])) {
 
     $query = "SELECT * FROM content_resources WHERE video_id = '$video_id'";
     $result = mysqli_query($connection, $query);
-    $video_data = mysqli_fetch_assoc($result);
-    $_SESSION['current_content_id'] = $video_data['video_content_id'];
-    $video_url = $video_data['file_url'];
-    $video_mtitle = $video_data['video_title'];
-    $video_desc = $video_data['video_desc'];
+
+    while ($video_data = mysqli_fetch_assoc($result)) {
+        $_SESSION['current_content_id'] = $video_data['video_content_id'];
+        $video_url = $video_data['file_url'];
+        $video_mtitle = $video_data['video_title'];
+        $video_desc = $video_data['video_desc'];
+    }
+//    $video_data = mysqli_fetch_assoc($result);
+
+    $query_content_name = "SELECT * FROM content WHERE content_id = '{$_SESSION['current_content_id']}' LIMIT 1";
+    $current_content_title = mysqli_query($connection, $query_content_name);
+    while ($content_data = mysqli_fetch_assoc($current_content_title))
+    {
+        $_SESSION['current_content_title'] = $content_data['content_title'];
+    }
 }
 ?>
 
@@ -78,7 +88,9 @@ if (isset($_GET['video_id'])) {
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
                 <h3 class="text-center help-block">
-                    <?php echo htmlentities($_SESSION['current_content_title']) ?>
+                    <?php
+                    //                    error_reporting(0);
+                    echo $_SESSION['current_content_title']; ?>
                 </h3>
             </li>
             <?php
