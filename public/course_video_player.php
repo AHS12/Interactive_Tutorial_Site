@@ -14,6 +14,7 @@
 
 require_once "../includes/database/db_connection.php";
 require_once "../includes/php/functions.php";
+confirm_logged_in();
 
 //?>
 
@@ -116,6 +117,8 @@ if (isset($_GET['video_id'])) {
 
 
             ?>
+
+
 
         </ul>
     </div>
