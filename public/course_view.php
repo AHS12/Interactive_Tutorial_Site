@@ -178,46 +178,47 @@ confirm_logged_in();
                     </table>
 
 
-<!--                    <div>-->
-<!--                        <h3>Question Table</h3>-->
-<!--                        <br>-->
-<!---->
-<!---->
-<!--                        <table class="table table-bordered table-responsive">-->
-<!--                            <thead class="bg-success">-->
-<!--                            <tr>-->
-<!--                                <th>Week</th>-->
-<!--                                <th>Question</th>-->
-<!--                                <th>Action</th>-->
-<!--                            </tr>-->
-<!--                            </thead>-->
-<!--                            <tbody>-->
-<!---->
-<!---->
-<!--                            --><?php
-//                            $query = "SELECT * FROM exam_ques WHERE content_id = '$content_id' ";
-//                            $result = mysqli_query($connection, $query);
-//
-//                            while ($row = mysqli_fetch_assoc($result)) {
-//                                $exam_week = $row['content_week'];
-//                                $exam_ques = $row['question'];
-//
-//
-//                                ?>
-<!--                                <tr>-->
-<!--                                    <td>--><?php //echo $exam_week ?><!--</td>-->
-<!--                                    <td>--><?php //echo $exam_ques ?><!--</td>-->
-<!--                                    <td> <button class="btn btn-danger">Delete</button></td>-->
-<!--                                </tr>-->
-<!---->
-<!--                            --><?php //} ?>
-<!--                            </tbody>-->
-<!--                        </table>-->
+                    <div>
+                        <h3>Question Table</h3>
+                        <br>
 
 
+                        <table class="table table-bordered table-responsive">
+                            <thead class="bg-success">
+                            <tr>
+                                <th>Week</th>
+                                <th>Question</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 
 
-                    </div><!--/tab-pane-->
+                            <?php
+                            $query = "SELECT * FROM exam_ques WHERE content_id = '$content_id' ";
+                            $result = mysqli_query($connection, $query);
+
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $exam_id = $row['ques_id'];
+                                $exam_week = $row['content_week'];
+                                $exam_ques = $row['question'];
+
+
+                                ?>
+                                <tr>
+                                    <td><?php echo $exam_week ?></td>
+                                    <td><?php echo $exam_ques ?></td>
+                                    <td><a href="course_exam.php?exam=<?php echo $exam_id ?>" class="btn btn-info">Participate</a></td>
+                                </tr>
+
+                            <?php } ?>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div><!--/tab-pane-->
                 <div class="tab-pane" id="messages">
 
                     <h2></h2>
