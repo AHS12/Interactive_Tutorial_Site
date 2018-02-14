@@ -24,9 +24,10 @@ if (isset($_POST['submit_ans'])) {
     move_uploaded_file($fileTmp, $filePath);
 
     $exam_id = $_SESSION['current_exam_id'];
+    $examinee_id=$_SESSION['user_id'];
 
-    $query = "INSERT INTO exam_ans(quest_id, answer, answer_url) ";
-    $query .= "VALUES('$exam_id','$exam_ans','$filePath')";
+    $query = "INSERT INTO exam_ans(ques_id,examinee_id, answer, answer_url) ";
+    $query .= "VALUES('$exam_id','$examinee_id','$exam_ans','$filePath')";
 
     $result = mysqli_query($connection, $query);
 

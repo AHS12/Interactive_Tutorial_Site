@@ -2,6 +2,7 @@
 <?php require_once("../includes/php/session.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
+<?php confirm_logged_in(); ?>
 <?php $content_id = get_selected_content_by_id();
 $found_user_enrollment = check_if_enrolled($_SESSION['user_id'],$content_id);
 ?>
