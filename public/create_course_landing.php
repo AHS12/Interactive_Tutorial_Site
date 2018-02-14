@@ -25,7 +25,8 @@ teacher_logged_in();
                         </thead>
                         <tbody>
                         <?php
-                        $query = "SELECT * FROM content WHERE visibility = 0";
+                        $user_id = $_SESSION['user_id'];
+                        $query = "SELECT * FROM content WHERE visibility = 0 AND user_id = {$user_id} ORDER BY content_id ASC";
                         $select_all_content = mysqli_query($connection,$query);
 
                         while ($row = mysqli_fetch_assoc($select_all_content)){
