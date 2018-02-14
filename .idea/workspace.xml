@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="834205bf-d4c2-4d64-8918-47fd39bb51fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/php/enrolling_students.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/php/functions.php" afterPath="$PROJECT_DIR$/includes/php/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_details.php" afterPath="$PROJECT_DIR$/public/course_details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/create_course.php" afterPath="$PROJECT_DIR$/public/create_course.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/database/interactivets.sql" afterPath="$PROJECT_DIR$/includes/database/interactivets.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -451,7 +448,7 @@
       <workItem from="1518450693377" duration="1763000" />
       <workItem from="1518538794779" duration="647000" />
       <workItem from="1518591637679" duration="179000" />
-      <workItem from="1518620944018" duration="5774000" />
+      <workItem from="1518620944018" duration="5889000" />
     </task>
     <task id="LOCAL-00001" summary="design re shalar">
       <created>1516036055859</created>
@@ -558,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518621012442</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="user enrollment finished">
+      <created>1518628530707</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1518628530707</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128970000" />
+    <option name="totallyTimeSpent" value="129085000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -665,7 +669,8 @@
     <MESSAGE value="BugFix on Video Player" />
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/master' into sohel_part&#10;&#10;# Conflicts:&#10;#&#9;public/course_view.php" />
     <MESSAGE value="bug fixes must merge before proceed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes must merge before proceed" />
+    <MESSAGE value="user enrollment finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="user enrollment finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
