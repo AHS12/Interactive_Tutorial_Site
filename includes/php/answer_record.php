@@ -21,6 +21,8 @@ if (isset($_POST['submit_ans'])) {
     }
     else $filePath = " ";
 
+    move_uploaded_file($fileTmp, $filePath);
+
     $exam_id = $_SESSION['current_exam_id'];
 
     $query = "INSERT INTO exam_ans(quest_id, answer, answer_url) ";

@@ -517,6 +517,10 @@ h2{color:#0b56a8;}
 /*----------------- Modal------------ */
 
 
-
+/* fixed grid */
+.row.fix {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 

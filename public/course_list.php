@@ -48,28 +48,29 @@
 <div class="container">
     <h1>Courses </h1>
     <hr>
-    <div class="row">
+    <div class="row fix">
 
-            <?php
-            $query = "SELECT * FROM content WHERE visibility = 1";
-            $select_all_content = mysqli_query($connection,$query);
-            while($row = mysqli_fetch_assoc($select_all_content)){
-                $content_id = $row['content_id'];
-                $user_id = $row['user_id'];
-                $content_title = $row['content_title'];
-                $content_picture = $row['content_picture'];
-                $content_date = $row['content_date'];
-                $content_category = $row['content_category'];
+        <?php
+        $query = "SELECT * FROM content WHERE visibility = 1";
+        $select_all_content = mysqli_query($connection, $query);
+        while ($row = mysqli_fetch_assoc($select_all_content)) {
+            $content_id = $row['content_id'];
+            $user_id = $row['user_id'];
+            $content_title = $row['content_title'];
+            $content_picture = $row['content_picture'];
+            $content_date = $row['content_date'];
+            $content_category = $row['content_category'];
 
-                $user = mysqli_fetch_assoc(find_selected_user_by_id($user_id));
-                $user_firstname = $user['firstname'];
-                $user_lastname = $user['lastname'];
-                ?>
-                <div class="col-sm-6 col-md-3">
+            $user = mysqli_fetch_assoc(find_selected_user_by_id($user_id));
+            $user_firstname = $user['firstname'];
+            $user_lastname = $user['lastname'];
+            ?>
+            <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="../images/<?php echo $content_picture;?>" alt="android">
-                    <p style="font-weight: bold; padding-top: 10px;"><?php echo $content_title;?></p>
-                    <p class="title" style="padding-left: 5px; font-size: 12px;"><?php echo "{$user_firstname} "."{$user_lastname}";?></p>
+                    <img src="../images/<?php echo $content_picture; ?>" alt="android">
+                    <p style="font-weight: bold; padding-top: 10px;"><?php echo $content_title; ?></p>
+                    <p class="title"
+                       style="padding-left: 5px; font-size: 12px;"><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
                     <div style="float: right; padding-right: 5px; color: orange; padding-bottom: 5px;">
                         <i class="price-text-color fa fa-star"></i><i
                                 class="price-text-color fa fa-star">
@@ -77,24 +78,24 @@
                                 class="price-text-color fa fa-star">
                         </i><i class="fa fa-star"></i>
                     </div>
-                    <a href="course_details.php?content=<?php echo urlencode($content_id)?>" class="btn btn-primary col-xs-12"
+                    <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
+                       class="btn btn-primary col-xs-12"
                        role="button">View Course Details</a>
                     <div class="clearfix"></div>
                 </div>
-        </div>
+            </div>
 
-                <?php
-            }
-
-
-            ?>
+            <?php
+        }
 
 
-
-        </div>
+        ?>
 
 
     </div>
+
+
+</div>
 <!-- **********course content end************ -->
 <!-- **********course content end************ -->
 <script type="text/javascript" src="js/another.js"></script>
@@ -229,7 +230,8 @@
 
                         <div class="design">
 
-                            <a href="#">Cool!! </a> | <a target="_blank" href="#">Web Design & Development by Team ASK</a>
+                            <a href="#">Cool!! </a> | <a target="_blank" href="#">Web Design & Development by Team
+                                ASK</a>
 
                         </div>
 
