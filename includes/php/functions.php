@@ -164,6 +164,12 @@ function get_selected_content_by_id(){
         return $selected_content_id;
 
     }
+
+    else if(isset($_GET["exam"])){
+        $selected_content_id = $_GET["exam"];
+        return $selected_content_id;
+
+    }
     else{
         $selected_content_id =null;
         return $selected_content_id;
