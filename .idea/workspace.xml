@@ -4,10 +4,22 @@
     <bookmark url="file://$PROJECT_DIR$/includes/layouts/create_course_nav.php" line="37" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="834205bf-d4c2-4d64-8918-47fd39bb51fe" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/course_exam.php" />
+
+    <list default="true" id="834205bf-d4c2-4d64-8918-47fd39bb51fe" name="Default" comment="bug fixes must merge before proceed">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_details.php" afterPath="$PROJECT_DIR$/public/course_details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/course_view.php" afterPath="$PROJECT_DIR$/public/course_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/create_course_landing.php" afterPath="$PROJECT_DIR$/public/create_course_landing.php" />
+
+    <list default="true" id="834205bf-d4c2-4d64-8918-47fd39bb51fe" name="Default" comment="BugFix on Video Player">
+      <change beforePath="" afterPath="$PROJECT_DIR$/includes/php/question_record.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/includes/php/init.php" afterPath="$PROJECT_DIR$/includes/php/init.php" />
+      <change beforePath="$PROJECT_DIR$/public/course_video_player.php" afterPath="$PROJECT_DIR$/public/course_video_player.php" />
       <change beforePath="$PROJECT_DIR$/public/course_view.php" afterPath="$PROJECT_DIR$/public/course_view.php" />
+      <change beforePath="$PROJECT_DIR$/public/create_course_curriculum.php" afterPath="$PROJECT_DIR$/public/create_course_curriculum.php" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+ 
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +30,6 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -27,10 +38,21 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <expand>
       <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="interactivets@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="interactivets@localhost" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
+
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="interactivets@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="interactivets" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="interactivets@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="interactivets" type="e3449647:DbNodeDescriptor" />
+        <item name="content" type="e3449647:DbNodeDescriptor" />
+
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="interactivets@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
@@ -47,36 +69,101 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="interactivets: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="exam_ques: table" type="98d5ac3d:MysqlImplModel$Table" />
+
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="course_view.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="course_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/course_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="248" selection-end-column="7" />
+
+            <state relative-caret-position="600">
+              <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding>
-                <marker date="1518621014441" expanded="true" signature="1448:1472" ph="..." />
-                <marker date="1518621014441" expanded="true" signature="3064:3134" ph="SELECT * FRO... content_resources" />
-                <marker date="1518621014441" expanded="true" signature="6918:6974" ph="SELECT * FRO... exam_ques" />
+                <marker date="1517758773525" expanded="true" signature="1675:1693" ph="UPDATE conte... " />
+                <marker date="1517758773525" expanded="true" signature="6356:6481" ph="..." />
+
+            <state relative-caret-position="16">
+              <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+              <folding>
+                <element signature="e#6999#7098#0#PHP" expanded="true" />
+                <marker date="1518598083460" expanded="true" signature="1448:1472" ph="..." />
+                <marker date="1518598083460" expanded="true" signature="3064:3134" ph="SELECT * FRO... content_resources" />
+                <marker date="1518598083460" expanded="true" signature="7039:7095" ph="SELECT * FRO... exam_ques" />
+
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="course_exam.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/course_exam.php">
+
+      <file leaf-file-name="course_details.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/course_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <marker date="1518538868030" expanded="true" signature="236:280" ph="..." />
+                <marker date="1518538868030" expanded="true" signature="2121:2226" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/php/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="course_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/course_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1975">
+              <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="92" />
+              <folding />
+
+      <file leaf-file-name="course_video_player.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/course_video_player.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <marker date="1518586990154" expanded="true" signature="545:605" ph="SELECT * FRO... videos" />
+                <marker date="1518586990154" expanded="true" signature="1019:1060" ph="SELECT conte... content" />
+                <marker date="1518586990154" expanded="true" signature="1019:1061" ph="SELECT conte... content" />
+                <marker date="1518586990154" expanded="true" signature="1019:1062" ph="SELECT conte... content" />
+                <marker date="1518586990154" expanded="true" signature="1019:1094" ph="SELECT conte... content" />
+                <marker date="1518586990154" expanded="true" signature="1019:1103" ph="SELECT conte... content" />
+                <marker date="1518586990154" expanded="true" signature="1388:1408" ph="..." />
+                <marker date="1518586990154" expanded="true" signature="1848:1858" ph="..." />
+                <marker date="1518586990154" expanded="true" signature="2586:2600" ph="SELECT * FRO... videos" />
+                <marker date="1518586990154" expanded="true" signature="2586:2644" ph="SELECT * FRO... content_resources" />
+                <marker date="1518586990154" expanded="true" signature="2586:2678" ph="SELECT * FRO... content_resources" />
+                <marker date="1518586990154" expanded="true" signature="3806:3832" ph="Select Video... Playlist" />
+                <marker date="1518586990154" expanded="true" signature="4848:4874" ph="Select Video... Playlist" />
+              </folding>
+
+            </state>
+          </provider>
+        </entry>
+      </file>
+
+      <file leaf-file-name="course_view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/course_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4600">
+              <caret line="187" column="57" lean-forward="false" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
+              <folding>
+                <marker date="1517850170427" expanded="true" signature="3107:3177" ph="SELECT * FRO... content_resources" />
+
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/login.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,11 +194,24 @@
                 <marker date="1518597660719" expanded="true" signature="9921:9989" ph="SELECT video... content_resources" />
                 <marker date="1518597660719" expanded="true" signature="9921:10002" ph="SELECT video... content_resources" />
                 <marker date="1518597660719" expanded="true" signature="12028:12084" ph="SELECT * FRO... exam_ques" />
+
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="create_course_landing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/create_course_landing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding>
+                <marker date="1517759901185" expanded="true" signature="1064:1106" ph="SELECT * FRO... content" />
+                <marker date="1517759901185" expanded="true" signature="1064:1121" ph="SELECT * FRO... content" />
+                <marker date="1517759901185" expanded="true" signature="1064:1131" ph="SELECT * FRO... content" />
+                <marker date="1517759901185" expanded="true" signature="1064:1155" ph="SELECT * FRO... content" />
+
       <file leaf-file-name="question_record.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/php/question_record.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,11 +219,24 @@
               <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1518591855970" expanded="true" signature="425:494" ph="INSERT into exam_ques... " />
+
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="course_video_player.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/course_video_player.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+              <folding>
+                <marker date="1517758773514" expanded="true" signature="524:584" ph="SELECT * FRO... content_resources" />
+                <marker date="1517758773514" expanded="true" signature="2062:2154" ph="SELECT * FRO... content_resources" />
+                <marker date="1517758773514" expanded="true" signature="3264:3290" ph="Select Video... Playlist" />
+                <marker date="1517758773514" expanded="true" signature="4306:4332" ph="Select Video... Playlist" />
+
       <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/php/init.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,21 +255,48 @@
               <folding>
                 <marker date="1515851614615" expanded="true" signature="1406:1483" ph="INSERT INTO users... " />
                 <marker date="1515851614615" expanded="true" signature="3414:3503" ph="INSERT INTO users... " />
+
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="create_course_nav.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/layouts/create_course_nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+
       <file leaf-file-name="video_record.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/php/video_record.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
               <caret line="40" column="82" lean-forward="false" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+
+      <file leaf-file-name="create_course_data_validation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/php/create_course_data_validation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding />
+
       <file leaf-file-name="create_course.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/create_course.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,6 +305,7 @@
               <folding>
                 <marker date="1517406235586" expanded="true" signature="1675:1693" ph="UPDATE content... " />
               </folding>
+
             </state>
           </provider>
         </entry>
@@ -202,7 +343,6 @@
         <option value="$PROJECT_DIR$/public/course_curriculum.php" />
         <option value="$PROJECT_DIR$/public/cards.php" />
         <option value="$PROJECT_DIR$/public/create_course_title.php" />
-        <option value="$PROJECT_DIR$/public/create_course_landing.php" />
         <option value="$PROJECT_DIR$/public/profile.php" />
         <option value="$PROJECT_DIR$/includes/php/create_course_data.php" />
         <option value="$PROJECT_DIR$/public/create_course_auto_msg.php" />
@@ -217,6 +357,12 @@
         <option value="$PROJECT_DIR$/includes/layouts/header.php" />
         <option value="$PROJECT_DIR$/includes/layouts/header2.php" />
         <option value="$PROJECT_DIR$/public/create_course.php" />
+
+        <option value="$PROJECT_DIR$/public/course_video_player.php" />
+        <option value="$PROJECT_DIR$/public/create_course_landing.php" />
+        <option value="$PROJECT_DIR$/public/course_view.php" />
+        <option value="$PROJECT_DIR$/public/course_details.php" />
+
         <option value="$PROJECT_DIR$/public/course_details.php" />
         <option value="$PROJECT_DIR$/includes/php/register.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
@@ -225,7 +371,7 @@
         <option value="$PROJECT_DIR$/includes/php/question_record.php" />
         <option value="$PROJECT_DIR$/public/create_course_curriculum.php" />
         <option value="$PROJECT_DIR$/public/course_view.php" />
-        <option value="$PROJECT_DIR$/public/course_exam.php" />
+
       </list>
     </option>
   </component>
@@ -237,10 +383,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -278,6 +423,14 @@
               <item name="Interactive_Tutorial_Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interactive_Tutorial_Site" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Interactive_Tutorial_Site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive_Tutorial_Site" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -289,12 +442,23 @@
             <path>
               <item name="Interactive_Tutorial_Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interactive_Tutorial_Site" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Interactive_Tutorial_Site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interactive_Tutorial_Site" type="2a2b976b:PhpTreeStructureProvider$1" />
+
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Interactive_Tutorial_Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interactive_Tutorial_Site" type="2a2b976b:PhpTreeStructureProvider$1" />
+
+              <item name="style" type="2a2b976b:PhpTreeStructureProvider$1" />
+
               <item name="videos" type="2a2b976b:PhpTreeStructureProvider$1" />
+
             </path>
           </expand>
           <select />
@@ -329,6 +493,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -387,14 +559,6 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -437,12 +601,23 @@
       <workItem from="1517288410466" duration="21191000" />
       <workItem from="1517404775577" duration="6751000" />
       <workItem from="1517486951014" duration="101000" />
+
+      <workItem from="1517597214143" duration="1886000" />
+      <workItem from="1517848794930" duration="2618000" />
+      <workItem from="1518108384256" duration="2452000" />
+      <workItem from="1518192035581" duration="735000" />
+      <workItem from="1518450693377" duration="1763000" />
+      <workItem from="1518538794779" duration="647000" />
+      <workItem from="1518591637679" duration="179000" />
+      <workItem from="1518620944018" duration="20000" />
+
       <workItem from="1517597214143" duration="2154000" />
       <workItem from="1517766907626" duration="922000" />
       <workItem from="1518275901409" duration="159000" />
       <workItem from="1518276096894" duration="4800000" />
       <workItem from="1518586148062" duration="6961000" />
-      <workItem from="1518620033940" duration="1114000" />
+      <workItem from="1518620033940" duration="11000" />
+
     </task>
     <task id="LOCAL-00001" summary="design re shalar">
       <created>1516036055859</created>
@@ -535,6 +710,39 @@
       <option name="project" value="LOCAL" />
       <updated>1517598277173</updated>
     </task>
+
+    <task id="LOCAL-00014" summary="bug fixes must merge before proceed">
+      <created>1518108729927</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1518108729928</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="123216000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.49785176" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1707841" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6086956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+
     <task id="LOCAL-00014" summary="BugFix on Video Player">
       <created>1517599125658</created>
       <option name="number" value="00014" />
@@ -556,22 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518278316963</updated>
     </task>
-    <task id="LOCAL-00017" summary="added exam creation and other bugfix">
-      <created>1518620117972</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1518620117972</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127025000" />
+    <option name="totallyTimeSpent" value="125922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -579,18 +779,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60841423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.49785176" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -659,14 +862,51 @@
     <MESSAGE value="mejor bug fixed in course creation and added video player" />
     <MESSAGE value="updated database file" />
     <MESSAGE value="BugFix on Video Player" />
-    <MESSAGE value="added exam creation and other bugfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exam creation and other bugfix" />
+    <MESSAGE value="Merge remote-tracking branch 'remotes/origin/master' into sohel_part&#10;&#10;# Conflicts:&#10;#&#9;public/course_view.php" />
+    <MESSAGE value="bug fixes must merge before proceed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes must merge before proceed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12975">
+          <caret line="519" column="0" lean-forward="false" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/layouts/create_course_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" lean-forward="true" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/curriculum.php" />
+    <entry file="file://$PROJECT_DIR$/public/create_course_price_coupons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/getid3/write.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+
+    <entry file="file://$PROJECT_DIR$/includes/php/create_course_data_validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/php/create_course_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -678,13 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/php/video_upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -702,6 +935,19 @@
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/includes/php/video_record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/create_course_curriculum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="62" selection-end-line="106" selection-end-column="62" />
+
     <entry file="file://$PROJECT_DIR$/includes/layouts/create_course_nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -709,6 +955,7 @@
           <folding>
             <element signature="e#1382#1415#0#PHP" expanded="false" />
           </folding>
+
         </state>
       </provider>
     </entry>
@@ -721,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/layouts/header2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        <state relative-caret-position="1300">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -828,21 +1075,86 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/videoplayer.css">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/course_list.php">
+    <entry file="file://$PROJECT_DIR$/includes/php/video_upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
-          <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="92" />
+        <state relative-caret-position="450">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/course_details.php">
+    <entry file="file://$PROJECT_DIR$/public/create_course_title.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9800">
+          <caret line="392" column="7" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="392" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.php">
+
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/layouts/create_course_nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/php/create_course_data_validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/course_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1975">
+          <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="92" />
+
+          <folding />
+
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="286">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/course_video_player.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <marker date="1517758773514" expanded="true" signature="524:584" ph="SELECT * FRO... content_resources" />
+            <marker date="1517758773514" expanded="true" signature="2062:2154" ph="SELECT * FRO... content_resources" />
+            <marker date="1517758773514" expanded="true" signature="3264:3290" ph="Select Video... Playlist" />
+            <marker date="1517758773514" expanded="true" signature="4306:4332" ph="Select Video... Playlist" />
+
         <state relative-caret-position="688">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
@@ -894,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,22 +1287,84 @@
           <folding>
             <marker date="1515851614615" expanded="true" signature="1406:1483" ph="INSERT INTO users... " />
             <marker date="1515851614615" expanded="true" signature="3414:3503" ph="INSERT INTO users... " />
+
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/php/question_record.php">
       <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="189">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/create_course_landing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <marker date="1517759901185" expanded="true" signature="1064:1106" ph="SELECT * FRO... content" />
+            <marker date="1517759901185" expanded="true" signature="1064:1121" ph="SELECT * FRO... content" />
+            <marker date="1517759901185" expanded="true" signature="1064:1131" ph="SELECT * FRO... content" />
+            <marker date="1517759901185" expanded="true" signature="1064:1155" ph="SELECT * FRO... content" />
+
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <marker date="1518591855970" expanded="true" signature="425:494" ph="INSERT into exam_ques... " />
+
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/create_course_curriculum.php">
       <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="225">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/php/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/course_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1518538868030" expanded="true" signature="236:280" ph="..." />
+            <marker date="1518538868030" expanded="true" signature="2121:2226" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/create_course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <marker date="1517758773525" expanded="true" signature="1675:1693" ph="UPDATE conte... " />
+            <marker date="1517758773525" expanded="true" signature="6356:6481" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/course_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4600">
+          <caret line="187" column="57" lean-forward="false" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
+          <folding>
+            <marker date="1517850170427" expanded="true" signature="3107:3177" ph="SELECT * FRO... content_resources" />
+
         <state relative-caret-position="4624">
           <caret line="289" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="289" selection-end-column="32" />
           <folding>
@@ -1005,21 +1378,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/course_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="248" selection-end-column="7" />
+        <state relative-caret-position="16">
+          <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
           <folding>
-            <marker date="1518621014441" expanded="true" signature="1448:1472" ph="..." />
-            <marker date="1518621014441" expanded="true" signature="3064:3134" ph="SELECT * FRO... content_resources" />
-            <marker date="1518621014441" expanded="true" signature="6918:6974" ph="SELECT * FRO... exam_ques" />
+            <element signature="e#6999#7098#0#PHP" expanded="true" />
+            <marker date="1518598083460" expanded="true" signature="1448:1472" ph="..." />
+            <marker date="1518598083460" expanded="true" signature="3064:3134" ph="SELECT * FRO... content_resources" />
+            <marker date="1518598083460" expanded="true" signature="7039:7095" ph="SELECT * FRO... exam_ques" />
+
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/course_exam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

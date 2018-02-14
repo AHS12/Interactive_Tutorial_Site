@@ -1,84 +1,9 @@
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>WEB Page</title>-->
-<!---->
-<!--    <link rel="stylesheet" href="../lib/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="../lib/font-awesome.min.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="../style/style.css">-->
-<!---->
-<!--</head>-->
-<!--<body>-->
-<!--<!-- ********** navbar ************* -->-->
-<!--<nav class="navbar navbar-default navbar-fixed-top">-->
-<!--    <div class="container">-->
-<!--        <div class="navbar-header navbar-left">-->
-<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">-->
-<!--                <span class="icon-bar"></span>-->
-<!--                <span class="icon-bar"></span>-->
-<!--                <span class="icon-bar"></span>-->
-<!--            </button>-->
-<!--            <a class="navbar-brand" href="#">Sheko</a>-->
-<!--        </div>-->
-<!--        <div class="collapse navbar-collapse" id="site-menu">-->
-<!--            <ul class="nav navbar-nav navbar-right">-->
-<!--                <li><a href="index.php">HOME</a></li>-->
-<!--                <li><a href="tutorial.html">TUTORIAL</a></li>-->
-<!--                <li><a href="#skills">SKILLS</a></li>-->
-<!--                <li><a href="#services">SERVICES</a></li>-->
-<!--                <li><a href="#portfolio">PORTFOLIO</a></li>-->
-<!--                <li><a href="#contact">CONTACT</a></li>-->
-<!--                <li><a href="index.php#join_pannel">REGISTER</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--</nav>-->
 <?php require_once("../includes/database/db_connection.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
 <?php $content_id = get_selected_content_by_id();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WEB Page</title>
-
-    <link rel="stylesheet" href="../lib/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-
-</head>
-<body>
-<!-- ********** navbar ************* -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header navbar-left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Sheko</a>
-        </div>
-        <div class="collapse navbar-collapse" id="site-menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="tutorial.html">TUTORIAL</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="index.php#join_pannel">REGISTER</a></li>
-            </ul>
-        </div>
-    </div>
-
-  </nav>
 
 <br><br>
 
@@ -134,50 +59,9 @@
                                     <i class="fa fa-check"> <?php echo  nl2br($content_values['content_what_to_learn']);?></i>
                                 </li>
 
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!---->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
+
                             </ul>
 
-
-<!--                            <ul class="col-lg-6" id="onno">-->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!---->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!---->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <i class="fa fa-check"> This is awesome tutorial site huge resourse to learn-->
-<!--                                        coding.Interface is really rich.</i>-->
-<!--                                </li>-->
-<!--                            </ul>-->
                         </div>
 
                     </div>
@@ -209,7 +93,7 @@
 
     <?php }else{?>
 
-
+        <br>
             <p>Please Select a course</p>
 
 
