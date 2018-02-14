@@ -46,7 +46,7 @@
 //    ?>
 
 
-    <a href="../includes/php/create_course_data_validation.php?alert=1" class="btn btn-primary btn-group-lg" >Submit for review</a>
+    <a href="../includes/php/create_course_data_validation.php?content=<?php echo urlencode($content_id) ?>" class="btn btn-primary btn-group-lg" >Submit for review</a>
 
     <!--    <button type="button" href="create_course_title.php" class="btn btn-primary btn-group-lg" id="myBtn">Submit for review</button>-->
     <div class="modal fade" id="myModal" role="dialog">
