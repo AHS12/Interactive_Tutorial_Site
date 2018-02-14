@@ -3,6 +3,7 @@
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
 <?php $content_id = get_selected_content_by_id();
+$found_user_enrollment = check_if_enrolled($_SESSION['user_id'],$content_id);
 ?>
 
 <br><br>
@@ -42,7 +43,19 @@
                         <i class="fa fa-clock-o" aria-hidden="true"> 10 Hrs</i>
                         <i class="fa fa-address-card" aria-hidden="true"> <?php echo htmlentities($content_values['content_level']) ?></i>
                         <i class="fa fa-cc" aria-hidden="true"> English</i>
-                        <a href="course_view.php?content=<?php echo urlencode($content_id) ?>" style="float: right; width: 250px;" class="btn btn-success btn-lg">Enroll</a>
+                        <?php
+                        if($found_user_enrollment == true){
+                            ?>
+                            <a href="course_view.php?content=<?php echo urlencode($content_id) ?>" style="float: right; width: 250px;" class="btn btn-success btn-lg">Go to Course</a>
+
+                            <?php
+                        }else{
+                            ?>
+                            <a href="../includes/php/enrolling_students.php?content=<?php echo urlencode($content_id) ?>" style="float: right; width: 250px;" class="btn btn-success btn-lg">Enroll</a>
+
+                            <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

@@ -101,7 +101,7 @@ if(isset($_POST['submit'])){
                             <hr style="width: 100%">
 
 
-                            <form action="create_course.php" method="post">
+                            <form action="create_course.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="content_title"> Course Title <span class="require">*</span></label>
                                     <input type="text" class="form-control" name="content_title" value="<?php echo htmlentities($content_title) ?>" />

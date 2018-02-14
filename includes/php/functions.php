@@ -224,4 +224,33 @@ function check_all_data_of_courses(){
     return $showmodal;
 }
 
+function check_if_enrolled($user_id,$content_id){
+    global $connection;
+
+    //escaping for security
+    $safe_user_id = mysqli_real_escape_string($connection,$user_id);
+    $safe_content_id = mysqli_real_escape_string($connection,$content_id);
+
+    //2. make query
+    $query  = "SELECT * ";
+    $query .= "FROM content_enrolled ";
+    $query .= "WHERE user_id = {$safe_user_id} ";
+    $query .= "AND content_id = {$safe_content_id}";
+    //this is famous technique
+    //used by dev so i can use if else(true) to apply any of them when it needed
+    $user_set = mysqli_query($connection,$query);
+    confirm_query($user_set);
+    $count_enroll = mysqli_num_rows($user_set);
+    if($count_enroll==1){
+        $found_enroll = true;
+        return $found_enroll;
+    }
+    else{
+        $found_enroll = false;
+        return $found_enroll;
+    }
+
+
+}
+
 ?>
