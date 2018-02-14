@@ -3,6 +3,9 @@
 @ob_start();
 if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
+require_once "../includes/php/functions.php";
+confirm_logged_in();
+
 ?>
 
 
@@ -75,10 +78,15 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
                                 </tr>
                                 </thead>
 
-                                <?php
-                                /*include "../includes/database/database.php";*/
-                                require_once "../lib/getid3/getid3.php";
-                                $getID3 = new getID3;
+
+                        <?php
+                        /*include "../includes/database/database.php";*/
+                        require_once "../lib/getid3/getid3.php";
+                        try {
+                            $getID3 = new getID3;
+                        } catch (getid3_exception $e) {
+                        }
+
 
                                 if (isset($content_id)) {
 
@@ -213,8 +221,52 @@ if (session_status() != PHP_SESSION_ACTIVE) session_start();
                             </section>
 
 
+
                         </div><!--/tab-pane-->
                         <div class="tab-pane" id="settings">
+
+<!--                    <div>-->
+<!--                        <h3>Question Table</h3>-->
+<!--                        <br>-->
+<!---->
+<!---->
+<!--                        <table class="table table-bordered table-responsive">-->
+<!--                            <thead class="bg-success">-->
+<!--                            <tr>-->
+<!--                                <th>Week</th>-->
+<!--                                <th>Question</th>-->
+<!--                                <th>Action</th>-->
+<!--                            </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody>-->
+<!---->
+<!---->
+<!--                            --><?php
+//                            $query = "SELECT * FROM exam_ques WHERE content_id = '$content_id' ";
+//                            $result = mysqli_query($connection, $query);
+//
+//                            while ($row = mysqli_fetch_assoc($result)) {
+//                                $exam_week = $row['content_week'];
+//                                $exam_ques = $row['question'];
+//
+//
+//                                ?>
+<!--                                <tr>-->
+<!--                                    <td>--><?php //echo $exam_week ?><!--</td>-->
+<!--                                    <td>--><?php //echo $exam_ques ?><!--</td>-->
+<!--                                    <td> <button class="btn btn-danger">Delete</button></td>-->
+<!--                                </tr>-->
+<!---->
+<!--                            --><?php //} ?>
+<!--                            </tbody>-->
+<!--                        </table>-->
+
+
+
+
+                    </div><!--/tab-pane-->
+                <div class="tab-pane" id="messages">
+
 
 
                             <hr>

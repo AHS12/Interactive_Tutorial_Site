@@ -27,7 +27,7 @@ teacher_logged_in();
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h2>Upload Video</h2>
+                                    <h2 class="text-center">Upload Video</h2>
 
                                 </div>
                             </div>
@@ -118,7 +118,10 @@ teacher_logged_in();
                                 <?php
                                 /*include "../includes/database/database.php";*/
                                 require_once "../lib/getid3/getid3.php";
-                                $getID3 = new getID3;
+                                try {
+                                    $getID3 = new getID3;
+                                } catch (getid3_exception $e) {
+                                }
 
                                 $content_id = $_SESSION['content_id'];
 
@@ -205,20 +208,95 @@ teacher_logged_in();
                                 </tbody>
                             </table>
 
+                            <hr>
+                            <div>
+                                <h2 class="text-center">Create Exam</h2>
+
+
+                                <form method="post" enctype="multipart/form-data"
+                                      action="../includes/php/question_record.php">
+                                    <label for="create_question">Enter Question</label>
+                                    <textarea rows="5" class="form-control" name="create_question"></textarea>
+                                    <br>
+
+                                    <p>Select Week:
+                                        <select name="week">
+                                            <?php
+                                            $query = "SELECT video_serial FROM content_resources WHERE video_content_id = '$content_id'";
+                                            $result = mysqli_query($connection, $query);
+
+                                            $number_of_videos = mysqli_num_rows($result);
+                                            $video_week = ceil($number_of_videos / 7);
+
+                                            for ($count = 1; $count <= $video_week; $count++) {
+                                                echo "<option value=\"${count}\"";
+                                                if ($video_week == $count) {
+                                                    echo " selected";
+                                                }
+                                                echo ">{$count}</option>";
+                                            }
+                                            ?>
+
+                                        </select>
+
+                                    </p>
+
+                                    <br>
+                                    <div>
+                                        <button class="btn btn-success" name="submitques">Submit
+                                        </button>
+                                    </div>
+
+
+                                </form>
+                                <br>
+
+                                <div>
+                                    <h3>Question Table</h3>
+                                    <br>
+
+
+                                    <table class="table table-bordered table-responsive">
+                                        <thead class="bg-success">
+                                        <tr>
+                                            <th>Week</th>
+                                            <th>Question</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                        <?php
+                                        $query = "SELECT * FROM exam_ques WHERE content_id = '$content_id' ";
+                                        $result = mysqli_query($connection, $query);
+
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                            $exam_week = $row['content_week'];
+                                            $exam_ques = $row['question'];
+
+
+                                            ?>
+                                            <tr>
+                                                <td><?php echo $exam_week ?></td>
+                                                <td><?php echo $exam_ques ?></td>
+                                                <td> <button class="btn btn-danger">Delete</button></td>
+                                            </tr>
+
+                                        <?php } ?>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+
+                            </div>
+
                         </div>
 
 
                     </div>
                 </div>
-
-                <!--                <div class="col-md-2" style="margin-left: 5px;">-->
-                <!---->
-                <!--                    <h2>Lorem ipsum lorem ipsum</h2>-->
-                <!--                    <p style="font-size: 16px;">Whether you've been teaching for years or are teaching for-->
-                <!--                        the first time, you can make an engaging course. We've compiled resources and best-->
-                <!--                        practices to help you get to the next level, no matter where you're starting.</p>-->
-                <!--                    <a href="#">View Details</a>-->
-                <!--                </div>-->
 
 
             </div>

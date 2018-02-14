@@ -6,4 +6,6 @@
  * Time: 06:43 PM
  */
 require_once "../database/database.php";
+//require_once "../database/db_connection.php";
 require_once "functions.php";
+require_once "session.php";
