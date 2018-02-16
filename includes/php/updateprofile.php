@@ -6,20 +6,23 @@
  * Time: 01:17 AM
  */
 
-@ob_start();
-if (session_status() != PHP_SESSION_ACTIVE) session_start();
+//@ob_start();
+//if (session_status() != PHP_SESSION_ACTIVE) session_start();
 
 include "init.php";
+require_once "functions.php";
 
 $db2 = new Database();
+$current_user_id = $_SESSION['user_id'];
 
 if (isset($_POST['update_user'])) {
     $newfirstname = $db2->escape_string($_POST['first_name']);
     $newLastname = $db2->escape_string($_POST['last_name']);
-    $newmail = $db2->escape_string($_POST['email']);
+//    $newmail = $db2->escape_string($_POST['email']);
 //    $newpass = $db2->escape_string($_POST['password']);
     $newinstitute = $db2->escape_string($_POST['institution']);
     $newbio = $db2->escape_string($_POST['bio']);
+
 
     //process image
 
@@ -36,40 +39,28 @@ if (isset($_POST['update_user'])) {
 
         if (($fileType != "image/jpeg" && $fileType != "image/png") && $fileType != "image/gif") {
 
-            $_SESSION['wrong_image_formate'] = 1;
+            echo "Wrong Formate.....!";
+            sleep(2);
             header("location: ../../public/reg_student.php");
 
         } else {
-
             //register process started
-
             move_uploaded_file($fileTmp, $filePath);
-
-//            $password = password_encrypt($newpass);
-//            $userRole = "S";
-
-            $query = "UPDATE users SET firstname= '$newfirstname',lastname ='$newLastname',email ='$newmail',";
-            $query .= "institution='$newinstitute',bio='$newbio',picture='$fileUserImgName' WHERE email='$newmail'";
+            $query = "UPDATE users SET firstname= '$newfirstname',lastname ='$newLastname',";
+            $query .= "institution='$newinstitute',bio='$newbio',picture='$fileUserImgName' WHERE id='$current_user_id'";
 
             $result = $db2->execute_query($query);
             if (!$result) {
                 die("Failed!!!" . mysqli_error($db2->connection));
-            } //update SESSION
+            } else {
 
-
-            else {
-
-//                $usermail = $_SESSION['usermail'];
-
-                $user_id = $_SESSION["user_id"];
-
+                //updating Session
                 $query = "SELECT * ";
                 $query .= "FROM users ";
-                $query .= "WHERE id = '{$user_id}'";
+                $query .= "WHERE id = '{$current_user_id}'";
                 $query .= "LIMIT 1";
 
                 $profile_data = $db2->execute_query($query);
-
 
 
                 $update_profile_data = mysqli_fetch_assoc($profile_data);
@@ -91,13 +82,12 @@ if (isset($_POST['update_user'])) {
                 } else {
 
                 }
-            }
-            $_SESSION['successReg'] = 1;
 
         }
-    } else {
-        $_SESSION['no_image'] = 1;
-        header("location: ../../public/profile.php");
+
+    }
+
+
     }
 
     // update process ends
