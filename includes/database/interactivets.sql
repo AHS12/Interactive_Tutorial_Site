@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2018 at 07:16 PM
--- Server version: 10.1.24-MariaDB
--- PHP Version: 7.1.6
+-- Generation Time: Feb 16, 2018 at 07:25 AM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -54,7 +54,8 @@ INSERT INTO `content` (`content_id`, `user_id`, `content_title`, `content_what_t
 (3, 7, 'The Complete Web Development Course - Build 15 Projects', 'Design and build Cash Earning Powerful Websites on a highly professional level using the latest Web Technologies.\r\nUse HTML5 and CSS3 to build website content and add stunning styling and decoration.\r\nUse Javascript, jQuery & jQuery User Interface to create Interactive Websites and Games.\r\nUse Twitter Bootstrap to produce Responsive Websites that will adapt to any device size.\r\n', '*****15 Full Professional Projects worth over 20,000$*****\r\n\r\n*****Car Sharing Website (10h), Online Notes App (11h) & many more*****\r\n\r\n*****77 hours of Content + 40 hands on Activities + 21 Quizzes*****\r\n\r\n*****Learn Step by Step with NO Step Skipped*****', 'I will teach you everything. All you need is a computer.\r\nThere is absolutely no pre-knowledge required. This is a 100% Comprehensive Web Development Course that will take you from Zero-skills to a Cash Earning Web Developer, Step by Step with NO Step skipped.', 'test_image5.jpg', '2018-01-17', 'Web Development', 'Web, Web Development, html, css, php ,js, javascript', 'Advanced', 'draft', 1),
 (5, 7, 'New Course on becoming Pro', 'been teaching for y\r\nears or are teaching for the first time, you can make an engaging course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', 'make an engagin\r\ng course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', 'years or are teaching for the first time, you can make an engaging course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', 'test_image5.jpg', '2018-01-23', 'PHP', ' php phph', 'Intermediate', 'draft', 1),
 (9, 7, 'New Test Course', ' first time, you can make an engaging course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', ' first time, you can make an engaging course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', ' course. We\'ve compiled resources and best practices to help you get to the next level, no matter where you\'re starting.', 'test_image5.jpg', '2018-01-24', 'PHP', ' php php java', 'Intermediate', 'draft', 1),
-(10, 7, 'new test course', ' asdasd\r\nasdasd', ' asdasd\r\nasdasd\r\nasdad', ' asdasdasd\r\nasdasdad', 'test_image5.jpg', '2018-02-14', 'Android', ' asd,asd,asd', 'Beginner', 'draft', 0);
+(10, 7, 'new test course', ' asdasd\r\nasdasd', ' asdasd\r\nasdasd\r\nasdad', ' asdasdasd\r\nasdasdad', 'test_image5.jpg', '2018-02-14', 'Android', ' asd,asd,asd', 'Beginner', 'draft', 0),
+(11, 6, 'Demo ABDUL HALIM COURSE', ' nothing', ' nothing', ' nothing', '1518639525giFnui8.jpg', '2018-02-14', 'Javascript', ' js', 'Beginner', 'draft', 1);
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,8 @@ CREATE TABLE `content_enrolled` (
 
 INSERT INTO `content_enrolled` (`enroll_id`, `content_id`, `user_id`) VALUES
 (1, 5, 9),
-(2, 3, 9);
+(2, 3, 9),
+(3, 11, 6);
 
 -- --------------------------------------------------------
 
@@ -98,7 +100,15 @@ CREATE TABLE `content_resources` (
 --
 
 INSERT INTO `content_resources` (`video_id`, `video_content_id`, `file_name`, `file_url`, `video_serial`, `video_title`, `video_desc`, `video_week`) VALUES
-(0, 5, '1517850695 (1).MP4', '../videos/1517850695 (1).MP4', 1, 'ajax introduction', 'ajax man!!', 1);
+(1, 5, '1517850695 (1).MP4', '../videos/1517850695 (1).MP4', 1, 'ajax introduction', 'ajax man!!', 1),
+(2, 11, '1518639556001 Introduction to the Complete JavaScript Course.mp4', '../videos/1518639556001 Introduction to the Complete JavaScript Course.mp4', 1, 'video 1', 'jonvnnwn  wribnri ib', 1),
+(3, 11, '1518639577002 Setup JavaScript.mp4', '../videos/1518639577002 Setup JavaScript.mp4', 2, 'video 2', 'dfdfdoj whf9wh ', 1),
+(4, 11, '1518639602003 JavaScript and HTML.mp4', '../videos/1518639602003 JavaScript and HTML.mp4', 3, 'video 3', 'fwfkw0 mhf gb bfir rrqirrebi', 1),
+(5, 11, '1518639631004 Add JavaScript to your WebPage.mp4', '../videos/1518639631004 Add JavaScript to your WebPage.mp4', 4, 'video 4', 'fe 0u48 m7 r74trrf', 1),
+(6, 11, '1518639651001 Introduction to the Complete JavaScript Course.mp4', '../videos/1518639651001 Introduction to the Complete JavaScript Course.mp4', 5, 'video 5', 'euw9c lnfshfugrv sjhfwuh', 1),
+(7, 11, '1518639677002 Setup JavaScript.mp4', '../videos/1518639677002 Setup JavaScript.mp4', 6, 'video 6', 'gjpiej  hfhwp sohh', 1),
+(8, 11, '1518639701003 JavaScript and HTML.mp4', '../videos/1518639701003 JavaScript and HTML.mp4', 7, 'video 7', 'nuhufhwfhf hrhwgrgrig  whiwlgi', 1),
+(9, 11, '1518639726006 Console debug.mp4', '../videos/1518639726006 Console debug.mp4', 8, 'video 8', 'fejfe  whefhferf whruwgh', 2);
 
 -- --------------------------------------------------------
 
@@ -108,10 +118,18 @@ INSERT INTO `content_resources` (`video_id`, `video_content_id`, `file_name`, `f
 
 CREATE TABLE `exam_ans` (
   `id` int(11) NOT NULL,
-  `quest_id` int(11) NOT NULL,
+  `ques_id` int(11) NOT NULL,
+  `examinee_id` int(11) NOT NULL,
   `answer` text NOT NULL,
   `answer_url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `exam_ans`
+--
+
+INSERT INTO `exam_ans` (`id`, `ques_id`, `examinee_id`, `answer`, `answer_url`) VALUES
+(4, 1, 6, 'code', '../../answers/1518641280hornors.cpp');
 
 -- --------------------------------------------------------
 
@@ -127,22 +145,13 @@ CREATE TABLE `exam_ques` (
   `question` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `questiontable`
+-- Dumping data for table `exam_ques`
 --
 
-CREATE TABLE `questiontable` (
-  `id` int(111) NOT NULL,
-  `content_id` int(111) NOT NULL,
-  `question` text NOT NULL,
-  `opt1` varchar(255) NOT NULL,
-  `opt2` varchar(255) NOT NULL,
-  `opt3` varchar(255) NOT NULL,
-  `opt4` varchar(255) NOT NULL,
-  `answer` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `exam_ques` (`ques_id`, `content_id`, `content_week`, `teacher_id`, `question`) VALUES
+(1, 11, 1, 6, 'week 1 exam is here'),
+(2, 11, 2, 6, 'week 2 exam is here');
 
 -- --------------------------------------------------------
 
@@ -197,11 +206,22 @@ ALTER TABLE `content_enrolled`
   ADD PRIMARY KEY (`enroll_id`);
 
 --
--- Indexes for table `questiontable`
+-- Indexes for table `content_resources`
 --
-ALTER TABLE `questiontable`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `content_id` (`content_id`);
+ALTER TABLE `content_resources`
+  ADD PRIMARY KEY (`video_id`);
+
+--
+-- Indexes for table `exam_ans`
+--
+ALTER TABLE `exam_ans`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `exam_ques`
+--
+ALTER TABLE `exam_ques`
+  ADD PRIMARY KEY (`ques_id`);
 
 --
 -- Indexes for table `users`
@@ -217,12 +237,27 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `content`
 --
 ALTER TABLE `content`
-  MODIFY `content_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `content_id` int(111) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `content_enrolled`
 --
 ALTER TABLE `content_enrolled`
-  MODIFY `enroll_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `enroll_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `content_resources`
+--
+ALTER TABLE `content_resources`
+  MODIFY `video_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `exam_ans`
+--
+ALTER TABLE `exam_ans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `exam_ques`
+--
+ALTER TABLE `exam_ques`
+  MODIFY `ques_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `users`
 --
@@ -237,12 +272,6 @@ ALTER TABLE `users`
 --
 ALTER TABLE `content`
   ADD CONSTRAINT `content_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
-
---
--- Constraints for table `questiontable`
---
-ALTER TABLE `questiontable`
-  ADD CONSTRAINT `questiontable_ibfk_1` FOREIGN KEY (`content_id`) REFERENCES `content_resource` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
