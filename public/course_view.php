@@ -53,6 +53,11 @@ if (isset($content_id)) {
                     <li><a href="#settings" data-toggle="tab">Exams</a></li>
                 </ul>
 
+
+
+
+
+
                 <div class="tab-content" id="profile_tab">
                     <div class="tab-pane active" id="home">
 
@@ -77,6 +82,7 @@ if (isset($content_id)) {
 
                             </tr>
                             </thead>
+                            <tbody>
 
 
                             <?php
@@ -174,14 +180,20 @@ if (isset($content_id)) {
 
                             ?>
 
-                            <tbody>
+
 
 
                             </tbody>
                         </table>
 
 
-                    </div><!--/tab-pane-->
+                    </div>
+
+
+
+
+
+                    <!--/tab-pane-->
                     <div class="tab-pane" id="messages">
 
                         <div class="container">
