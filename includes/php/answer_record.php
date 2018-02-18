@@ -13,18 +13,21 @@ require_once "session.php";
 if (isset($_POST['submit_ans'])) {
     $exam_ans = mysqli_prep($_POST['answer']);
 
-    if (isset($_FILES['code'])) {
-        $fileTmp = $_FILES['code']['tmp_name'];
-        $exam_file = time() . $_FILES['code']['name'];
-        $fileType = $_FILES['code']['type'];
-        $filePath = "../../answers/" . $exam_file;
-    }
-    else $filePath = " ";
+    $fileTmp = $_FILES['code']['tmp_name'];
+    $exam_file = time() . $_FILES['code']['name'];
+    $fileType = $_FILES['code']['type'];
+    $filePath = "../../answers/" . $exam_file;
+
+
+    move_uploaded_file($fileTmp, $filePath);
+
 
     $exam_id = $_SESSION['current_exam_id'];
+    $exaninee_id = $_SESSION['user_id'];
 
-    $query = "INSERT INTO exam_ans(quest_id, answer, answer_url) ";
-    $query .= "VALUES('$exam_id','$exam_ans','$filePath')";
+
+    $query = "INSERT INTO exam_ans(ques_id,examinee_id, answer, answer_url) ";
+    $query .= "VALUES('$exam_id','$exaninee_id','$exam_ans','$filePath')";
 
     $result = mysqli_query($connection, $query);
 

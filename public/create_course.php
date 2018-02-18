@@ -43,8 +43,7 @@ if(isset($_POST['submit'])){
 
             }
         } else {
-            $_SESSION['no_image'] = 1;
-            header("location: ../../public/create_course.php");
+            $fileUserImgName = "test_image5.jpg";
         }
     }
 
@@ -101,11 +100,7 @@ if(isset($_POST['submit'])){
                             <hr style="width: 100%">
 
 
-                                <form action="create_course.php" method="post" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label for="content_title"> Course Title <span class="require">*</span></label>
-                                        <input type="text" class="form-control" name="content_title"
-                                               value="<?php echo htmlentities($content_title) ?>"/>
+
                                         <br>
                             <form action="create_course.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
@@ -179,12 +174,12 @@ if(isset($_POST['submit'])){
 
 
                         </div>
-                        <div class="col-md-2" style="margin-left: 5px;">
-
-                            <h3>Helpful Tips</h3>
-                            <p style="font-size:16px;">Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've compiled resources and best practices to help you get to the next level, no matter where you're starting.</p>
-
-                        </div>
+<!--                        <div class="col-md-2" style="margin-left: 5px;">-->
+<!---->
+<!--                            <h3>Helpful Tips</h3>-->
+<!--                            <p style="font-size:16px;">Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've compiled resources and best practices to help you get to the next level, no matter where you're starting.</p>-->
+<!---->
+<!--                        </div>-->
 
                     </div>
                 </div>
