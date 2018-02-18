@@ -259,4 +259,30 @@ function check_if_enrolled($user_id,$content_id){
 
 }
 
+function get_num_of_weeks($content_id){
+    global $connection;
+
+    $query = "SELECT video_serial FROM content_resources WHERE video_content_id='$content_id'";
+    $result = mysqli_query($connection,$query);
+
+    $num_of_videos = mysqli_num_rows($result);
+    $num_of_weeks = ceil($num_of_videos/7);
+
+    return $num_of_weeks;
+}
+
+function get_week_progress($user_id, $content_id){
+    global $connection;
+
+    $query = "SELECT week_progress FROM content_enrolled WHERE content_id = '$content_id' AND user_id = '$user_id' LIMIT 1";
+
+    $result = mysqli_query($connection,$query);
+    $week_progress = mysqli_fetch_assoc($result);
+    $week = $week_progress['week_progress'];
+
+    return $week;
+
+
+}
+
 ?>

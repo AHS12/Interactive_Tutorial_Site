@@ -96,6 +96,8 @@ if (isset($_GET['video_id'])) {
             </li>
             <?php
             echo "<br>";
+            echo "<br>";
+            echo "<br>";
             $query = "SELECT * FROM content_resources WHERE video_content_id = '{$_SESSION['current_content_id']}'";
             $result = mysqli_query($connection, $query);
 

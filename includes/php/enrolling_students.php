@@ -9,7 +9,7 @@ if(isset($_GET['content'])){
     $user_id = $_SESSION['user_id'];
     $week_progress = 1;
 
-    $query = "INSERT INTO content_enrolled (content_id, user_id,week_progress) VALUES ('$content_id','$user_id','$week_progress')";
+    $query = "INSERT INTO content_enrolled (content_id, user_id, week_progress) VALUES ('$content_id','$user_id','$week_progress')";
     $set_user_enrollment = mysqli_query($connection, $query);
     if(!$set_user_enrollment){
         die("failed". mysqli_error($connection));

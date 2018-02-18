@@ -11,12 +11,19 @@ confirm_logged_in();
 
 <?php require_once "../includes/database/db_connection.php" ?>
 <?php require_once "../includes/php/functions.php" ?>
+<?php require_once "../includes/php/session.php" ?>
 <?php require_once "../includes/layouts/header2.php" ?>
 <?php $content_id = get_selected_content_by_id();
 ?>
 
 <?php
 if (isset($content_id)) {
+
+    $current_user_id = $_SESSION['user_id'];
+    $weeks = get_num_of_weeks($content_id);
+    $user_week_progress = get_week_progress($current_user_id, $content_id);
+
+
     ?>
     <div id="course_view" class="course_view">
         <div class="container" style="background-color: #182333;height: 300px; width: 100%;">
@@ -54,10 +61,6 @@ if (isset($content_id)) {
                 </ul>
 
 
-
-
-
-
                 <div class="tab-content" id="profile_tab">
                     <div class="tab-pane active" id="home">
 
@@ -71,129 +74,125 @@ if (isset($content_id)) {
                         </div>
 
                         <br>
-                        <table class="table table-bordered table-responsive">
-                            <thead>
-                            <tr class="bg-success">
-                                <th>Video Serial</th>
-                                <th>Video Title</th>
-                                <th>Video Description</th>
-                                <th>Length/Duration</th>
-                                <th>Action</th>
 
-                            </tr>
-                            </thead>
-                            <tbody>
+                        <!-- testing -->
+                        <?php
+                        for ($count = 1; $count <= $weeks; $count++) {
+                            ?>
+                            <!--                            colapse start-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#<?php echo "week" . $count; ?>"><?php echo "week " . $count ?></a>
+                                    </h4>
+                                </div>
+                                <div id="<?php echo "week" . $count; ?>" class="panel-collapse collapse">
 
+                                    <?php
+                                    if($count<=$user_week_progress){
+                                        ?>
 
-                            <?php
-                            /*include "../includes/database/database.php";*/
-                            require_once "../lib/getid3/getid3.php";
-                            try {
-                                $getID3 = new getID3;
-                            } catch (getid3_exception $e) {
-                            }
-
-
-                            if (isset($content_id)) {
-
-                                $query = "SELECT * FROM content_resources WHERE video_content_id = '$content_id' ";
-
-                                $result = mysqli_query($connection, $query);
-
-
-                                while ($row = mysqli_fetch_assoc($result)) {
-
-                                    $video_id = $row['video_id'];
-                                    $video_url = $row['file_url'];
-                                    $video_serial = $row['video_serial'];
-                                    $video_title = $row['video_title'];
-                                    $video_desc = $row['video_desc'];
+                                        <!--                                table here-->
+                                        <div>
+                                            <table class="table table-bordered table-responsive">
+                                                <thead>
+                                                <tr class="bg-success">
+                                                    <th>Video Serial</th>
+                                                    <th>Video Title</th>
+                                                    <th>Description</th>
+                                                    <th>Length/Duration</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
 
 
-                                    $min = " minutes";
+                                                <?php
 
-//
+                                                require_once "../lib/getid3/getid3.php";
+                                                try {
+                                                    $getID3 = new getID3;
+                                                } catch (getid3_exception $exception) {
+                                                    echo $exception;
+                                                }
+
+                                                $query = "SELECT * FROM content_resources WHERE video_content_id = '$content_id' AND video_week = '$count'";
+                                                $result = mysqli_query($connection, $query);
+
+                                                while ($row = mysqli_fetch_assoc($result)) {
+                                                    $video_id = $row['video_id'];
+                                                    $video_url = $row['file_url'];
+                                                    $video_serial = $row['video_serial'];
+                                                    $video_title = $row['video_title'];
+                                                    $video_desc = $row['video_desc'];
+
+                                                    $min = " minutes";
+                                                    $fileData = $getID3->analyze($video_url);
+                                                    $video_duration = $fileData['playtime_string'];
+
+                                                    ?>
 
 
-                                    $fileData = $getID3->analyze($video_url);
-                                    $video_duration = $fileData['playtime_string'];
+                                                    <tr>
+                                                        <td><?php echo $video_serial ?></td>
+                                                        <td><?php echo $video_title ?></td>
+                                                        <td><?php echo $video_desc ?></td>
+                                                        <td><?php echo $video_duration . $min ?></td>
+                                                        <td>
 
 
-                                    ?>
+                                                            <a class="btn btn-success text-right"
+                                                               href="course_video_player.php?video_id=<?php
+                                                               echo urlencode($video_id) ?>">Play</a>
+                                                        </td>
+                                                    </tr>
 
-                                    <tr>
-                                        <td>
+
+                                                <?php } ?>
+
+                                                </tbody>
+                                            </table>
                                             <?php
-                                            if (isset($video_serial)) {
-                                                echo $video_serial;
-                                            } else {
-                                                echo "#";
+                                            if($count == $user_week_progress){
+                                                ?>
+                                                <button class="btn btn-primary right">Mark As Finished</button>
+
+                                            <?php
                                             }
                                             ?>
 
-                                        </td>
 
+                                        </div>
 
-                                        <td>
-                                            <?php
-                                            if (isset($video_title)) {
-                                                echo $video_title;
-                                            } else {
-                                                echo "No data";
-                                            }
-                                            ?>
-                                        </td>
-
-
-                                        <td>
-                                            <?php
-                                            if (isset($video_desc)) {
-                                                echo $video_desc;
-                                            } else {
-                                                echo "No data";
-                                            }
-                                            ?>
-                                        </td>
-
-                                        <td>
-                                            <?php
-                                            if (isset($video_duration)) {
-                                                echo $video_duration . $min;
-                                            } else {
-                                                echo "No data";
-                                            }
-                                            ?>
-                                        </td>
-                                        <td>
-                                            <a href="course_video_player.php?video_id=<?php echo urlencode($video_id) ?>"
-                                               class="btn text-right btn-success">Play
-                                            </a>
-                                        </td>
-
-                                    </tr>
 
 
                                     <?php
-                                }
-                            }
-
-
-                            ?>
+                                    }
+                                    ?>
 
 
 
+                                </div>
+                            </div>
+<!--                            till it-->
 
-                            </tbody>
-                        </table>
 
 
+
+
+
+
+
+
+
+                            <?php
+                        }
+                        ?>
                     </div>
-
-
-
-
-
                     <!--/tab-pane-->
+
+
                     <div class="tab-pane" id="messages">
 
                         <div class="container">
@@ -267,7 +266,7 @@ if (isset($content_id)) {
                                         <td><?php echo $exam_week ?></td>
                                         <td><?php echo $exam_ques ?></td>
                                         <td>
-                                            <a href="course_exam.php?exam=<?php echo urlencode($exam_id)?>"
+                                            <a href="course_exam.php?exam=<?php echo urlencode($exam_id) ?>"
                                                class="btn btn-success">Participate</a>
                                         </td>
                                     </tr>

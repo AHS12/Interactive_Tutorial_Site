@@ -16,34 +16,6 @@ confirm_logged_in();
 <hr>
 <div class="container bootstrap snippet">
     <div class="row">
-        <!--        <div class="col-sm-3"><!--left col-->
-
-        <!--            <ul class="list-group">-->
-        <!--                <li class="list-group-item text-muted">Profile</li>-->
-        <!--                <li class="list-group-item text-right"><span class="pull-left"><strong>Full Name</strong></span></li>-->
-        <!--                <li class="list-group-item text-right"><span class="pull-left"><strong>Address</strong></span></li>-->
-        <!--                <li class="list-group-item text-right"><span class="pull-left"><strong>Telephone</strong></span></li>-->
-        <!---->
-        <!--            </ul>-->
-
-        <!--
-        <ul class="list-group">
-          <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
-          <li class="list-group-item text-right"><span class="pull-left"><strong>Shares</strong></span> 125</li>
-          <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
-          <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
-          <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
-        </ul>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">Social Media</div>
-          <div class="panel-body">
-              <i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
-          </div>
-        </div>
-    -->
-
-        <!--        </div><!--/col-3-->
         <div>
 
             <ul class="nav nav-tabs" id="myTab">
