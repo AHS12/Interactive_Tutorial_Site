@@ -171,20 +171,9 @@ if (isset($content_id)) {
                                     }
                                     ?>
 
-
-
                                 </div>
                             </div>
 <!--                            till it-->
-
-
-
-
-
-
-
-
-
 
                             <?php
                         }
