@@ -90,7 +90,7 @@ if (isset($content_id)) {
                                 <div id="<?php echo "week" . $count; ?>" class="panel-collapse collapse">
 
                                     <?php
-                                    if($count<=$user_week_progress){
+                                    if ($count <= $user_week_progress) {
                                         ?>
 
                                         <!--                                table here-->
@@ -154,11 +154,17 @@ if (isset($content_id)) {
                                                 </tbody>
                                             </table>
                                             <?php
-                                            if($count == $user_week_progress){
+                                            if ($weeks == $user_week_progress) {
                                                 ?>
-                                                <button class="btn btn-primary right">Mark As Finished</button>
 
-                                            <?php
+
+                                                <?php
+                                            } else if ($count == $user_week_progress) {
+
+                                                ?>
+                                                <a href="../includes/php/update_week_pogress.php?cid=<?php echo $content_id . "&week=" . $count ?>"
+                                                   class="btn btn-primary right">Mark As Finished</a>
+                                                <?php
                                             }
                                             ?>
 
@@ -166,14 +172,13 @@ if (isset($content_id)) {
                                         </div>
 
 
-
-                                    <?php
+                                        <?php
                                     }
                                     ?>
 
                                 </div>
                             </div>
-<!--                            till it-->
+                            <!--                            till it-->
 
                             <?php
                         }
