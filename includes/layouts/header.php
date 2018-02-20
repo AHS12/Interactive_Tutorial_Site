@@ -37,6 +37,8 @@
                 }?>
                 <?php if((($userrole=="T") && isset($_SESSION['userfname']))){?>
                     <!--                    <li><a href="profile.php">--><?php //echo htmlentities($_SESSION["userfname"]); ?><!--</a></li>-->
+
+                    <li><a href="create_course_landing.php">CREATE COURSE</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> </i><?php echo " ". htmlentities($_SESSION["userfname"]);?><b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -47,7 +49,10 @@
                                 <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                             </li >
                             <li>
-                                <a href="create_course_landing.php"><i class="fa fa-fw fa-edit"></i> Create Course</a>
+                                <a href="course_manage.php"><i class="fa fa-fw fa-edit"></i> Manage Course</a>
+                            </li>
+                            <li>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
                             </li>
                             <li>
                                 <a href="profile.php#profile_tab#settings"><i class="fa fa-fw fa-gear"></i> Settings</a>
@@ -58,7 +63,7 @@
                             </li>
                         </ul>
                     </li>
-                <?php }else if(isset($_SESSION['userfname'])){ ?>
+                <?php }else if(isset($_SESSION['userfname']) && $userrole=="S"){ ?>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> </i><?php echo " ". htmlentities($_SESSION["userfname"]);?><b class="caret"></b></a>
@@ -68,6 +73,10 @@
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            </li>
+
+                            <li>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
                             </li>
 
                             <li>

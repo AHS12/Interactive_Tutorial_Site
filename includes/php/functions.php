@@ -114,6 +114,7 @@ function logged_in(){
 
 function confirm_logged_in(){
     if(!logged_in()){
+        $_SESSION['no_right'] = 1;
         redirect_to("login.php");
     }
 }
@@ -284,5 +285,3 @@ function get_week_progress($user_id, $content_id){
 
 
 }
-
-?>

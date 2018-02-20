@@ -3,55 +3,36 @@
 <?php require_once("../includes/php/functions.php"); ?>
 <?php require_once "../includes/layouts/header2.php" ?>
 
-
+<?php
+teacher_logged_in();
+?>
 <!-- **********navbar end *********** -->
 
 <hr style="width: 100%">
 <!--<hr style="width: 100%">-->
 
 <!-- ********** navbar ************* -->
-<nav style="margin-bottom: 0; padding-top: 10px;" class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header navbar-left">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
-        </div>
-        <form class="navbar-form navbar-left">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Search</button>
-        </form>
-        <div class="collapse navbar-collapse" id="site-menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="webin.html">PHP</a></li>
-                <li><a href="cards.html">JAVASCRIPT</a></li>
-                <li><a href="#skills">ANDROID</a></li>
-                <li><a href="#services">LARAVEL</a></li>
-                <li><a href="#portfolio">.NET</a></li>
-                <li><a href="#contact">REACT</a></li>
-                <li><a href="registraion.html">NODEJS</a></li>
-            </ul>
-
-        </div>
-    </div>
-</nav>
 <!-- **********navbar end *********** -->
 <br><br>
 
 <!-- **************** course content start ********-->
 <!-- **************** course content start ********-->
 <div class="container">
-    <h1>Courses </h1>
+    <h1>Your Courses </h1>
     <hr>
     <div class="row fix">
 
         <?php
-        $query = "SELECT * FROM content WHERE visibility = 1";
+        //
+        //        $current_user_id = $_SESSION['user_id'];
+        //        $query_content = "SELECT content_id FROM content_enrolled WHERE user_id = '$current_user_id'";
+        //        $result = mysqli_query($connection, $query_content);
+        //        $content_list = mysqli_fetch_assoc($result);
+        //        $row = $content_list;
+
+        $current_user_id = $_SESSION['user_id'];
+        $query = "SELECT * FROM content WHERE visibility = 1 AND user_id = '$current_user_id' ";
         $select_all_content = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_assoc($select_all_content)) {
             $content_id = $row['content_id'];
@@ -78,9 +59,15 @@
                                 class="price-text-color fa fa-star">
                         </i><i class="fa fa-star"></i>
                     </div>
-                    <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
-                       class="btn btn-primary col-xs-12"
-                       role="button">View Course Details</a>
+                    <div class="row">
+                        <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
+                           class="btn btn-primary col-md-6"
+                           role="button">View Course</a>
+                        <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
+                           class="btn btn-primary col-md-6"
+                           role="button">Manage Course</a>
+
+                    </div>
                     <div class="clearfix"></div>
                 </div>
             </div>

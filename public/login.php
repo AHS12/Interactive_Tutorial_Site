@@ -59,6 +59,11 @@ if (isset($_POST['submit'])) {
                         if (isset($_SESSION["err_login"])) {
                             echo "<h2 id=\"message\" class=\"text-center alert alert-danger\"><strong>Email Or Password Error!</strong></h2>";
                         }
+
+                        if (isset($_SESSION['no_right'])){
+                            echo "<h2 id=\"message\" class=\"text-center alert alert-danger\"><strong>You Have to Login to Continue!</strong></h2>";
+                        }
+
                         session_unset();
                         ?>
                         <p>
