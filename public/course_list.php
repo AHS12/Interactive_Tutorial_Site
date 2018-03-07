@@ -10,7 +10,7 @@
 <!--<hr style="width: 100%">-->
 
 <!-- ********** navbar ************* -->
-<nav style="margin-bottom: 0; padding-top: 10px;" class="navbar navbar-default">
+<nav style="margin-bottom: 0; padding-top: 10px;" class="navbar second">
     <div class="container">
         <div class="navbar-header navbar-left">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">

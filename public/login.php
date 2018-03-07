@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         $_SESSION["userinstitute"] = $found_user["institution"];
         $_SESSION["userbio"] = $found_user["bio"];
         $_SESSION["userrole"] = $found_user["user_role"];
-        redirect_to("index.php");
+        redirect_to("index2.php");
     } else {
         $_SESSION["err_login"] = 1;
         redirect_to("login.php");

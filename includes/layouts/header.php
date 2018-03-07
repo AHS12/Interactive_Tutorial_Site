@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Sheko</a>
+            <a class="navbar-brand" href="index2.php">Sheko</a>
         </div>
         <div class="collapse navbar-collapse" id="site-menu">
             <ul class="nav navbar-nav navbar-right">
@@ -92,7 +92,7 @@
                 <?php }else{?>
                     <li><a href="login.php">LOGIN</a></li>
 
-                    <li><a href="index.php#join_pannel">REGISTER</a></li>
+                    <li><a href="index2.php#join_pannel">REGISTER</a></li>
                 <?php }?>
 
             </ul>

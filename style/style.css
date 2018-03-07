@@ -1,4 +1,10 @@
 /*----------------------- navbar start /image er center e kaaj---------------------- */
+.navbar{
+    background-color: #276b70;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+
 #size{
     height: 992px;
     background-position: center;
@@ -15,6 +21,10 @@
     font-size:50px;
     text-shadow: #00b3ee;
 }
+.menu2 li{
+    background-color: #276b70;
+}
+
 /*-------------------navbar end--------*/
 
 

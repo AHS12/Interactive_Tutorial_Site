@@ -12,6 +12,7 @@ body{
 li{
     list-style: none;
     display: inline-block;
+
 }
 a{
     text-decoration: none;
@@ -71,9 +72,6 @@ p{
     margin-left: 2px;
     vertical-align: middle;
 }
-.dropdown-menu{
-    background-color: #276b70;
-}
 /* ----------------------------Navbar  styling end here -------------------- */
 
 
@@ -81,7 +79,7 @@ p{
 
 .signIn{
     padding: 80px 0 80px;
-    background-image: url("pictures/coffe.jpg");
+    background-image: url("../images/coffe.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +117,7 @@ p{
 .registration{
     width: 100%;
     padding: 30px 0 30px;
-    background-image: url("pictures/another.jpg");
+    background-image: url("../images/another.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,7 +148,7 @@ p{
 
 .login_wrapper label{
     font-weight:500;
-    font-size: 18px;
+    font-style: 18px;
     padding: 5px;
 
 }
@@ -250,7 +248,7 @@ p{
     width: 100%;
     padding: 30px 0 30px;
     margin-top: 50px;
-    background-image: url("pictures/new5.jpg");
+    background-image: url("../style/pictures/new5.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,6 +311,7 @@ p{
     font-size: 70px;
     text-align: center;
     margin-top: 75px;
+    text-shadow: 2px 2px 4px #000000;
 }
 .button{
     margin-top: 30px;
@@ -344,27 +343,34 @@ p{
 }
 
 /* ---------------------------header  styling end here--------------------- */
-@media (max-width: 768px) {
-.header{
-padding: 30px;
-height: 750px;
-}
-.header img {
-width: 90%;
-height: 300px;
-margin: 20px 0 0 20px;
-}
-.header .btn {
-font-size: 10px;
-margin-left: 20px;
-}
-.header h1{
-font-size: 20px;
-}
 
-
-}
 /* ---------------------------header  styling end here--------------------- */
+
+
+/* ---------------------------new segment styling start here--------------------- */
+.new_segment .container{
+    background: linear-gradient(-45deg,#ec5252,#6e1a52);
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    border: none;
+}
+.new_segment b{
+    font-size: 17px;
+    color: #fff;
+
+}
+.sheko_course_tittle{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.new_segment i{
+    font-size: 50px;
+    color: #fff;
+}
+
+/* ---------------------------new segment  styling end here--------------------- */
 
 
 /* ---------------------------new segment card  styling here--------------------- */
@@ -372,8 +378,25 @@ font-size: 20px;
     color:#bfbdb3;
     padding-right:5px;
 }
+.product_card .container{
+    /*background-color: #3399ff;*/
+    background-color: #f4f7f9;
+    opacity: 3.7;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.product_card h2{
+    font-size: 20px;
+    color: #535456;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding-top: 10px;
+    text-transform: none;
+}
 .product_card h4{
-    font-weight:600;
+    font-weight: 500;
+    text-transform: none;
     color:#696969;
 }
 .product_card a{
@@ -396,6 +419,7 @@ font-size: 20px;
 }
 .card-block {
     padding:15px;
+    background-color: #fff;
 }
 .card-footer {
     border-top: 1px solid #e2e2e2;
@@ -410,6 +434,12 @@ font-size: 20px;
 .margin-t-10 {
     margin-top:8px;
 }
+@media (max-width: 1199px)
+    ..product_card h2 {
+        text-align: left;
+        flex: 1;
+        min-width: 1px;
+    }
 /* ---------------------------new segment card  styling end here--------------------- */
 
 
@@ -417,6 +447,7 @@ font-size: 20px;
 .services{
     padding: 80px 0 80px;
     text-align: center;
+    background-color: #f4f7f9;
 }
 .services h2,
 .services h4 {
@@ -442,7 +473,7 @@ font-size: 20px;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px;) {
     .services {
         padding: 30px;
     }
@@ -636,52 +667,116 @@ span{
 
 /*------------------------Pricing styling start here-------------------------------*/
 
-.pricing{
-    padding: 80px 0 80px;
-    text-align: center;
-    background-color: #3399ff;
-}
-.pricing h2,
-.pricing p {
-    color: #fff;
-}
-.pricing p {
-    padding-bottom: 40px;
-}
-.pricing .packages {
-    padding: 30px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-.packages li{
-    display: block;
-    padding: 5px;
-}
-.packages h4,
-.packages h1,
-.packages b {
-    color: #4c4c4c;
-}
-.packages p,
-.packages li {
-    color: #737373;
-}
-.packages button{
-    margin-top: 10px;
-}
+/*.pricing{*/
+    /*padding: 80px 0 80px;*/
+    /*text-align: center;*/
+    /*background-color: #3399ff;*/
+/*}*/
+/*.pricing h2,*/
+/*.pricing p {*/
+    /*color: #fff;*/
+/*}*/
+/*.pricing p {*/
+    /*padding-bottom: 40px;*/
+/*}*/
+/*.pricing .packages {*/
+    /*padding: 30px;*/
+    /*border: 1px solid #ccc;*/
+    /*background-color: #fff;*/
+    /*border-radius: 5px;*/
+    /*margin-top: 30px;*/
+/*}*/
+/*.packages li{*/
+    /*display: block;*/
+    /*padding: 5px;*/
+/*}*/
+/*.packages h4,*/
+/*.packages h1,*/
+/*.packages b {*/
+    /*color: #4c4c4c;*/
+/*}*/
+/*.packages p,*/
+/*.packages li {*/
+    /*color: #737373;*/
+/*}*/
+/*.packages button{*/
+    /*margin-top: 10px;*/
+/*}*/
 
 
-@media (max-width: 768px) {
-    .pricing {
-        width: 80%;
-        margin-left: 25px;
-    }
+/*@media (max-width: 768px;) {*/
+    /*.pricing {*/
+        /*width: 80%;*/
+        /*margin-left: 25px;*/
+    /*}*/
 
-}
+/*}*/
+
 
 /*------------------------ Pricing styling end here---------------------- */
+
+/*------------------------ join panel start here---------------------- */
+    .joinPanel {
+        background: url("../style/pictures/backside.jpeg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 100.0;
+    }
+    .transparent .tuyin
+    {
+        margin-top: 20px;
+        background: linear-gradient(to top, rgba(50,50,50,0), rgba(50,50,50,1));
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+        /*box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);*/
+        /*box-shadow: 0 12px 200px #e7e7e7;*/
+
+        padding: 10%;
+        text-align: center;
+        width: 97%;
+        min-height: 315px;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .transparent .tuyin .title
+    {
+        text-align: center;
+        color: #FFF;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 36px;
+    }
+    /*.transparent .tuyin .plan-name*/
+    /*{*/
+        /*font-size: 20px;*/
+        /*font-weight: 400;*/
+        /*border-bottom: 1px solid #FFF;*/
+        /*padding-bottom: 15px;*/
+        /*padding: 10px*/
+    /*}*/
+
+    .transparent .tuyin .text
+    {
+        margin-top: 20px;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000000;
+        font-weight: 300;
+        margin-bottom: 13px;
+        font-size: 18px;
+    }
+    .joinPanel .btn-one
+    {
+        background-color: #7823c6;
+        color:#fff;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "Roboto",sans-serif;
+        text-transform: none;
+    }
+
+    /*------------------------  join panel end here---------------------- */
+
 
 /*----------------------- Team  styling start here----------------------- */
 .team {
@@ -699,9 +794,10 @@ span{
 }
 
 .team img {
-    height: 150px;
-    width: 150px;
+    width: 120px;
+    height: 120px;
     margin-top: 80px;
+    border: 10px double #fff;
 }
 .team i{
     height: 30px;
@@ -988,6 +1084,8 @@ span {
 }
 
 /*-------------------------- Footer styling end here -----------------------*/
+
+
 
 
 
