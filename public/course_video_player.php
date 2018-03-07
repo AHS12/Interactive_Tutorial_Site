@@ -88,11 +88,11 @@ if (isset($_GET['video_id'])) {
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <h3 class="text-center">
+                <h4 class="text-center">
                     <?php
                     //                    error_reporting(0);
                     echo $_SESSION['current_content_title']; ?>
-                </h3>
+                </h4>
             </li>
             <?php
             echo "<br>";

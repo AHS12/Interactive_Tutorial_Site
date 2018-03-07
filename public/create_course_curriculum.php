@@ -111,6 +111,8 @@ teacher_logged_in();
                                     <th>Video Title</th>
                                     <th>Video Description</th>
                                     <th>Length/Duration</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
 
                                 </tr>
                                 </thead>
@@ -193,6 +195,11 @@ teacher_logged_in();
                                             }
                                             ?>
                                         </td>
+
+                                        <td>
+                                            <a class=" btn btn-danger" href="">Delete</a>
+                                        </td>
+                                        <td><a class=" btn btn-primary" href="">Update</a></td>
                                     </tr>
 
 
@@ -280,7 +287,9 @@ teacher_logged_in();
                                             <tr>
                                                 <td><?php echo $exam_week ?></td>
                                                 <td><?php echo $exam_ques ?></td>
-                                                <td> <button class="btn btn-danger">Delete</button></td>
+                                                <td>
+                                                    <button class="btn btn-danger">Delete</button>
+                                                </td>
                                             </tr>
 
                                         <?php } ?>
