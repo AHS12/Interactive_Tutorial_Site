@@ -264,121 +264,41 @@
 <!-- New segment of card -->
 <div id="product_card" class="product_card">
     <div class="container">
-        <h2>Top Courses in "Business"</h2>
-        <div class="row">
-            <div class="col-md-3 wow flipInY">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 wow flipInY">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 wow flipInY">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3 wow flipInY">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <h2>Top Courses in "Development"</h2>
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row fix">
+
+            <?php
+            $query = "SELECT * FROM content WHERE visibility = 1";
+            $select_all_content = mysqli_query($connection, $query);
+            while ($row = mysqli_fetch_assoc($select_all_content)) {
+            $content_id = $row['content_id'];
+            $user_id = $row['user_id'];
+            $content_title = $row['content_title'];
+            $content_picture = $row['content_picture'];
+            $content_date = $row['content_date'];
+            $content_category = $row['content_category'];
+
+            $user = mysqli_fetch_assoc(find_selected_user_by_id($user_id));
+            $user_firstname = $user['firstname'];
+            $user_lastname = $user['lastname'];
+            ?>
+
+            <div class="col-md-3 wow flipInY">
                 <div class="card">
                     <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
+                        <img class="img-responsive" src="../images/<?php echo $content_picture;?>">
                     </div>
                     <div class="card-block">
                         <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
+                            <small><?php echo $content_category?></small>
+                            <h4><?php echo $content_title;?></h4>
+                            <p><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
                         </div>
                         <div class="card-footer">
 
                             <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
+                                <li class="margin-t-10"><a href="course_details.php?content=<?php echo urlencode($content_id) ?>">
+                                        <i class="fa fa-list"></i> View Course Details</a></li>
 
 
                             </ul>
@@ -388,80 +308,14 @@
 
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
+                <?php
+            }
 
 
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-img">
-                        <img class="img-responsive" src="../style/pictures/another.jpg">
-                    </div>
-                    <div class="card-block">
-                        <div class="card-title">
-                            <small><a href="#">Categories</a></small>
-                            <h4>Frank Ericsson Midway Electrics co. </h4>
-                            <p>David Miles & Sons Carpentry</p>
-                        </div>
-                        <div class="card-footer">
-
-                            <ul class="list-inline">
-                                <li class="margin-t-10"><a href="#"> <i class="fa fa-list"></i> View Course Details</a></li>
-
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+            ?>
         </div>
     </div>
+
 </div>
 
 <!-- New segment of card end-->

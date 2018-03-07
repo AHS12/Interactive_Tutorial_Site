@@ -18,69 +18,59 @@ teacher_logged_in();
 
 <!-- **************** course content start ********-->
 <!-- **************** course content start ********-->
-<div class="container">
-    <h1>Your Courses </h1>
-    <hr>
-    <div class="row fix">
-
-        <?php
-        //
-        //        $current_user_id = $_SESSION['user_id'];
-        //        $query_content = "SELECT content_id FROM content_enrolled WHERE user_id = '$current_user_id'";
-        //        $result = mysqli_query($connection, $query_content);
-        //        $content_list = mysqli_fetch_assoc($result);
-        //        $row = $content_list;
-
-        $current_user_id = $_SESSION['user_id'];
-        $query = "SELECT * FROM content WHERE visibility = 1 AND user_id = '$current_user_id' ";
-        $select_all_content = mysqli_query($connection, $query);
-        while ($row = mysqli_fetch_assoc($select_all_content)) {
-            $content_id = $row['content_id'];
-            $user_id = $row['user_id'];
-            $content_title = $row['content_title'];
-            $content_picture = $row['content_picture'];
-            $content_date = $row['content_date'];
-            $content_category = $row['content_category'];
-
-            $user = mysqli_fetch_assoc(find_selected_user_by_id($user_id));
-            $user_firstname = $user['firstname'];
-            $user_lastname = $user['lastname'];
-            ?>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="../images/<?php echo $content_picture; ?>" alt="android">
-                    <p style="font-weight: bold; padding-top: 10px;"><?php echo $content_title; ?></p>
-                    <p class="title"
-                       style="padding-left: 5px; font-size: 12px;"><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
-                    <div style="float: right; padding-right: 5px; color: orange; padding-bottom: 5px;">
-                        <i class="price-text-color fa fa-star"></i><i
-                                class="price-text-color fa fa-star">
-                        </i><i class="price-text-color fa fa-star"></i><i
-                                class="price-text-color fa fa-star">
-                        </i><i class="fa fa-star"></i>
-                    </div>
-                    <div class="row">
-                        <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
-                           class="btn btn-primary col-md-6"
-                           role="button">View Course</a>
-                        <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
-                           class="btn btn-primary col-md-6"
-                           role="button">Manage Course</a>
-
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
+<div id="product_card" class="product_card">
+    <div class="container">
+        <h1>Manage Your Courses</h1>
+        <hr>
+        <div class="row fix">
 
             <?php
-        }
+            $query = "SELECT * FROM content WHERE visibility = 1";
+            $select_all_content = mysqli_query($connection, $query);
+            while ($row = mysqli_fetch_assoc($select_all_content)) {
+                $content_id = $row['content_id'];
+                $user_id = $row['user_id'];
+                $content_title = $row['content_title'];
+                $content_picture = $row['content_picture'];
+                $content_date = $row['content_date'];
+                $content_category = $row['content_category'];
+
+                $user = mysqli_fetch_assoc(find_selected_user_by_id($user_id));
+                $user_firstname = $user['firstname'];
+                $user_lastname = $user['lastname'];
+                ?>
+
+                <div class="col-md-3 wow flipInY">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-responsive" src="../images/<?php echo $content_picture;?>">
+                        </div>
+                        <div class="card-block">
+                            <div class="card-title">
+                                <small><?php echo $content_category?></small>
+                                <h4><?php echo $content_title;?></h4>
+                                <p><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
+                            </div>
+                            <div class="card-footer">
+
+                                <ul class="list-inline">
+                                    <li class="margin-t-10"><a href="course_details.php?content=<?php echo urlencode($content_id) ?>"><i class="fa fa-list"></i>View Course</a></li>
+                                    <li class="pull-right margin-t-10"><a href="#">Manage Course </a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <?php
+            }
 
 
-        ?>
-
-
+            ?>
+        </div>
     </div>
-
 
 </div>
 <!-- **********course content end************ -->
