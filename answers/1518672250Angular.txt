@@ -1,0 +1,18 @@
+Angular 5 (formerly Angular 2) - The Complete Guide
+
+What Will I Learn?
+Develop modern, complex, responsive and scalable web applications with Angular 4
+Fully understand the architecture behind an Angular 4 application and how to use it
+Use their gained, deep understanding of the Angular 4 fundamentals to quickly establish themselves as frontend developers
+Create single-page applications with on of the most modern JavaScript frameworks out there
+Requirements
+NO Angular 1 or Angular 2 knowledge is required!
+Basic HTML and CSS knowledge helps, but isn't a must-have
+Prior TypeScript knowledge also helps but isn't necessary to benefit from this course
+Basic JavaScript knowledge is required
+Description
+This course starts from scratch, you neither need to know Angular 1 nor Angular 2! (Angular 5 simply is the latest version of Angular 2)
+
+Join the most comprehensive and popular Angular course on Udemy, because now is the time to get started! 
+
+From Setup to Deployment, this course covers it all! You'll learn all about Components, Directives, Services, Forms, Http Access, Authentication, Optimizing an Angular App with Modules and Offline Compilation and much more - and in the end: You'll learn how to deploy an application!

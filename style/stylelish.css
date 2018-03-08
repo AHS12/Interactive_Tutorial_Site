@@ -1,0 +1,1098 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans',sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}
+a{
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+a:hover,
+a:active{
+    text-decoration: none;
+}
+h1,
+h2,
+h4 {
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+    line-height: 21px;
+}
+.btn{
+    transition: all 500ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #ededed !important;
+    color: #3c3c3c !important;
+    border: 1px solid #fff !important;
+
+}
+/* --------------------------- Navbar  styling start here ------------------*/
+.navbar{
+    background-color: #276b70;
+    text-transform: uppercase;
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-weight: 700;
+}
+.navbar a {
+    color: #fff !important;
+    opacity: 0.7;
+
+}
+.navbar a:hover{
+    opacity: 1;
+    background-color: #111111 !important;
+}
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+/* ----------------------------Navbar  styling end here -------------------- */
+
+
+/*-----------------------------Log in Style Here start ---------------------- */
+
+.signIn{
+    padding: 80px 0 80px;
+    background-image: url("../images/coffe.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.signIn h2{
+    text-align: center;
+    color: #fff;
+    text-transform: none;
+    font-family: 'PT San Narrow', Arial,sans-serif
+
+}
+.login {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom,rgba(50,50,50,0),rgba(50,50,50,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top,rgba(50,50,50,0),rgba(50,50,50,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top,rgba(50,50,50,0),rgba(50,50,50,1)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, rgba(50,50,50,0), rgba(50,50,50,1)); /*Standard*/
+
+    /*box-shadow: 0 8px 15px 0 rgba(0, 0, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 10, 0.19);*/
+    color: #fff;
+    font-size: 18px;
+}
+/*------------------------------Log in  Style Here end ------------------ */
+
+
+/*----------------------------- Registration  Style start  Here ------------------ */
+
+/*.login_main{*/
+    /*background-image: url('../images/laptop.png');*/
+    /*background-position: cover;*/
+    /*background-position: repeat-y;*/
+/*}*/
+.registration{
+    width: 100%;
+    padding: 30px 0 30px;
+    background-image: url("../images/another.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    opacity: 5.7;
+}
+.login_heading{
+    color: #fff;
+    padding-left: 50px;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.login_form_0{
+
+
+
+}
+.login_wrapper{
+    max-width:500px;
+    margin-left: 32%;
+    margin-bottom: 115px;
+    box-shadow: 0 12px 200px #e7e7e7;
+    padding: 25px;
+}
+
+
+.login_wrapper label{
+    font-weight:500;
+    font-style: 18px;
+    padding: 5px;
+
+}
+
+
+.login_submit{
+
+    margin-left: 30%;
+}
+
+.login_submit_button_0 button{
+
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+.login_or{
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 400;
+
+}
+.login_or_0{
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+
+
+}
+.login_or_another{
+    text-align: center;
+    font-weight:500;
+    color:white;
+}
+.login_or_another a{
+    color:white;
+}
+
+.login_form_1{
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+
+
+}
+.login_check_0{
+
+    margin-top: 7px;
+
+}
+.login_check_1{
+
+    font-size: 18px;
+    margin-left:-305px;
+}
+
+.login_check_1 input[type="checkbox"]{
+    width:20px;
+    height: 20px;
+    margin-top: 0px;
+
+}
+
+
+@media only screen and (max-width: 787px) {
+
+    .login_check_0{
+        margin-left:90px;
+
+    }
+
+    .login_wrapper{
+        margin-left: 1px;
+    }
+
+    .login_or_another{
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+
+/*----------------------------- Registration  Style style  end Here ------------------ */
+
+
+
+
+
+/* ---------------------------- header  styling start here---------------- */
+.header{
+    height: 600px;
+    width: 100%;
+    padding: 30px 0 30px;
+    margin-top: 50px;
+    background-image: url("../style/pictures/new5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    opacity: 1.5;
+}
+.header img{
+    height: 350px;
+    width: 450px;
+    margin:70px 0 0 40px;
+}
+/*.header h1{*/
+    /*font-size: 40px;*/
+    /*font-weight: 700;*/
+    /*padding-top: 30px;*/
+/*}*/
+/*.header h1,*/
+/*.header p,*/
+ /*.header button {*/
+    /*margin-top: 20px;*/
+
+ /*}*/
+/*.header .btn {*/
+    /*border-radius: 0;*/
+    /*margin: 40px 20px;*/
+/*}*/
+/*@media (max-width: 768px;) {*/
+    /*.header{*/
+        /*padding: 30px;*/
+        /*height: 750px;*/
+    /*}  !* To fix the small device responsive *!*/
+    /*.header img {*/
+        /*width: 90%;*/
+        /*height: 300px;*/
+        /*margin: 20px 0 0 20px;*/
+    /*}*/
+    /*.header .btn {*/
+        /*font-size: 10px;*/
+        /*margin-left: 20px;*/
+    /*}*/
+    /*.header h1{*/
+        /*font-size: 20px;*/
+    /*}*/
+    /*.header  p{*/
+        /*font-size: 10px;*/
+    /*}*/
+
+/*}*/
+.hero
+{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.header h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 75px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.button{
+    margin-top: 30px;
+    margin-left: 440px;
+}
+.header .btn
+{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size:13px;
+    text-transform: uppercase;
+}
+.btn-one
+{
+    background-color: darkorange;
+    font-family: "Roboto",sans-serif;
+}
+.btn-two
+{
+    font-family: "Roboto",sans-serif;
+}
+.btn-two:hover
+{
+    background-color: darkorange;
+    transition: all 0.5s ease-in;
+}
+
+/* ---------------------------header  styling end here--------------------- */
+
+/* ---------------------------header  styling end here--------------------- */
+
+
+/* ---------------------------new segment styling start here--------------------- */
+.new_segment .container{
+    background: linear-gradient(-45deg,#ec5252,#6e1a52);
+    width: 100%;
+    height: 100px;
+    padding: 25px;
+    border: none;
+}
+.new_segment b{
+    font-size: 17px;
+    color: #fff;
+
+}
+.sheko_course_tittle{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.new_segment i{
+    font-size: 50px;
+    color: #fff;
+}
+
+/* ---------------------------new segment  styling end here--------------------- */
+
+
+/* ---------------------------new segment card  styling here--------------------- */
+.product_card i{
+    color:#bfbdb3;
+    padding-right:5px;
+}
+.product_card .container{
+    /*background-color: #3399ff;*/
+    background-color: #f4f7f9;
+    opacity: 3.7;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.product_card h2{
+    font-size: 20px;
+    color: #535456;
+    font-weight: 500;
+    margin: 0 0 10px;
+    padding-top: 10px;
+    text-transform: none;
+}
+.product_card h4{
+    font-weight: 500;
+    text-transform: none;
+    color:#696969;
+}
+.product_card a{
+    color:#dd0000;
+}
+.product_card a:hover {
+    text-decoration:none;
+}
+
+.product_card .card{
+    width: 25rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 0px;
+    text-transform:Capitalize;
+    margin-top: 10px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-block {
+    padding:15px;
+    background-color: #fff;
+}
+.card-footer {
+    border-top: 1px solid #e2e2e2;
+    padding-top:1px;
+}
+.card-img {
+    /*border-radius: 0px 0px 0 0;*/
+    width: 100%;
+    max-height:150px;
+    overflow: hidden;
+}
+.margin-t-10 {
+    margin-top:8px;
+}
+@media (max-width: 1199px)
+    ..product_card h2 {
+        text-align: left;
+        flex: 1;
+        min-width: 1px;
+    }
+/* ---------------------------new segment card  styling end here--------------------- */
+
+
+/* --------------------------Services  styling start here------------------ */
+.services{
+    padding: 80px 0 80px;
+    text-align: center;
+    background-color: #f4f7f9;
+}
+.services h2,
+.services h4 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+
+}
+.services p{
+    color: #737373;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+.services i{
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #6699cc;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 768px;) {
+    .services {
+        padding: 30px;
+    }
+
+}
+/*--------------------------------- end services  styling here---------------*/
+
+
+/*----------------------------------Start  Course styling her--------------- */
+.Course_card{
+    margin-top: 15px;
+}
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+    width: 23rem;
+
+
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.thumbnail > h4 {
+    padding: 7px 5px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.thumbnail h4 .info {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0.6em;
+    padding-left: 15px;
+
+
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    cursor:  pointer;
+}
+
+.thumbnail h4 .info > span {
+    margin-right: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 150px;
+}
+.row.fix{
+    display: flex;
+    flex-wrap: wrap;
+}
+.thumbnail a.btn {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/*-------------------------------------end Course styling here------------------------ */
+
+
+/*------------------------------------Course  Card styling start here------------------- */
+.Course_tittle{
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+.Course_teacher{
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: grey;
+}
+.Course_card span{
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.Course_card a{
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.dollar{
+    font-family: 'PT San Narrow', Arial,sans-serif;
+    font-size: 16px;
+    float: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+/*--------------Course  Card styling end here------------------- */
+
+
+/*--------------view course details styling start  here------------------- */
+.course_details .container{
+    background-color: #172747;
+    opacity: 0.9;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+
+}
+.taka {
+    padding: 20px 15px;
+}
+.size {
+    font-size: 30px;
+    font-weight: bold;
+}
+.taka p{
+    font-weight: 200;
+}
+
+.taka .btn-lg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.taka h5{
+    text-align: center;
+    font-weight: bold;
+}
+.change i{
+color: black;
+}
+.course_details h1{
+     color: #fff;
+    font-size: 36px;
+    text-transform: none;
+    line-height: 41px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.course_details h2{
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 27px;
+    padding-left: 30px;
+
+}
+.course_details  .i_change{
+    color: orange;
+}
+
+span .i_change {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.left_thumb{
+    width: 35rem;
+    margin-top: 30%;
+    margin-bottom: -80%;
+
+}
+.what_learn .panel{
+   margin-top: 30px;
+}
+.what_learn .panel-body {
+    padding: 15px 10px;
+    height: 290px;
+}
+.compare {
+    font-size: 15px;
+    font-weight: bold;
+}
+.compare p,
+span{
+    color: grey;
+}
+.compare_h1{
+    margin-top: 40px;
+}
+
+
+
+/*-----------------------view course details  styling end here------------------- */
+
+
+/*------------------------Pricing styling start here-------------------------------*/
+
+/*.pricing{*/
+    /*padding: 80px 0 80px;*/
+    /*text-align: center;*/
+    /*background-color: #3399ff;*/
+/*}*/
+/*.pricing h2,*/
+/*.pricing p {*/
+    /*color: #fff;*/
+/*}*/
+/*.pricing p {*/
+    /*padding-bottom: 40px;*/
+/*}*/
+/*.pricing .packages {*/
+    /*padding: 30px;*/
+    /*border: 1px solid #ccc;*/
+    /*background-color: #fff;*/
+    /*border-radius: 5px;*/
+    /*margin-top: 30px;*/
+/*}*/
+/*.packages li{*/
+    /*display: block;*/
+    /*padding: 5px;*/
+/*}*/
+/*.packages h4,*/
+/*.packages h1,*/
+/*.packages b {*/
+    /*color: #4c4c4c;*/
+/*}*/
+/*.packages p,*/
+/*.packages li {*/
+    /*color: #737373;*/
+/*}*/
+/*.packages button{*/
+    /*margin-top: 10px;*/
+/*}*/
+
+
+/*@media (max-width: 768px;) {*/
+    /*.pricing {*/
+        /*width: 80%;*/
+        /*margin-left: 25px;*/
+    /*}*/
+
+/*}*/
+
+
+/*------------------------ Pricing styling end here---------------------- */
+
+/*------------------------ join panel start here---------------------- */
+    .joinPanel {
+        background: url("../style/pictures/backside.jpeg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 100.0;
+    }
+    .transparent .tuyin
+    {
+        margin-top: 20px;
+        background: linear-gradient(to top, rgba(50,50,50,0), rgba(50,50,50,1));
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+        /*box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);*/
+        /*box-shadow: 0 12px 200px #e7e7e7;*/
+
+        padding: 10%;
+        text-align: center;
+        width: 97%;
+        min-height: 315px;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .transparent .tuyin .title
+    {
+        text-align: center;
+        color: #FFF;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 36px;
+    }
+    /*.transparent .tuyin .plan-name*/
+    /*{*/
+        /*font-size: 20px;*/
+        /*font-weight: 400;*/
+        /*border-bottom: 1px solid #FFF;*/
+        /*padding-bottom: 15px;*/
+        /*padding: 10px*/
+    /*}*/
+
+    .transparent .tuyin .text
+    {
+        margin-top: 20px;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000000;
+        font-weight: 300;
+        margin-bottom: 13px;
+        font-size: 18px;
+    }
+    .joinPanel .btn-one
+    {
+        background-color: #7823c6;
+        color:#fff;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "Roboto",sans-serif;
+        text-transform: none;
+    }
+
+    /*------------------------  join panel end here---------------------- */
+
+
+/*----------------------- Team  styling start here----------------------- */
+.team {
+    padding: 50px 0 80px;
+    text-align: center;
+}
+.team b,
+.team h2,
+.team h4{
+    margin: 20px 0 20px;
+    color: #4c4c4c;
+}
+.team p{
+    color: #737373;
+}
+
+.team img {
+    width: 120px;
+    height: 120px;
+    margin-top: 80px;
+    border: 10px double #fff;
+}
+.team i{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a0db8e;
+    color: #fff;
+}
+.team a:hover {
+    background-color: #709963;
+}
+/*-------------------------- Team  styling end here ------------------*/
+
+
+
+/*---------------------------- client  styling start here------------- */
+.clients{
+    padding: 50px 0 80px;
+    background-color: #3399ff;
+    text-align: center;
+    color: #fff;
+}
+.clients h2{
+    color: #5e5e5e;
+}
+.clients p{
+    padding-bottom: 40px;
+}
+.clients img{
+    width: 200px;
+    opacity: 0.6;
+    cursor: pointer;
+    margin: 40px 0;
+    transition: all 500ms ease-in-out;
+
+}
+.clients li:hover img{
+    opacity: 1;
+}
+/* client  styling end here */
+
+/* Contact  styling start  here */
+.contact{
+    padding: 50px 0 80px;
+    text-align: center;
+}
+.contact p{
+    padding-bottom: 80px;
+    color: #737373;
+}
+.contact h2{
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+.contact .input-group{
+    margin-bottom: 25px;
+}
+.contact .form-control{
+    border: 0 !important;
+}
+.contact span{
+    border-radius: 0 !important;
+}
+.contact .btn {
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+.contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+/* --------------------------Contact styling end here ---------------------*/
+
+
+
+/*-------------------------- Timeline styling start  here ----------------------*/
+.carousel-inner .item  img{
+    width: 100px;
+    height: 100px;
+}
+
+/*----------------------------- Timeline styling end here ------------------------- */
+
+
+
+/*----------------------------- profile styling start  here ------------------------- */
+.profile_user{
+    background:  #F1F3FA;
+}
+.profile {
+    margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+}
+
+.profile-usermenu {
+    margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+}
+/* Profile Content */
+.profile_user .profile-content {
+    background: #fff;
+}
+.profile_user .profile-content h1,
+#para {
+    text-align: center;
+    padding: 15px 0 0px;
+
+}
+.profile_user .form-group{
+    padding: 10px 142px;
+    background: #fff;
+}
+
+.profile-content #editor{
+    padding: 10px 142px;
+}
+.profile-content .btn {
+    color: #fff;
+    background-color: #ec5252;
+    text-transform: none;
+
+}
+/*- profilepage_photo styling here -*/
+.thumbnail {
+    border-radius: 2px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #B73333;
+}
+.btn-danger span {
+    color: #fff;
+}
+
+/* File Upload */
+.fake-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.fileUpload #logo-id {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 33px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.img-preview {
+    max-width: 100%;
+}
+.profile-content .panel-body p,
+span {
+   color: grey;
+}
+
+/*----------------------------- profile styling end here ------------------------- */
+
+
+
+/*----------------------------- Footer styling start here ---------------------------*/
+.footer{
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;margin-bottom: 10px;
+    margin-right: 5px;
+}
+.footer input{
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+}
+.footer .btn{
+    padding: 10px 5px 10px;
+    margin: -3px 0 0 5px;
+}
+
+/*-------------------------- Footer styling end here -----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+

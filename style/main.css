@@ -45,6 +45,11 @@ body, html {
 /*---------------------- hero image end ------------- */
 
 /*----------------------- navbar start /image er center e kaaj---------------------- */
+.scndNav{
+    background-color: #276b70;
+    box-shadow: 2px 2px 4px #000000;
+}
+
 #size{
     height: 992px;
     background-position: center;

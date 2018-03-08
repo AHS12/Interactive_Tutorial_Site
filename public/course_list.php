@@ -10,7 +10,7 @@
 <!--<hr style="width: 100%">-->
 
 <!-- ********** navbar ************* -->
-<nav style="margin-bottom: 0; padding-top: 10px;" class="navbar navbar-default">
+<nav style="margin-bottom: 0; padding-top: 10px;" class="navbar second">
     <div class="container">
         <div class="navbar-header navbar-left">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-menu">
@@ -45,6 +45,7 @@
 
 <!-- **************** course content start ********-->
 <!-- **************** course content start ********-->
+<div id="product_card" class="product_card">
 <div class="container">
     <h1>Courses </h1>
     <hr>
@@ -65,23 +66,48 @@
             $user_firstname = $user['firstname'];
             $user_lastname = $user['lastname'];
             ?>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="../images/<?php echo $content_picture; ?>" alt="android">
-                    <p style="font-weight: bold; padding-top: 10px;"><?php echo $content_title; ?></p>
-                    <p class="title"
-                       style="padding-left: 5px; font-size: 12px;"><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
-                    <div style="float: right; padding-right: 5px; color: orange; padding-bottom: 5px;">
-                        <i class="price-text-color fa fa-star"></i><i
-                                class="price-text-color fa fa-star">
-                        </i><i class="price-text-color fa fa-star"></i><i
-                                class="price-text-color fa fa-star">
-                        </i><i class="fa fa-star"></i>
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="thumbnail">-->
+<!--                    <img src="../images/--><?php //echo $content_picture; ?><!--" alt="android">-->
+<!--                    <p style="font-weight: bold; padding-top: 10px;">--><?php //echo $content_title; ?><!--</p>-->
+<!--                    <p class="title"-->
+<!--                       style="padding-left: 5px; font-size: 12px;">--><?php //echo "{$user_firstname} " . "{$user_lastname}"; ?><!--</p>-->
+<!--                    <div style="float: right; padding-right: 5px; color: orange; padding-bottom: 5px;">-->
+<!--                        <i class="price-text-color fa fa-star"></i><i-->
+<!--                                class="price-text-color fa fa-star">-->
+<!--                        </i><i class="price-text-color fa fa-star"></i><i-->
+<!--                                class="price-text-color fa fa-star">-->
+<!--                        </i><i class="fa fa-star"></i>-->
+<!--                    </div>-->
+<!--                    <a href="course_details.php?content=--><?php //echo urlencode($content_id) ?><!--"-->
+<!--                       class="btn btn-primary col-xs-12"-->
+<!--                       role="button">View Course Details</a>-->
+<!--                    <div class="clearfix"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="col-md-3 wow flipInY">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="img-responsive" src="../images/<?php echo $content_picture;?>">
                     </div>
-                    <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
-                       class="btn btn-primary col-xs-12"
-                       role="button">View Course Details</a>
-                    <div class="clearfix"></div>
+                    <div class="card-block">
+                        <div class="card-title">
+                            <small><?php echo $content_category?></small>
+                            <h4><?php echo $content_title;?></h4>
+                            <p><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
+                        </div>
+                        <div class="card-footer">
+
+                            <ul class="list-inline">
+                                <li class="margin-t-10"><a href="course_details.php?content=<?php echo urlencode($content_id) ?>">
+                                        <i class="fa fa-list"></i> View Course Details</a></li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -95,6 +121,7 @@
     </div>
 
 
+</div>
 </div>
 <!-- **********course content end************ -->
 <!-- **********course content end************ -->

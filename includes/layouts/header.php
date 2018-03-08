@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Sheko</a>
+            <a class="navbar-brand" href="index2.php">Sheko</a>
         </div>
         <div class="collapse navbar-collapse" id="site-menu">
             <ul class="nav navbar-nav navbar-right">
@@ -52,7 +52,7 @@
                                 <a href="course_manage.php"><i class="fa fa-fw fa-edit"></i> Manage Course</a>
                             </li>
                             <li>
-                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> Enrolled Courses</a>
                             </li>
                             <li>
                                 <a href="profile.php#profile_tab#settings"><i class="fa fa-fw fa-gear"></i> Settings</a>
@@ -76,7 +76,7 @@
                             </li>
 
                             <li>
-                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> Enrolled Courses</a>
                             </li>
 
                             <li>
@@ -92,7 +92,7 @@
                 <?php }else{?>
                     <li><a href="login.php">LOGIN</a></li>
 
-                    <li><a href="index.php#join_pannel">REGISTER</a></li>
+                    <li><a href="index2.php#join_pannel">REGISTER</a></li>
                 <?php }?>
 
             </ul>
