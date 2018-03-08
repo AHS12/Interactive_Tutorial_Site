@@ -11,7 +11,7 @@ if(isset($_GET['content'])){
     if(!$result){
         die("failed ". mysqli_error($connection));
     }else{
-        redirect_to("../../public/course_view.php?content=$content_id");
+        redirect_to("../../public/course_manage.php");
     }
 
 

@@ -52,7 +52,7 @@
                                 <a href="course_manage.php"><i class="fa fa-fw fa-edit"></i> Manage Course</a>
                             </li>
                             <li>
-                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> Enrolled Courses</a>
                             </li>
                             <li>
                                 <a href="profile.php#profile_tab#settings"><i class="fa fa-fw fa-gear"></i> Settings</a>
@@ -76,7 +76,7 @@
                             </li>
 
                             <li>
-                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> My Courses</a>
+                                <a href="my_courses.php"><i class="fa fa-fw fa-book"></i> Enrolled Courses</a>
                             </li>
 
                             <li>

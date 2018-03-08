@@ -34,7 +34,7 @@ teacher_logged_in();
                             <hr style="width: 100%">
 
 
-                            <h4 class="text-center alert alert-danger">Note: Mamximum video Limit is 200mb
+                            <h4 class="text-center alert alert-success">Note: Mamximum video Limit is 200mb
                                 and video
                                 formate must me .mp4</h4>
                             <hr>
@@ -72,10 +72,11 @@ teacher_logged_in();
                                     <?php
 
                                     if (isset($_SESSION["successMsg"])) {
-                                        echo "<h2 id=\"message\" class=\"text-center alert alert-danger\"><strong>Video Record inserted!</strong></h2>";
+                                        echo "<h2 id=\"message\" class=\"text-center alert alert-success\"><strong>Video Record inserted!</strong></h2>";
                                     }
 
                                     unset($_SESSION['successMsg']);
+//                                    redirect_to("create_course_curriculum.php")
                                     ?>
 
 
