@@ -260,6 +260,7 @@ function check_if_enrolled($user_id,$content_id){
 
 }
 
+
 function get_num_of_weeks($content_id){
     global $connection;
 
