@@ -171,6 +171,11 @@ function get_selected_content_by_id(){
         return $selected_content_id;
 
     }
+
+    else if (isset($_GET["delete"])){
+        $selected_content_id = $_GET["delete"];
+        return $selected_content_id;
+    }
     else{
         $selected_content_id =null;
         return $selected_content_id;

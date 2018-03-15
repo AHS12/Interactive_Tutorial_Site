@@ -10,7 +10,7 @@
 
                 </div>
                 <div class="col-md-2">
-                    <a href="#" class="btn btn-danger" style="width: 150px; float: right;padding-left: 20px;">
+                    <a href="../includes/php/delete_course.php?delete=<?php echo $content_id;?>" class="btn btn-danger" style="width: 150px; float: right;padding-left: 20px;">
                         <i class="fa fa-trash" aria-hidden="true"></i> Delete
                     </a>
                 </div>

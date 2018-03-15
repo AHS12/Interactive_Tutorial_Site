@@ -198,7 +198,7 @@ teacher_logged_in();
                                         </td>
 
                                         <td>
-                                            <a class=" btn btn-danger" href="">Delete</a>
+                                            <a class=" btn btn-danger">Delete</a>
                                         </td>
                                         <td><a class=" btn btn-primary" href="">Update</a></td>
                                     </tr>
