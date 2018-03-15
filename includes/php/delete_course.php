@@ -15,6 +15,14 @@ $delete_course_id = get_selected_content_by_id();
 
 //Deleting Main Content Data
 
+$query_get_course_image = "SELECT conten_picture FROM content WHERE content_id = '$delete_course_id'";
+$found_img = mysqli_query($connection, $query_get_course_image);
+
+while ($row = mysqli_fetch_assoc($found_img)) {
+    $image = $row['content_picture'];
+    unlink("../../images/".$image);
+}
+
 $query_delete_content = "Delete FROM interactivets.content WHERE content_id = '$delete_course_id'";
 $result = mysqli_query($connection, $query_delete_content);
 if (!$result) {
