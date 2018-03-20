@@ -115,11 +115,11 @@
                     </li>
                 <?php } else if (isset($_SESSION['userfname']) && ($userrole == "S")) { ?>
 
-                    <li class="dropdown">
+                    <li class="dropdown"   >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
                                     class="fa fa-user"> </i><?php echo " " . htmlentities($_SESSION["userfname"]); ?><b
                                     class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="background-color: #276b70;">
                             <li>
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                             </li>

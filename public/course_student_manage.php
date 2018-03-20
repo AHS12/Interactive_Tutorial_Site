@@ -40,6 +40,7 @@ if (isset($content_id)) {
     ?>
 
 
+    <br>
     <div id="course_view" class="course_view">
         <div class="container" style="background-color: #182333;height: 300px; width: 100%;">
             <div class="row">
@@ -69,8 +70,74 @@ if (isset($content_id)) {
     <br>
     <br>
 
-    <h3>Total Enrolled Student is <?php echo $enrolled_counter ?></h3>
+    <h3 class="text-center ">Total Enrolled Student : <?php echo $enrolled_counter ?></h3>
 
+    <br>
+
+    <div>
+        <h3>Student Exam Table</h3>
+        <br>
+
+
+        <table class="table table-bordered table-responsive">
+            <thead class="bg-success">
+            <tr>
+                <th>Week</th>
+                <th>Question</th>
+                <th>Sumbited by</th>
+                <th>Marks</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <?php
+            $query = "SELECT * FROM exam_ques WHERE content_id = '$content_id' ";
+            $result = mysqli_query($connection, $query);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                $exam_id = $row['ques_id'];
+                $exam_week = $row['content_week'];
+                $exam_ques = $row['question'];
+
+                $query_answer = "SELECT * FROM exam_ans WHERE ques_id = '$exam_id'";
+                $found_user_result = mysqli_query($connection, $query_answer);
+
+                while ($row = mysqli_fetch_assoc($found_user_result)) {
+                    $found_user_id = $row['examinee_id'];
+                    $found_user_ans_id = $row['id'];
+                    $found_user_marks = $row['marks'];
+
+
+                    $query_user = "SELECT * FROM users WHERE id = '$found_user_id'";
+                    $found_user_data = mysqli_query($connection, $query_user);
+
+                    while ($row = mysqli_fetch_assoc($found_user_data)) {
+                        $found_user_fname = $row['firstname'];
+                        $found_user_lname = $row['lastname'];
+
+
+                        ?>
+                        <tr>
+                            <td><?php echo $exam_week ?></td>
+                            <td><?php echo $exam_ques ?></td>
+                            <td><?php echo $found_user_fname . " " . $found_user_lname ?></td>
+                            <td><?php echo $found_user_marks ?></td>
+                            <td>
+                                <a href="course_exam_evaluate.php?course=<?php echo htmlentities($content_id) ?>&ans=<?php echo htmlentities($found_user_ans_id) ?>"
+                                   class="btn btn-info">Evaluate</a>
+
+                            </td>
+                        </tr>
+
+                    <?php }
+                }
+            } ?>
+            </tbody>
+        </table>
+
+    </div>
 
     <?php
 } else {
