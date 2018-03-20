@@ -28,13 +28,13 @@
         </form>
         <div class="collapse navbar-collapse" id="site-menu">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="webin.html">PHP</a></li>
-                <li><a href="cards.html">JAVASCRIPT</a></li>
-                <li><a href="#skills">ANDROID</a></li>
-                <li><a href="#services">LARAVEL</a></li>
-                <li><a href="#portfolio">.NET</a></li>
-                <li><a href="#contact">REACT</a></li>
-                <li><a href="registraion.html">NODEJS</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">ANDROID</a></li>
+                <li><a href="#">LARAVEL</a></li>
+                <li><a href="#">.NET</a></li>
+                <li><a href="#">REACT</a></li>
+                <li><a href="#">NODEJS</a></li>
             </ul>
 
         </div>

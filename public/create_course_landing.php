@@ -26,7 +26,7 @@ teacher_logged_in();
                         <tbody>
                         <?php
                         $user_id = $_SESSION['user_id'];
-                        $query = "SELECT * FROM content WHERE visibility = 0 AND user_id = {$user_id} ORDER BY content_id ASC";
+                        $query = "SELECT * FROM content WHERE visibility = 0 AND content_status='draft' AND user_id = {$user_id} ORDER BY content_id ASC";
                         $select_all_content = mysqli_query($connection,$query);
 
                         while ($row = mysqli_fetch_assoc($select_all_content)){
@@ -44,6 +44,37 @@ teacher_logged_in();
 
                         </tbody>
                     </table>
+                    <br>
+                    <hr>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+
+                            <th>Created Courses (Pending For Approval)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $user_id = $_SESSION['user_id'];
+                        $query = "SELECT * FROM content WHERE visibility = 0 AND content_status='pending' AND user_id = {$user_id} ORDER BY content_id ASC";
+                        $select_all_content = mysqli_query($connection,$query);
+
+                        while ($row = mysqli_fetch_assoc($select_all_content)){
+                            $content_id = $row['content_id'];
+                            $content_title = $row['content_title'];
+                            echo "<tr>";
+
+                            echo "<td>{$content_title}</td>";
+                            echo "</tr>";
+
+                        }
+                        ?>
+
+
+                        </tbody>
+                    </table>
+
 
                 </div>
                 <div class="col-xs-2">

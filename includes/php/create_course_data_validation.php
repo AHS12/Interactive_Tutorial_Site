@@ -5,16 +5,27 @@
 if(isset($_GET['content'])){
     $content_id = $_GET['content'];
     global $connection;
-    $query = "UPDATE content SET visibility = 1 WHERE content_id = {$content_id}";
+    $query = "UPDATE content SET visibility = 0, content_status='pending' WHERE content_id = {$content_id}";
     $result = mysqli_query($connection,$query);
 
     if(!$result){
         die("failed ". mysqli_error($connection));
     }else{
-        redirect_to("../../public/course_manage.php");
+        redirect_to("../../public/create_course_landing.php");
     }
 
 
+}else if(isset($_GET['approve'])){
+    $content_id = $_GET['approve'];
+    global $connection;
+    $query = "UPDATE content SET visibility = 1, content_status='accepted' WHERE content_id = {$content_id}";
+    $result = mysqli_query($connection,$query);
+
+    if(!$result){
+        die("failed ". mysqli_error($connection));
+    }else{
+        redirect_to("../../admin/pending_courses.php");
+    }
 }
 
 ?>

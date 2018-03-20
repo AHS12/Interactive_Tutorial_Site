@@ -51,7 +51,7 @@
                                             echo htmlentities(mysqli_prep($content_values['content_title']));
 
                                             ?></h2>
-                                        <a href="#" type="button" class="btn btn-success"><i class="fa fa-check"></i> Approve</a>
+                                        <a href="../includes/php/create_course_data_validation.php?approve=<?php echo htmlentities($content_id)?>" type="button" class="btn btn-success"><i class="fa fa-check"></i> Approve</a>
                                         <a href="#" type="button" class="btn btn-primary"><i class="fa fa-mail-reply"></i> Report</a>
                                         <a href="#" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a>
                                     </div>

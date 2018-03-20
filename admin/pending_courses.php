@@ -44,7 +44,7 @@
                         <tbody>
                         <?php
 
-                        $query = "SELECT * FROM content WHERE visibility = 0";
+                        $query = "SELECT * FROM content WHERE visibility = 0 AND content_status='pending'";
                         $select_all_content = mysqli_query($connection, $query);
                         while ($row = mysqli_fetch_assoc($select_all_content)) {
                             $content_id = $row['content_id'];

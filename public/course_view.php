@@ -14,6 +14,11 @@ confirm_logged_in();
 <?php require_once "../includes/php/session.php" ?>
 <?php require_once "../includes/layouts/header2.php" ?>
 <?php $content_id = get_selected_content_by_id();
+$found_enrolled = check_if_enrolled($_SESSION['user_id'],$content_id);
+if($found_enrolled == false){
+    redirect_to("course_details.php?content=$content_id");
+}
+
 ?>
 
 <?php
