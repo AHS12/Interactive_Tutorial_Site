@@ -52,7 +52,6 @@ while ($row = mysqli_fetch_assoc($answer_data)) {
 ?>
 
 
-
 <br>
 <div id="course_view" class="course_view">
     <div class="container" style="background-color: #182333;height: 300px; width: 100%;">
@@ -79,8 +78,8 @@ while ($row = mysqli_fetch_assoc($answer_data)) {
 </div>
 
 
-<div>
-<!--    --><?php //echo $_SESSION['ans_id'].$_SESSION['marks_content_id'] ?>
+<div class="container">
+    <!--    --><?php //echo $_SESSION['ans_id'].$_SESSION['marks_content_id'] ?>
 
     <h3 class="text-center">Question : <?php echo $question ?></h3>
 
@@ -125,6 +124,7 @@ while ($row = mysqli_fetch_assoc($answer_data)) {
         </form>
 
     </div>
+</div>
 
     <?php
     } else {
