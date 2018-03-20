@@ -125,7 +125,7 @@ if (isset($content_id)) {
                             <td><?php echo $found_user_fname . " " . $found_user_lname ?></td>
                             <td><?php echo $found_user_marks ?></td>
                             <td>
-                                <a href="course_exam_evaluate.php?course=<?php echo htmlentities($content_id) ?>&ans=<?php echo htmlentities($found_user_ans_id) ?>"
+                                <a href="course_exam_evaluate.php?course=<?php echo htmlentities($content_id) ?>&ques=<?php echo htmlentities($exam_id) ?>&ans=<?php echo htmlentities($found_user_ans_id) ?>"
                                    class="btn btn-info">Evaluate</a>
 
                             </td>

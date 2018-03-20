@@ -17,6 +17,7 @@ if (isset($_POST['submit_ans'])) {
     $exam_file = time() . $_FILES['code']['name'];
     $fileType = $_FILES['code']['type'];
     $filePath = "../../answers/" . $exam_file;
+    $fileurl = "answers/" . $exam_file;
 
 
     move_uploaded_file($fileTmp, $filePath);
@@ -28,7 +29,7 @@ if (isset($_POST['submit_ans'])) {
 
 
     $query = "INSERT INTO exam_ans(ques_id,examinee_id, answer, answer_url) ";
-    $query .= "VALUES('$exam_id','$exaninee_id','$exam_ans','$filePath')";
+    $query .= "VALUES('$exam_id','$exaninee_id','$exam_ans','$fileurl')";
 
     $result = mysqli_query($connection, $query);
 
