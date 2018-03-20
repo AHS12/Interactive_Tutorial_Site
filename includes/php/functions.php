@@ -104,7 +104,18 @@ function teacher_logged_in(){
             redirect_to("../public/index.php");
         }
     }else{
-        redirect_to("../public/index.php");
+        redirect_to("../public/index2.php");
+    }
+}
+
+function admin_logged_in(){
+    if(isset($_SESSION['userrole'])){
+        $userrole = $_SESSION['userrole'];
+        if($userrole!="A"){
+            redirect_to("../public/login.php");
+        }
+    }else{
+        redirect_to("../public/index2.php");
     }
 }
 
@@ -116,6 +127,7 @@ function confirm_logged_in(){
     if(!logged_in()){
         $_SESSION['no_right'] = 1;
         redirect_to("login.php");
+
     }
 }
 
@@ -306,4 +318,57 @@ function delete_file($file_url)
     unlink("../" . $file_url);
     header('Location: ' . $_SERVER['PHP_SELF']);
 
+}
+
+function get_number_of_courses(){
+
+    global $connection;
+
+    $query = "SELECT * FROM content WHERE visibility=1";
+
+    $result = mysqli_query($connection,$query);
+    confirm_query($result);
+
+    $count_courses = mysqli_num_rows($result);
+
+    return $count_courses;
+
+
+}
+
+function get_number_of_instructors(){
+    global $connection;
+
+    $query = "SELECT * FROM users WHERE user_role='T'";
+    $select_all_users = mysqli_query($connection, $query);
+    confirm_query($select_all_users);
+
+    $count_instructors = mysqli_num_rows($select_all_users);
+
+    return $count_instructors;
+
+}
+
+function get_number_of_students(){
+    global $connection;
+
+    $query = "SELECT * FROM users WHERE user_role='S'";
+    $select_all_users = mysqli_query($connection, $query);
+    confirm_query($select_all_users);
+
+    $count_students = mysqli_num_rows($select_all_users);
+
+    return $count_students;
+
+}
+
+function get_number_of_pending_tutorials(){
+    global $connection;
+
+    $query = "SELECT * FROM content WHERE visibility = 0";
+    $select_all_content = mysqli_query($connection, $query);
+    confirm_query($select_all_content);
+    $count_pending = mysqli_num_rows($select_all_content);
+
+    return $count_pending;
 }

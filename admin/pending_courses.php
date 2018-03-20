@@ -2,12 +2,14 @@
 <?php require_once ("../includes/php/session.php");?>
 <?php require_once ("../includes/php/functions.php");?>
 <?php require_once ("../admin/layouts/admin_header.php");?>
-
+<?php admin_logged_in(); ?>
 
     <div id="wrapper">
 
     <!-- Navigation -->
-
+    <?php
+    require_once "../admin/php/users_online.php";
+    ?>
     <?php require_once("../admin/layouts/admin_navigation.php");?>
 
     <div id="page-wrapper">
@@ -68,7 +70,7 @@
                                 <td><?php echo $content_level; ?></td>
                                 <td><?php echo $content_date; ?></td>
                                 <td><?php echo $content_tags; ?></td>
-                                <td><a class="btn btn-primary" href="#">Demonstrate</a></td>
+                                <td><a class="btn btn-primary" href="course_view_admin.php?content=<?php echo htmlentities($content_id)?>">Demonstrate</a></td>
                                 <td><a class="btn btn-danger" href="#">Delete</a></td>
                             </tr>
 

@@ -4,7 +4,9 @@
 <?php
 
 if(isset($_GET['content'])){
-    confirm_logged_in();
+    if(!isset($_SESSION['user_id'])){
+        redirect_to("../../public/login.php");
+    }
     $content_id = $_GET['content'];
     $user_id = $_SESSION['user_id'];
     $week_progress = 1;

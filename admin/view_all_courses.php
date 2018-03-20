@@ -3,11 +3,13 @@
 <?php require_once ("../includes/php/functions.php");?>
 <?php require_once ("../admin/layouts/admin_header.php");?>
 
-
+<?php admin_logged_in(); ?>
     <div id="wrapper">
 
     <!-- Navigation -->
-
+    <?php
+    require_once "../admin/php/users_online.php";
+    ?>
     <?php require_once("../admin/layouts/admin_navigation.php");?>
 
     <div id="page-wrapper">

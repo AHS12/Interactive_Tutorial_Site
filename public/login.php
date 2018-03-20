@@ -17,12 +17,18 @@ if (isset($_POST['submit'])) {
         $_SESSION["userfname"] = $found_user["firstname"];
         $_SESSION["userlname"] = $found_user["lastname"];
         $_SESSION["usermail"] = $found_user["email"];
-        $_SESSION["userpass"] = $found_user["password"];
         $_SESSION["userpicture"] = $found_user["picture"];
         $_SESSION["userinstitute"] = $found_user["institution"];
         $_SESSION["userbio"] = $found_user["bio"];
         $_SESSION["userrole"] = $found_user["user_role"];
-        redirect_to("index2.php");
+
+        if($_SESSION['userrole']==T || $_SESSION['userrole']==S){
+            redirect_to("index2.php");
+        }else if($_SESSION['userrole']==A){
+            redirect_to("../admin/index.php");
+        }
+
+
     } else {
         $_SESSION["err_login"] = 1;
         redirect_to("login.php");

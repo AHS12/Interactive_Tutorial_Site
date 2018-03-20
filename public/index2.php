@@ -1,7 +1,9 @@
 <?php require_once("../includes/database/db_connection.php"); ?>
 <?php require_once("../includes/php/session.php"); ?>
 <?php require_once("../includes/php/functions.php"); ?>
-
+<?php
+require_once "../admin/php/users_online.php";
+?>
 
 <!DOCTYPE html>
 <html>
