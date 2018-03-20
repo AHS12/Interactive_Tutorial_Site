@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
     <link rel="stylesheet" href="../lib/fontAwesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
 
     <script type="text/javascript">
@@ -54,6 +55,7 @@
     </script>
 
 
+
 <body>
 <!-- ********** navbar ************* -->
 <nav class="navbar navbar-fixed-top">
@@ -90,7 +92,7 @@
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                                <a href="inbox.php"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                             </li>
                             <li>
                                 <a href="course_manage.php"><i class="fa fa-fw fa-edit"></i> Manage Course</a>
@@ -118,7 +120,7 @@
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                                <a href="inbox.php"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                             </li>
 
                             <li>

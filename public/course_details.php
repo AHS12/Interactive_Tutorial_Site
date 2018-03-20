@@ -36,10 +36,10 @@ if(isset($_SESSION['user_id'])){
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <div id="rateRight">
-                            <p>4.6 Ratings 9,324 enrolled</p>
-                        </div>
+                        <span class="fa fa-star"> <b style="color: #fff;font-weight: 600;">4.6 Ratings 9,324 enrolled</b></span>
+<!--                        <div id="rateRight">-->
+<!--                            <p>4.6 Ratings 9,324 enrolled</p>-->
+<!--                        </div>-->
                     </div>
                     <div id="description">
 <!--                        <p>Created by Jonas Schme Last updated 10/2017</p>-->

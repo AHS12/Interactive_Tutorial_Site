@@ -603,3 +603,101 @@ h2{color:#0b56a8;}
         min-width: 1px;
     }
 }
+
+/*inbox section*/
+
+.something { margin-top:50px;}
+.messages .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.messages .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.messages .list-group .checkbox { display: inline-block;margin: 0px; }
+.messages .list-group input[type="checkbox"]{ margin-top: 2px; }
+.messages .list-group .glyphicon { margin-right:5px; }
+.messages .list-group .glyphicon:hover { color:#FFBC00; }
+a.list-group-item.read { color: #222;background-color: #F3F3F3; }
+hr { margin-top: 5px;margin-bottom: 10px; }
+.nav-pills>li>a {padding: 5px 10px;}
+
+.ad { padding: 5px;background: #F5F5F5;color: #222;font-size: 80%;border: 1px solid #E5E5E5; }
+.ad a.title {color: #15C;text-decoration: none;font-weight: bold;font-size: 110%;}
+.ad a.url {color: #093;text-decoration: none;}
+
+
+
+.message-wrap
+{
+    box-shadow: 0 0 3px #ddd;
+    padding:0;
+
+}
+.msg
+{
+    padding:5px;
+    border-top:1px solid #ddd;
+    margin:0;
+}
+.msg.odd {
+    background-color: #FFFFFF;
+}
+.msg.even {
+    background-color: #F4F6F8;
+}
+.msg .author {
+    border-right: 1px solid #ddd;
+}
+.msg-wrap {
+    padding:10px;
+}
+
+
+.msg-wrap .thread-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #222222;
+    padding: 0 0 0 10px;
+}
+
+.send-wrap
+{
+    border-top: 1px solid #eee;
+    padding:10px;
+    /*background: #f8f8f8;*/
+}
+
+.highlight
+{
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+.msg-wrap .media-heading
+{
+    color:#003bb3;
+    font-weight: 700;
+}
+
+.msg-date
+{
+    background: none;
+    text-align: center;
+    color:#aaa;
+    border:none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/*mail inbox*/
+
+.newPortion{ margin-top:50px;}
+.nav-tabs .glyphicon:not(.no-margin) { margin-right:10px; }
+.tab-pane .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.tab-pane .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.tab-pane .list-group .checkbox { display: inline-block;margin: 0px; }
+.tab-pane .list-group input[type="checkbox"]{ margin-top: 2px; }
+.tab-pane .list-group .glyphicon { margin-right:5px; }
+.tab-pane .list-group .glyphicon:hover { color:#FFBC00; }
+a.list-group-item.read { color: #222;background-color: #F3F3F3; }
+hr { margin-top: 5px;margin-bottom: 10px; }
+.nav-pills>li>a {padding: 5px 10px;}
+.ad { padding: 5px;background: #F5F5F5;color: #222;font-size: 80%;border: 1px solid #E5E5E5; }
+.ad a.title {color: #15C;text-decoration: none;font-weight: bold;font-size: 110%;}
+.ad a.url {color: #093;text-decoration: none;}

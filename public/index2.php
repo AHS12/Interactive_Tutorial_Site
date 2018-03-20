@@ -98,7 +98,7 @@ require_once "../admin/php/users_online.php";
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                                <a href="inbox.php"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                             </li>
                             <li>
                                 <a href="course_manage.php"><i class="fa fa-fw fa-edit"></i> Manage Course</a>
@@ -126,7 +126,7 @@ require_once "../admin/php/users_online.php";
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                                <a href="inbox.php"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                             </li>
 
                             <li>
