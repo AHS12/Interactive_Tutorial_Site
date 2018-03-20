@@ -24,6 +24,7 @@ if (isset($_POST['submit_ans'])) {
 
     $exam_id = $_SESSION['current_exam_id'];
     $exaninee_id = $_SESSION['user_id'];
+    $courese_id = $_SESSION['current_content_id_exam'];
 
 
     $query = "INSERT INTO exam_ans(ques_id,examinee_id, answer, answer_url) ";
@@ -31,10 +32,11 @@ if (isset($_POST['submit_ans'])) {
 
     $result = mysqli_query($connection, $query);
 
+
     if (!$result) {
         die("Failed!!!" . mysqli_error($connection));
     } else {
-        header("location: ../../public/course_exam.php?exam=$exam_id");
+        header("location: ../../public/course_view.php?content=$courese_id");
 
     }
 

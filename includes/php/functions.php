@@ -188,6 +188,9 @@ function get_selected_content_by_id()
     } else if (isset($_GET["vid"])) {
         $selected_content_id = $_GET["vid"];
         return $selected_content_id;
+    } else if (isset($_GET["delqid"])) {
+        $selected_content_id = $_GET["delqid"];
+        return $selected_content_id;
     } else {
         $selected_content_id = null;
         return $selected_content_id;

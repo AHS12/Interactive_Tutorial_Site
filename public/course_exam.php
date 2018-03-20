@@ -24,6 +24,7 @@ if (isset($exam_id)) {
 
     while ($row = mysqli_fetch_assoc($result)) {
         $current_content_id = $row['content_id'];
+        $_SESSION['current_content_id_exam'] = $current_content_id;
 //        $exam_week = $row['content_week'];
         $exam_ques = $row['question'];
     }
@@ -58,9 +59,9 @@ if (isset($exam_id)) {
             <form method="post" enctype="multipart/form-data"
                   action="../includes/php/answer_record.php">
                 <label for="create_question">Enter Answer</label>
-                <textarea rows="5" class="form-control" name="answer"></textarea>
+                <textarea rows="5" class="form-control" name="answer" required></textarea>
                 <br>
-                <p class="help-block">Or Upload Your Code</p>
+                <p class="help-block">AND Upload Your Code</p>
                 <input type="file" name="code"> <br>
                 <button class="btn btn-success btn-lg" type="submit" name="submit_ans">submit</button>
             </form>

@@ -297,6 +297,7 @@ teacher_logged_in();
                                         $result = mysqli_query($connection, $query);
 
                                         while ($row = mysqli_fetch_assoc($result)) {
+                                            $exam_id = $row['ques_id'];
                                             $exam_week = $row['content_week'];
                                             $exam_ques = $row['question'];
 
@@ -306,7 +307,7 @@ teacher_logged_in();
                                                 <td><?php echo $exam_week ?></td>
                                                 <td><?php echo $exam_ques ?></td>
                                                 <td>
-                                                    <button class="btn btn-danger">Delete</button>
+                                                    <a href="../includes/php/delete_ques.php?delqid=<?php echo htmlentities($exam_id) ?>" class="btn btn-danger">Delete</a>
                                                 </td>
                                             </tr>
 

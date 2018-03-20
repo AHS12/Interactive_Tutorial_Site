@@ -46,23 +46,30 @@
                 $user_firstname = $user['firstname'];
                 $user_lastname = $user['lastname'];
                 ?>
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="../images/<?php echo $content_picture; ?>" alt="android">
-                        <p style="font-weight: bold; padding-top: 10px;"><?php echo $content_title; ?></p>
-                        <p class="title"
-                           style="padding-left: 5px; font-size: 12px;"><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
-                        <div style="float: right; padding-right: 5px; color: orange; padding-bottom: 5px;">
-                            <i class="price-text-color fa fa-star"></i><i
-                                    class="price-text-color fa fa-star">
-                            </i><i class="price-text-color fa fa-star"></i><i
-                                    class="price-text-color fa fa-star">
-                            </i><i class="fa fa-star"></i>
+
+                <div class="col-md-3 wow flipInY">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="img-responsive" src="../images/<?php echo $content_picture;?>">
                         </div>
-                        <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
-                           class="btn btn-primary col-xs-12"
-                           role="button">View Course Details</a>
-                        <div class="clearfix"></div>
+                        <div class="card-block">
+                            <div class="card-title">
+                                <small><?php echo $content_category?></small>
+                                <h4><?php echo $content_title;?></h4>
+                                <p><?php echo "{$user_firstname} " . "{$user_lastname}"; ?></p>
+                            </div>
+                            <div class="card-footer">
+
+                                <ul class="list-inline">
+                                    <li class="margin-t-10"><a href="course_details.php?content=<?php echo urlencode($content_id) ?>">
+                                            <i class="fa fa-list"></i> View Course Details</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 
@@ -88,95 +95,7 @@
 <script src="../lib/jquery-3.2.1.min.js"></script>
 <!-- Latest compiled JavaScript-->
 <script src="../lib/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
 
-        /**
-         * This object controls the nav bar. Implement the add and remove
-         * action over the elements of the nav bar that we want to change.
-         *
-         * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
-         */
-        var myNavBar = {
-
-            flagAdd: true,
-
-            elements: [],
-
-            init: function (elements) {
-                this.elements = elements;
-            },
-
-            add: function () {
-                if (this.flagAdd) {
-                    for (var i = 0; i < this.elements.length; i++) {
-                        document.getElementById(this.elements[i]).className += " fixed-theme";
-                    }
-                    this.flagAdd = false;
-                }
-            },
-
-            remove: function () {
-                for (var i = 0; i < this.elements.length; i++) {
-                    document.getElementById(this.elements[i]).className =
-                        document.getElementById(this.elements[i]).className.replace(/(?:^|\s)fixed-theme(?!\S)/g, '');
-                }
-                this.flagAdd = true;
-            }
-
-        };
-
-        /**
-         * Init the object. Pass the object the array of elements
-         * that we want to change when the scroll goes down
-         */
-        myNavBar.init([
-            "header",
-            "header-container",
-            "brand"
-        ]);
-
-        /**
-         * Function that manage the direction
-         * of the scroll
-         */
-        function offSetManager() {
-
-            var yOffset = 0;
-            var currYOffSet = window.pageYOffset;
-
-            if (yOffset < currYOffSet) {
-                myNavBar.add();
-            }
-            else if (currYOffSet == yOffset) {
-                myNavBar.remove();
-            }
-
-        }
-
-        /**
-         * bind to the document scroll detection
-         */
-        window.onscroll = function (e) {
-            offSetManager();
-        }
-
-        /**
-         * We have to do a first detectation of offset because the page
-         * could be load with scroll down set.
-         */
-        offSetManager();
-    });
-
-    /**
-     * thumnail
-     */
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-
-
-</script>
 <br>
 <hr>
 <div class="footer-bottom">
