@@ -40,7 +40,6 @@ if(isset($_SESSION['user_id'])){
                         <div id="rateRight">
                             <p>4.6 Ratings 9,324 enrolled</p>
                         </div>
-
                     </div>
                     <div id="description">
 <!--                        <p>Created by Jonas Schme Last updated 10/2017</p>-->

@@ -2,7 +2,7 @@
 
 $session = session_id();
 $time = time();
-$time_out_in_seconds = 60;
+$time_out_in_seconds = 60*60;
 $time_out = $time - $time_out_in_seconds;
 
 $query = "SELECT * FROM users_online WHERE session='$session'";

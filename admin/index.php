@@ -12,6 +12,8 @@
     $total_pending_courses = get_number_of_pending_tutorials();
 
     require_once "../admin/php/users_online.php";
+
+    $total_users_online = $count_user;
     ?>
     <?php require_once "layouts/admin_navigation.php" ?>
 
@@ -143,9 +145,9 @@
                             ['Data', 'Count'],
                             <?php
 
-                            $element_text = ['Tutorials','Instructor','Student','Pending Tutorials'];
-                            $element_count = [$total_courses,$total_instructors,$total_students,$total_pending_courses];
-                            for($i = 0; $i<4; $i++){
+                            $element_text = ['Tutorials','Instructor','Student','Pending Tutorials','Users Online'];
+                            $element_count = [$total_courses,$total_instructors,$total_students,$total_pending_courses,$total_users_online];
+                            for($i = 0; $i<5; $i++){
                                 echo "['{$element_text[$i]}'" . ",". "{$element_count[$i]}],";
                             }
 
