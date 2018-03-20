@@ -58,7 +58,7 @@ teacher_logged_in();
                                     <div class="row">
                                         <div class="col-md-6">
 
-                                            <a href="course_details.php?content=<?php echo urlencode($content_id) ?>"
+                                            <a href="course_student_manage.php?content=<?php echo urlencode($content_id) ?>"
                                                class="btn btn-one" data-wow-delay=".8">Manage Students</a>
                                         </div>
                                         <div class="col-md-6">

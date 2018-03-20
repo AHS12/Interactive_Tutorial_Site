@@ -110,10 +110,10 @@ function teacher_logged_in()
         $userrole = $_SESSION['userrole'];
 
         if (($userrole != "T")) {
-            redirect_to("../public/index.php");
+            redirect_to("../public/index2.php");
         }
     } else {
-        redirect_to("../public/index.php");
+        redirect_to("../public/index2.php");
     }
 }
 
