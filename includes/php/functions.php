@@ -170,9 +170,14 @@ function get_selected_content_by_id(){
         $selected_content_id = $_GET["exam"];
         return $selected_content_id;
 
-    }
-    else{
-        $selected_content_id =null;
+    } else if (isset($_GET["delete"])) {
+        $selected_content_id = $_GET["delete"];
+        return $selected_content_id;
+    } else if (isset($_GET["vid"])) {
+        $selected_content_id = $_GET["vid"];
+        return $selected_content_id;
+    } else {
+        $selected_content_id = null;
         return $selected_content_id;
     }
 
@@ -260,8 +265,8 @@ function check_if_enrolled($user_id,$content_id){
 
 }
 
-
-function get_num_of_weeks($content_id){
+function get_num_of_weeks($content_id)
+{
     global $connection;
 
     $query = "SELECT video_serial FROM content_resources WHERE video_content_id='$content_id'";
@@ -284,5 +289,21 @@ function get_week_progress($user_id, $content_id){
 
     return $week;
 
+
+}
+
+
+function delete_video($video_url)
+{
+    unlink("../" . $video_url);
+    //redirecting to same page
+//    header('Location: ' . $_SERVER['PHP_SELF']);
+
+}
+
+function delete_file($file_url)
+{
+    unlink("../" . $file_url);
+    header('Location: ' . $_SERVER['PHP_SELF']);
 
 }

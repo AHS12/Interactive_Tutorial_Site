@@ -76,7 +76,7 @@ teacher_logged_in();
                                     }
 
                                     unset($_SESSION['successMsg']);
-//                                    redirect_to("create_course_curriculum.php")
+                                    //                                    redirect_to("create_course_curriculum.php")
                                     ?>
 
 
@@ -105,18 +105,36 @@ teacher_logged_in();
                             <h3>Uploded Video List</h3>
                             <hr>
 
-                            <table class="table table-bordered table-responsive">
+
+                            <script>
+
+
+                                var addSerialNumber = function () {
+                                    $('#vidtable').each(function (index) {
+                                        $(this).find('td:nth-child(1)').html(index + 1);
+                                    });
+                                };
+
+                                addSerialNumber();
+
+
+                            </script>
+
+                            <table id="vidtable" class="table table-bordered table-responsive">
                                 <thead>
                                 <tr class="bg-success">
                                     <th>Serial</th>
                                     <th>Video Title</th>
                                     <th>Video Description</th>
                                     <th>Length/Duration</th>
-                                    <th>Edit</th>
                                     <th>Delete</th>
+                                    <th>Edit</th>
+
 
                                 </tr>
                                 </thead>
+
+                                <tbody>
 
                                 <?php
                                 /*include "../includes/database/database.php";*/
@@ -131,7 +149,6 @@ teacher_logged_in();
                                 $query = "SELECT * FROM content_resources WHERE video_content_id = '$content_id' ";
 
                                 $result = mysqli_query($connection, $query);
-
 
                                 while ($row = mysqli_fetch_assoc($result)) {
 
@@ -197,8 +214,10 @@ teacher_logged_in();
                                             ?>
                                         </td>
 
+
                                         <td>
-                                            <a class=" btn btn-danger" href="">Delete</a>
+                                            <a class="button btn btn-danger"
+                                               href="../includes/php/delete_video.php?vid=<?php echo $video_id ?> ">Delete</a>
                                         </td>
                                         <td><a class=" btn btn-primary" href="">Update</a></td>
                                     </tr>
@@ -209,8 +228,6 @@ teacher_logged_in();
 
 
                                 ?>
-
-                                <tbody>
 
 
                                 </tbody>

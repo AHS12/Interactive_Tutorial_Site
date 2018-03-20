@@ -38,13 +38,13 @@
 
 }
 #fntColor h1{
- color:#fff;
+    color:#fff;
 }
 #fntColor p{
- color:#ced9ea;
+    color:#ced9ea;
 }
 #fntColor i{
- color:#ced9ea;
+    color:#ced9ea;
 }
 
 .thik img{
@@ -80,8 +80,8 @@
 }
 #left {
     float: left;
-   /* color: #fff;
-    background: #122b40; */
+    /* color: #fff;
+     background: #122b40; */
     padding-top: 5px;
 
 }
@@ -112,7 +112,7 @@ ul{
 #rate{
     float: left;
     padding-left: 0;
-    
+
 }
 #rate i{
     color: yellow;
@@ -360,7 +360,7 @@ p.small.text-muted {
 
 /*html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}*/
 /*div.card {*/
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);*/
+/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);*/
 /*}*/
 
 .header {
@@ -462,7 +462,7 @@ label small {
 /*----------------- create course segment end ------------ */
 
 
-    /*----------------- create course page er component step by step end ------------ */
+/*----------------- create course page er component step by step end ------------ */
 .blogShort{ border-bottom:1px solid #ddd;}
 .add{background: #333; padding: 10%; height: 300px;}
 
@@ -596,9 +596,10 @@ h2{color:#0b56a8;}
 .margin-t-10 {
     margin-top:8px;
 }
-@media (max-width: 1199px)
+@media (max-width: 1199px){
     .product_card h2 {
         text-align: left;
         flex: 1;
         min-width: 1px;
     }
+}

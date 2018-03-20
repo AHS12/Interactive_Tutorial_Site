@@ -54,9 +54,12 @@ teacher_logged_in();
                             <div class="card-footer">
 
                                 <ul class="list-inline">
-                                    <div
-                                    <li class="margin-t-10"><a href="course_details.php?content=<?php echo urlencode($content_id) ?>"><i class="fa fa-list"></i>View Course</a></li>
-                                    <li class="pull-right margin-t-10"><a href="#">Manage Course </a></li>
+<!--                                    <div-->
+<!--                                    <li class="margin-t-10"><a href="course_details.php?content=--><?php //echo urlencode($content_id) ?><!--"><i class="fa fa-list"></i>View Course</a></li>-->
+<!--                                    <li class="pull-right margin-t-10"><a href="#">Manage Course </a></li>-->
+
+                                    <a href="course_details.php?content=<?php echo urlencode($content_id) ?>" class="btn btn-one wow bounceInUp" data-wow-delay=".8">Details</a>
+                                    <a href="create_course.php?id=<?php echo urlencode($content_id) ?>" class="btn btn-two wow bounceInUp" data-wow-delay=".9">Manage</a>
 
                                 </ul>
                             </div>
